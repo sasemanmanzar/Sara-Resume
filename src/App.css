@@ -54,11 +54,12 @@
   margin-left: 95vw;
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  position: fixed;
 }
 
 .dot1 {margin-top:20vw;}
-.dot2 {margin-top:15px;}
-.dot3 {margin-top:15px;}
-.dot4 {margin-top:15px;}
-.dot5 {margin-top:15px;}
+.dot2 {margin-top:23vw;}
+.dot3 {margin-top:26vw;}
+.dot4 {margin-top:29vw;}
+.dot5 {margin-top:32vw;}
 

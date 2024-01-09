@@ -1,6 +1,6 @@
 // import sky from './sky.png';
-import './One.css'
 // import Two from '../Two/Two'
+import './One.css'
 
 function One(){
 
@@ -10,7 +10,7 @@ function One(){
 
     return(
         <>
-        <div>page One</div>
+        <div>Page One</div>
         {/* <img src={sky} /> */}
         {/* <div className='mainImg'>
             <div className='circle'/>
