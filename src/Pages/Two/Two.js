@@ -1,11 +1,9 @@
+import './Two.css'
+
 function Two(){
 
-    // const sara = () => {
-    //     alert("Hi! Here is Two");
-    // }
-
     return(
-        <div>Page Two</div>
+        <div className='two'>Page Two</div>
     );
 }
 
