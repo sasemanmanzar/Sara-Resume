@@ -37,3 +37,9 @@
     }
   }
   
+  .mainImg {
+    background-image:url('sky.png');
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}

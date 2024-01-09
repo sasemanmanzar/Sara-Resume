@@ -1,22 +1,22 @@
 import sky from './sky.png';
 import './One.css'
-// import Two from './Two/Two'
+import Two from '../Two/Two'
 
 function One(){
 
-    // const shoot = () => {
-    //     alert("Great Shot!");
-    //   }
+    // const button = () => {
+    //     alert("Hi!");
+    // }
 
     return(
         <>
         {/* <img src={sky} /> */}
         <div className='mainImg'>
-            <div className='circle'/>
+            {/* <div className='circle'/>
+            <div className='circle' style={{ marginTop:'15px'}} onClick={button} />
+            <div className='circle' style={{ marginTop:'15px'}} onClick={Two}/>
             <div className='circle' style={{ marginTop:'15px'}} />
-            <div className='circle' style={{ marginTop:'15px'}} />
-            <div className='circle' style={{ marginTop:'15px'}} />
-            <div className='circle' style={{ marginTop:'15px'}} />
+            <div className='circle' style={{ marginTop:'15px'}} /> */}
         </div>
 
         {/* <img src={sky} usemap='#circleMap'/>
