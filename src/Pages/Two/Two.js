@@ -5,9 +5,7 @@ function Two(){
     // }
 
     return(
-        <div>
-            sara
-        </div>
+        <div>Page Two</div>
     );
 }
 

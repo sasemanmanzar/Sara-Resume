@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
-// import './App.css';
-import sky from './Pages/One/sky.png';
+import './App.css';
+import sky from './sky.png';
 import One from './Pages/One/One'
 import Two from './Pages/Two/Two';
 
@@ -12,20 +12,23 @@ function App() {
     }
 
   return (
-    <div>
+    <div>    
+      <div className='circle dot1' onClick={One}/>
+      <div className='circle dot2' onClick={Two} />
+      <div className='circle dot3' onClick={button}/>
+      <div className='circle dot4' />
+      <div className='circle dot5' />
+    </div>
+
 
   
-    <div className='mainImg'>
-      <div className='circle'/>
-      <div className='circle' style={{ marginTop:'15px'}} onClick={button} />
-      <div className='circle' style={{ marginTop:'15px'}} onClick={Two}/>
-      <div className='circle' style={{ marginTop:'15px'}} />
-      <div className='circle' style={{ marginTop:'15px'}} />
-    </div>
-
-    </div>
-
-
+    // <div className='mainImg'>
+    //   <div className='circle'/>
+    //   <div className='circle' style={{ marginTop:'15px'}} onClick={button} />
+    //   <div className='circle' style={{ marginTop:'15px'}} onClick={Two}/>
+    //   <div className='circle' style={{ marginTop:'15px'}} />
+    //   <div className='circle' style={{ marginTop:'15px'}} />
+    // </div>
 
 
     // <div className="pages" ref={fullPageRef} onScroll={onScroll}>
@@ -38,6 +41,8 @@ function App() {
     //   <One/>
     //   <Two/>
     // </div>
+
+
   );
 }
 

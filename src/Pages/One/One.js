@@ -1,6 +1,6 @@
-import sky from './sky.png';
+// import sky from './sky.png';
 import './One.css'
-import Two from '../Two/Two'
+// import Two from '../Two/Two'
 
 function One(){
 
@@ -10,14 +10,15 @@ function One(){
 
     return(
         <>
+        <div>page One</div>
         {/* <img src={sky} /> */}
-        <div className='mainImg'>
-            {/* <div className='circle'/>
+        {/* <div className='mainImg'>
+            <div className='circle'/>
             <div className='circle' style={{ marginTop:'15px'}} onClick={button} />
             <div className='circle' style={{ marginTop:'15px'}} onClick={Two}/>
             <div className='circle' style={{ marginTop:'15px'}} />
-            <div className='circle' style={{ marginTop:'15px'}} /> */}
-        </div>
+            <div className='circle' style={{ marginTop:'15px'}} />
+        </div> */}
 
         {/* <img src={sky} usemap='#circleMap'/>
         <div style={{backgroundColor:'red'}}>ss</div>

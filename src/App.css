@@ -43,3 +43,22 @@
     height: 100vh;
     position: fixed;
 }
+
+.circle {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #86cadd;
+  border-radius: 50%;
+  /* margin-top:20vw; */
+  margin-left: 95vw;
+  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.dot1 {margin-top:20vw;}
+.dot2 {margin-top:15px;}
+.dot3 {margin-top:15px;}
+.dot4 {margin-top:15px;}
+.dot5 {margin-top:15px;}
+
