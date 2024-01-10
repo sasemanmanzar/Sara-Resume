@@ -11,7 +11,7 @@ function One(){
 
     return(
         <>
-        <div id='IdOne'>Page One</div>
+        <div id='IdOne' className='one'>Page One</div>
         {/* <img src={sky} /> */}
         {/* <div className='mainImg'>
             <div className='circle'/>

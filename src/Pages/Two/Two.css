@@ -1,9 +1,8 @@
 .two{
-    margin-top: 100vw;
+    /* margin-top: 100vw; */
 
-    /* margin: 100px; */
-
+    margin-top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 217, 255);
+    background-color: rgb(0, 247, 255);
 }

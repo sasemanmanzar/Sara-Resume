@@ -1,7 +1,6 @@
 .four{
-    margin-top: 300vw;
+    margin-top: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 0, 0);
-    /* position:static; */
 }
