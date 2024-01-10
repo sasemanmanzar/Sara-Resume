@@ -7,9 +7,9 @@ import Five from './Pages/Five/Five';
 
 function App() {
 
-    // const button = () => {
-    //   alert("Hi!");
-    // }
+    const button = () => {
+      alert("Hi!");
+    }
 
     const marginDot1 = document.getElementById('IdOne');
     const marginDot2 = document.getElementById('IdTwo');
@@ -55,6 +55,7 @@ function App() {
         <div className='circle dot3' onClick={Dot3} />
         <div className='circle dot4' onClick={Dot4} />
         <div className='circle dot5' onClick={Dot5} />
+        <div className='circle dot6' onClick={button} />
       </div>
 
       <One/>
