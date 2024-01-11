@@ -1,4 +1,4 @@
-// import sky from './sky.png';
+// import sky from '../../sky.png';
 // import Two from '../Two/Two'
 import './One.css'
 // import { useCallback } from 'react';
