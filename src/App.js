@@ -11,50 +11,50 @@ function App() {
     //   alert("Hi!");
     // }
 
-    const marginDot1 = document.getElementById('IdOne');
-    const marginDot2 = document.getElementById('IdTwo');
-    const marginDot3 = document.getElementById('IdThree');
-    const marginDot4 = document.getElementById('IdFour');
-    const marginDot5 = document.getElementById('IdFive');
-
-    const Dot1 = () => {
+  const scrollToMarginPage1 = () => {
+    const marginDot1 = document.getElementById('IdOne'); 
       if (marginDot1) {
         marginDot1.scrollIntoView();
       }
-    };
+  };
 
-    const Dot2 = () => {
+  const scrollToMarginPage2 = () => {
+    const marginDot2 = document.getElementById('IdTwo'); 
       if (marginDot2) {
         marginDot2.scrollIntoView();
       }
-    };
+  };
 
-    const Dot3 = () => {
+
+  const scrollToMarginPage3 = () => {
+    const marginDot3 = document.getElementById('IdThree'); 
       if (marginDot3) {
         marginDot3.scrollIntoView();
       }
-    };
+  };
 
-    const Dot4 = () => {
+  const scrollToMarginPage4 = () => {
+    const marginDot4 = document.getElementById('IdFour'); 
       if (marginDot4) {
         marginDot4.scrollIntoView();
       }
-    };
+  };
 
-    const Dot5 = () => {
+  const scrollToMarginPage5 = () => {
+    const marginDot5 = document.getElementById('IdFive'); 
       if (marginDot5) {
         marginDot5.scrollIntoView();
       }
-    };
+  };
 
   return (
     <div>
       <div>    
-        <div className='circle dot1' onClick={Dot1} />
-        <div className='circle dot2' onClick={Dot2} />
-        <div className='circle dot3' onClick={Dot3} />
-        <div className='circle dot4' onClick={Dot4} />
-        <div className='circle dot5' onClick={Dot5} />
+        <div className='circle dot1' onClick={scrollToMarginPage1} />
+        <div className='circle dot2' onClick={scrollToMarginPage2} />
+        <div className='circle dot3' onClick={scrollToMarginPage3} />
+        <div className='circle dot4' onClick={scrollToMarginPage4} />
+        <div className='circle dot5' onClick={scrollToMarginPage5} />
         {/* <div className='circle dot6' onClick={button} /> */}
       </div>
 
