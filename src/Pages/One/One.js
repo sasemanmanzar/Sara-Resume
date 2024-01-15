@@ -1,4 +1,4 @@
-// import sky from '../../sky.png';
+// import sky from '../../Pic/sky.png';
 // import Two from '../Two/Two'
 import './One.css'
 // import { useCallback } from 'react';
@@ -12,6 +12,9 @@ function One(){
     return(
         <>
         <div id='IdOne' className='one'>Page One</div>
+
+        
+
         {/* <img src={sky} /> */}
         {/* <div className='mainImg'>
             <div className='circle'/>
