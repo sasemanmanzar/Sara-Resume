@@ -3,8 +3,23 @@
     width: 100vw;
     height: 100vh;
     /* background-color: rgb(10, 10, 124); */
-    /* background-image:url('../../Pic/darkBlue2.jpg'); */
-    background-image:url('../../Pic/darkBlue5.jpg');
+    background-image:url('../../Pic/darkBlue2.jpg');
+    /* background-image:url('../../Pic/darkBlue5.jpg'); */
+}
+
+.picSara {
+    /* width: 120px;
+    height: 160px;
+    margin-top: 200px;
+    margin-left: 80vw; */
+    /* display: block; */
+    
+    margin-left: 60vw;
+    /* margin-left: 900px; */
+    margin-top: 140px;
+    width: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
 }
 
 /* img{
