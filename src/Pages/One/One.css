@@ -2,48 +2,32 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: rgb(10, 10, 124); */
-    background-image:url('../../Pic/darkBlue2.jpg');
-    /* background-image:url('../../Pic/darkBlue5.jpg'); */
+    background-image:url('../../Pic/darkBlue5.jpg');
+    position: relative;
 }
 
 .picSara {
-    /* width: 120px;
-    height: 160px;
-    margin-top: 200px;
-    margin-left: 80vw; */
-    /* display: block; */
-    
     margin-left: 60vw;
-    /* margin-left: 900px; */
     margin-top: 140px;
     width: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
 }
 
-/* img{
-    width: 100vw;
-    height: 100vh;
-} */
+.textOne{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 46vw;
+    margin-top: -30px;
+   }
 
-/* .mainImg {
-    background-image:url('sky.png');
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-} */
-
-
-/* .circle {
+   .circelOne {
     display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #86cadd;
-    border-radius: 50%;
-    margin-top:20vw;
-    margin-left: 95vw;
-    box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    width: 40px;
+    height: 20px;
+    /* border-radius: 50%; */
+    margin-left: 50vw;
+    background-color: rgb(255, 0, 64);
+    box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-   */
