@@ -12,15 +12,12 @@ function One(){
     // }
 
     return(
-        <>
         <div id='IdOne' className='one'>
              <img className='picSara' src={picSara} alt="" />
-             <div className='textOne'>سارا آسمان منظر</div>
+             {/* <div className='textOne'>سارا آسمان منظر</div> */}
              
-             <div className='circelOne'></div>        
+             {/* <div className='circelOne'></div>         */}
         </div>
-        
-        </>
     );
 }
 
