@@ -5,8 +5,8 @@
     position: fixed;
 } */
 
-.circleTest {
-  /* display: flex; */
+/* .circleTest {
+  display: flex;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -14,18 +14,14 @@
   background-color: gold;
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  /* position: fixed; */
-
-  display: flex;
   position: fixed;
-  z-index: 1;
-}
-
+} */
+/* 
 .dot1 {margin-top:40vh;}
 .dot2 {margin-top:45vh;}
 .dot3 {margin-top:50vh;}
 .dot4 {margin-top:55vh;}
 .dot5 {margin-top:60vh;}
 .dot6 {margin-top:65vh;}
-
+ */
 

@@ -5,7 +5,7 @@ import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 
-import Test from './Pages/test';
+// import Test from './Pages/test';
 
 function App() {
 
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <div>
-      {/* <div>    
+      <div>    
         <div className='circle dot1' onClick={scrollToMarginPage1} />
         <div className='circle dot2' onClick={scrollToMarginPage2} />
         <div className='circle dot3' onClick={scrollToMarginPage3} />
@@ -68,10 +68,7 @@ function App() {
       <Two/>
       <Three/>
       <Four/>
-      <Five/> */}
-      
-      <One/>
-      <Test/>
+      <Five/>
     </div>
   );
 }
