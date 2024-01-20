@@ -16,7 +16,13 @@ function One(){
              <img className='picSara' src={picSara} alt="" />
              {/* <div className='textOne'>سارا آسمان منظر</div> */}
              
-             {/* <div className='circelOne'></div>         */}
+             {/* <div className='circleOne'></div> */}
+             <div className='circlePageOne'></div>
+             <div className='circlePageOne'></div>
+             <div className='circlePageOne'></div>
+             <div className='circlePageOne'></div>
+             <div className='circlePageOne'></div>
+
         </div>
     );
 }
