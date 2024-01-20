@@ -1,17 +1,12 @@
-import './App.css';
-import One from './Pages/One/One';
-import Two from './Pages/Two/Two';
-import Three from './Pages/Three/Three';
-import Four from './Pages/Four/Four';
-import Five from './Pages/Five/Five';
+import './test.css';
+// import One from './One/One';
+import Two from './Two/Two';
+import Three from './Three/Three';
+import Four from './Four/Four';
+import Five from './Five/Five';
+import One from './One/One';
 
-import Test from './Pages/test';
-
-function App() {
-
-    // const button = () => {
-    //   alert("Hi!");
-    // }
+function Test() {
 
   const scrollToMarginPage1 = () => {
     const marginDot1 = document.getElementById('IdOne'); 
@@ -56,24 +51,22 @@ function App() {
 
   return (
     <div>
-      {/* <div>    
-        <div className='circle dot1' onClick={scrollToMarginPage1} />
-        <div className='circle dot2' onClick={scrollToMarginPage2} />
-        <div className='circle dot3' onClick={scrollToMarginPage3} />
-        <div className='circle dot4' onClick={scrollToMarginPage4} />
-        <div className='circle dot5' onClick={scrollToMarginPage5} />
+      <div>
+        <div className='circleTest dot1' onClick={scrollToMarginPage1} />
+        <div className='circleTest dot2' onClick={scrollToMarginPage2} />
+        <div className='circleTest dot3' onClick={scrollToMarginPage3} />
+        <div className='circleTest dot4' onClick={scrollToMarginPage4} />
+        <div className='circleTest dot5' onClick={scrollToMarginPage5} />
+        {/* <div className='circle dot6' onClick={button} /> */}
       </div>
 
-      <One/>
+      {/* <One/> */}
       <Two/>
       <Three/>
       <Four/>
-      <Five/> */}
-      
-      <One/>
-      <Test/>
+      <Five/>
     </div>
   );
 }
 
-export default App;
+export default Test;
