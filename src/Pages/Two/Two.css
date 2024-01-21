@@ -4,10 +4,11 @@
     margin-top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 247, 255);
+    /* background-color: rgb(0, 247, 255); */
     /* background-image:url('../../Pic/darkBlue3.jpg'); */
     /* background-image:url('../../Pic/darkBlue5.jpg'); */
     /* background-image:url('../../Pic/darkBlue2.jpg'); */
     /* background-color: rgba(18,61,113,255); */
-    /* background-color: rgba(205,212,220,255); */
+    background-color: rgba(205,212,220,255);
+    /* background-color: rgba(72,111,151,255); */
 }
