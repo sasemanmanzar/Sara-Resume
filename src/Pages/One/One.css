@@ -2,7 +2,8 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-image:url('../../Pic/darkBlue5.jpg');
+    background-image:url('../../Pic/darkBlue03.jpg');
+    /* background-image:url('../../Pic/darkBlue7.jpg'); */
     position: relative;
     /* position: static; */
 }
