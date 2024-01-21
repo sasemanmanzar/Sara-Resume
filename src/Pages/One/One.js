@@ -14,14 +14,13 @@ function One(){
     return(
         <div id='IdOne' className='one'>
              <img className='picSara' src={picSara} alt="" />
-             {/* <div className='textOne'>سارا آسمان منظر</div> */}
+             <div className='textPageOne'>سارا آسمان منظر</div>
              
-             {/* <div className='circleOne'></div> */}
-             <div className='circlePageOne'></div>
-             <div className='circlePageOne'></div>
-             <div className='circlePageOne'></div>
-             <div className='circlePageOne'></div>
-             <div className='circlePageOne'></div>
+             <div className='circlePageOne circlePageOne1'><p>تماس با ما</p></div>
+             <div className='circlePageOne circlePageOne2'><p>تجارب</p></div>
+             <div className='circlePageOne circlePageOne3'><p>مهارت ها</p></div>
+             <div className='circlePageOne circlePageOne4'><p>مقالات</p></div>
+             <div className='circlePageOne circlePageOne5'><p>سوابق تحصیلی</p></div>
 
         </div>
     );
