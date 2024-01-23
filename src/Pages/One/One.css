@@ -2,19 +2,7 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    /* background-image:url('../../Pic/darkBlue03.jpg'); */
-    /* background-image:url('../../Pic/darkBlue7.jpg'); */
-    /* background-image:url('../../Pic/b2.jpeg'); */
-    /* background-image:url('../../Pic/b3.jpg'); */
-    /* background-image:url('../../Pic/b4.jpg'); */
-    /* background-image:url('../../Pic/b5.png'); */
-    /* background-image:url('../../Pic/b7.jpg'); */
-    /* background-image:url('../../Pic/b8.jpg'); */
-        
-    /* background-image:url('../../Pic/darkBlue.jpg'); */
-    background-image:url('../../Pic/db01.jpg');
-
-
+    background-image:url('../../Pic/darkBlue1.jpg');
     position: relative;
     /* position: static; */
 }

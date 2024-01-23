@@ -3,7 +3,7 @@
 // import { useCallback } from 'react';
 
 import './One.css';
-import picSara from '../../Pic/sara2.jpg';
+import picSara from '../../Pic/sara.jpg';
 // import App from '../../App';
 
 function One(){
