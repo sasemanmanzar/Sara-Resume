@@ -8,8 +8,9 @@
 }
 
 .picSara {
-    margin-left: 60vw;
-    margin-top: 140px;
+    margin-left: 53vw;
+    /* margin-top: 180px; */
+    margin-top: 220px;
     width: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
@@ -18,8 +19,9 @@
 
 
 .textPageOne{
-    margin-left: 43vw;
-    margin-top: 255px;
+    margin-left: 36vw;
+    /* margin-top: 295px; */
+    margin-top: 335px;
     position: absolute;
     /* background-color: rgba(38,37,51, 0.25); */
     background-color: rgba(220, 189, 90, 0.85);
