@@ -2,7 +2,9 @@
     margin-top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 251, 0);
+    /* background-color: rgb(255, 251, 0); */
     /* background-image:url('../../Pic/darkBlue6.jpg'); */
     /* background-image:url('../../Pic/darkBlue5.jpg'); */
+    background-image:url('../../Pic/db01.jpg');
+
 }
