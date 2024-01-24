@@ -4,11 +4,26 @@ function Two(){
 
     return(
         <div id='IdTwo' className='two'>
-            <div className='smallBox1 top1'>سوابق تحصیلی</div>
-            <div className='smallBox top2'>کارشناسی ارشد</div>
-            <div className='box top3'>قم</div>
-            <div className='smallBox top4'>کارشناسی</div>
-            <div className='box top5'>خواجه</div>
+            <div className='smallBox1 top1'><p>سوابق تحصیلی</p></div>
+            <div className='smallBox top2'><p>کارشناسی ارشد</p></div>
+            <div className='box top3'>
+                <p>
+                    <div>کارشناسی ارشد مهندسی فناوری اطلاعات گرایش مدیریت سیستم های اطلاعاتی</div>
+                    <div>موسسه آموزش عالی فناوری اطلاعات تعالی، قم ۱۳۹۴</div>
+                    <div>پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی (مورد واکاوی: مرکز شنوایی سنجی)</div>
+                    <div>استاد راهنما: جناب آقای دکتر رضا احسن</div>
+                </p>
+            </div>
+            <div className='smallBox top4'><p>کارشناسی</p></div>
+            <div className='box top5'>
+                <p>
+                    <div>کارشناسی مهندسی فناوری اطلاعات</div>
+                    <div>دانشگاه صنعتی خواجه نصیر الدین طوسی، تهران ۱۳۹۱</div>
+                    <div>رتبه اول فارغ التحصیلان دوره کارشناسی رشته مهندسی فناوری اطلاعات</div>
+                    <div>پروژه پایانی: مدارس و دانشگاه های هوشمند</div>
+                    <div>استاد راهنما: جناب آقای دکتر اصغر زمانی</div>
+                </p>
+            </div>
 
         </div>
     );
