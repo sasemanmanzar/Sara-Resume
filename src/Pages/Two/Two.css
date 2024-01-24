@@ -1,5 +1,4 @@
 .two{
-    /* margin-top: 100vw; */
     margin-top: 0;
     width: 100vw;
     height: 100vh;
@@ -8,34 +7,22 @@
 
 .smallBox1 {
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     height: 5vh;
+    margin-left: 35vw;
     background-color: rgba(8,46,108,0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 40vw;
     border-radius: 8px;
-    /* color: #faf7f7; */
-    /* text-align: center; */
-    /* font: 1.2em sans-serif; */
-    /* padding: 10px 50px 10px 50px; */
 }
 
 .smallBox {
     position: absolute;
     width: 10vw;
     height: 5vh;
-    /* background-color: rgba(220, 189, 90, 0.85); */
-    /* background-color: rgba(8,46,108,0.5); */
     background-color: rgba(8,46,108,0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 65vw;
     border-radius: 8px;
-    /* color: #faf7f7; */
-    /* text-align: center;
-    font-weight: bold; */
-    /* margin-left: 60vw; */
-    /* padding: 10px 30px 10px 30px; */
-
 }
 
 .box {
@@ -43,30 +30,31 @@
     background-color: rgba(220, 189, 90, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 50vw;
-    height: 10vh;
+    height: 20vh;
     margin-left: 25vw;
     border-radius: 8px;
+    padding: 20px 0 20px 0;
 }
 
-.top1 {margin-top: 25vh;}
-.top2 {margin-top: 35vh;}
-.top3 {margin-top: 41vh;}
-.top4 {margin-top: 55vh;}
-.top5 {margin-top: 61vh;}
+.top1 {margin-top: 15vh;}
+.top2 {margin-top: 25vh;}
+.top3 {margin-top: 31vh;}
+.top4 {margin-top: 61vh;}
+.top5 {margin-top: 67vh;}
 
 .smallBox1 p ,
-.smallBox p ,
-.box p {
-    /* padding: 1px 1px 1px 1px; */
+.smallBox p {
     text-align: center;
-    /* padding-top: 0; */
-    /* font: 1.2em sans-serif; */
     color: #faf7f7;
-    /* font-weight: bold; */
     font: 1.3em sans-serif;
-    padding: 3px 0 3px 0;
-    /* position: fixed; */
-    /* color: blueviolet; */
+    margin-top: auto;
+    padding-top: 5px;
+}
 
-
+.box p {
+    text-align: right;
+    color: #020202;
+    font: 1em sans-serif;
+    margin-top: auto;
+    padding: 1px 20px 1px 20px;
 }
