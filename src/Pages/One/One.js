@@ -1,23 +1,11 @@
-// import sky from '../../Pic/sky.png';
-// import Two from '../Two/Two'
-// import { useCallback } from 'react';
-
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-// import App from '../../App';
 
 function One(){
 
     // const button = () => {
     //     alert("Hi!");
     // }
-
-    const scrollToMarginPage1 = () => {
-        const marginDot1 = document.getElementById('IdOne'); 
-          if (marginDot1) {
-            marginDot1.scrollIntoView();
-          }
-      };
 
       const scrollToMarginPage2 = () => {
         const marginDot2 = document.getElementById('IdTwo'); 
@@ -47,16 +35,23 @@ function One(){
           }
       };
 
+      const scrollToMarginPage6 = () => {
+        const marginDot6 = document.getElementById('IdSix'); 
+          if (marginDot6) {
+            marginDot6.scrollIntoView();
+          }
+      };
+
     return(
         <div id='IdOne' className='one'>
              <img className='picSara' src={picSara} alt="" />
              <div className='textPageOne'>سارا آسمان منظر</div>
              
-             <div className='circlePageOne circlePageOne1' onClick={scrollToMarginPage5}><p>تماس با ما</p></div>
-             <div className='circlePageOne circlePageOne2' onClick={scrollToMarginPage4}><p>تجارب</p></div>
-             <div className='circlePageOne circlePageOne3' onClick={scrollToMarginPage3}><p>مهارت ها</p></div>
-             <div className='circlePageOne circlePageOne4' onClick={scrollToMarginPage2}><p>مقالات</p></div>
-             <div className='circlePageOne circlePageOne5' onClick={scrollToMarginPage1}><p>سوابق تحصیلی</p></div>
+             <div className='circlePageOne circlePageOne1' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
+             <div className='circlePageOne circlePageOne2' onClick={scrollToMarginPage5}><p>تجارب</p></div>
+             <div className='circlePageOne circlePageOne3' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
+             <div className='circlePageOne circlePageOne4' onClick={scrollToMarginPage3}><p>مقالات</p></div>
+             <div className='circlePageOne circlePageOne5' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
 
         </div>
     );

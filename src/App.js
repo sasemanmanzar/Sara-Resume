@@ -4,6 +4,7 @@ import Two from './Pages/Two/Two';
 import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
+import Six from './Pages/Six/Six';
 
 // import Test from './Pages/test';
 
@@ -49,6 +50,13 @@ function App() {
       }
   };
 
+  const scrollToMarginPage6 = () => {
+    const marginDot6 = document.getElementById('IdSix'); 
+      if (marginDot6) {
+        marginDot6.scrollIntoView();
+      }
+  };
+
   // می خواهیم بررسی کنیم اگر در صفحه اول هست کلاس نیم جدید داشته باشن دایره زردا در غیر این صورت سیرکل اجرا بشه
   // const specialPageOne = () => {
   //   if (marginDot1){}
@@ -62,6 +70,7 @@ function App() {
         <div className='circle dot3' onClick={scrollToMarginPage3} />
         <div className='circle dot4' onClick={scrollToMarginPage4} />
         <div className='circle dot5' onClick={scrollToMarginPage5} />
+        <div className='circle dot6' onClick={scrollToMarginPage6} />
       </div>
 
       <One/>
@@ -69,6 +78,8 @@ function App() {
       <Three/>
       <Four/>
       <Five/>
+      <Six/>
+
     </div>
   );
 }
