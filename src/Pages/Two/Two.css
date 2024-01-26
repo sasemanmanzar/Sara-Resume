@@ -53,9 +53,31 @@
 }
 
 .box p {
-    text-align: right;
+    /* text-align: right; */
+    text-align: center;
     color: #020202;
     font: 1em sans-serif;
     margin-top: auto;
     padding: 1px 20px 1px 20px;
+}
+
+#subject{
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+#university{
+    color: rgb(8,46,108);
+    font: 0.95em sans-serif;
+    font-weight: bold;
+}
+
+#prise{
+    font-style: italic;
+    color: rgb(8,46,108);
+}
+
+#project{
+    font-style: italic;
+    /* color: rgb(8,46,108); */
 }
