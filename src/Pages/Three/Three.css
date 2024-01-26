@@ -28,3 +28,20 @@
 
 .topPaper1 {margin-top: 10vh;}
 .topPaper2 {margin-top: 18vh;}
+
+.smallBoxPaper p {
+    text-align: center;
+    color: #faf7f7;
+    font: 1.3em sans-serif;
+    margin-top: auto;
+    padding-top: 5px;
+}
+
+
+.boxPaper p {
+    text-align: right;
+    color: #020202;
+    font: 1em sans-serif;
+    margin-top: auto;
+    padding: 1px 30px 1px 30px;
+}
