@@ -40,14 +40,36 @@
 
 
 .boxPaper p {
-    text-align: right;
+    text-align: center;
     color: #020202;
     font: 1em sans-serif;
     margin-top: auto;
     padding: 1px 30px 1px 30px;
 }
 
+hr {
+    width: 80%;
+}
+
 #title {
+    padding-top: 15px;
     font-weight: bold;
 }
 
+#name {
+    font: 1em sans-serif;
+    /* color: rgb(8,46,108); */
+}
+
+#nameConf{
+    font-style: italic;
+    color: rgb(8,46,108);
+}
+
+#date {
+    font-style: italic;
+}
+
+#link{
+    text-align: center;
+}
