@@ -4,3 +4,23 @@
     height: 100vh;
     background-image:url('../../Pic/darkBlue2.jpg');
 }
+
+.smallBoxSkill {
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    margin-left: 35vw;
+    background-color: rgba(8,46,108,0.85);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.smallBoxSkill p {
+    text-align: center;
+    color: #faf7f7;
+    font: 1.3em sans-serif;
+    margin-top: auto;
+    padding-top: 5px;
+}
+
+.topSkill1 {margin-top: 10vh;}
