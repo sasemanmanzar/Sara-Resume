@@ -93,11 +93,11 @@ table {
 
   #sk1 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
   #sk01 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
-  #sk001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
-  #sk0001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
-  #sk00001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
-  #sk3 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
-  #sk03 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
+  #sk001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk0001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk00001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk3 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk03 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
   #sk003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 100%, rgba(255, 255, 255, 0.7) 0%);}
   #sk0003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 70%, rgba(255, 255, 255, 0.7) 30%);}
-  #sk00003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 40%, rgba(255, 255, 255, 0.7) 60%);}
+  #sk00003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 50%, rgba(255, 255, 255, 0.7) 50%);}
