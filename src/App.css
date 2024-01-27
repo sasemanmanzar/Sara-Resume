@@ -68,3 +68,19 @@
 .dot6 {margin-top:65vh;}
 
 
+.circle:hover:after {
+  content: "صفحه اصلی";
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  /* position: absolute; */
+  margin-left: -8vw;
+  /* margin-right: 400px; */
+  /* margin-top: 1vh; */
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}
+
+
