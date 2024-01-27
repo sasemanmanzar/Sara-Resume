@@ -101,3 +101,43 @@ table {
   #sk003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 100%, rgba(255, 255, 255, 0.7) 0%);}
   #sk0003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 70%, rgba(255, 255, 255, 0.7) 30%);}
   #sk00003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 50%, rgba(255, 255, 255, 0.7) 50%);}
+
+
+/* .progress:after {
+    width: 0;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+}
+.progress:hover:after {
+    width: 50%;
+} */
+
+/* .progress:after {
+  width: 50%; 
+  -webkit-animation: filler 2s ease-in-out;
+  -moz-animation: filler 2s ease-in-out;
+  animation: filler 2s ease-in-out;
+} */
+
+/* @-webkit-keyframes filler {
+  0% {
+      width: 0;
+  }
+} */
+
+/* #sk1:after {
+  width: 0;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+
+
+
+  width: 80%;
+  -webkit-animation: filler 2s ease-in-out;
+  -moz-animation: filler 2s ease-in-out;
+  animation: filler 2s ease-in-out;
+} */
+
+/* #sk1:hover:after {
+  width: 50%;
+}  */
