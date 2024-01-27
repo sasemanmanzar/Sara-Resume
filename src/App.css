@@ -68,19 +68,88 @@
 .dot6 {margin-top:65vh;}
 
 
-.circle:hover:after {
+/* .circle:hover:after {
   content: "صفحه اصلی";
   display: inline-block;
   background-color: rgba(255,215,0,0.5);
   width: 8vw;
   height: 2vh;
-  /* position: absolute; */
   margin-left: -8vw;
-  /* margin-right: 400px; */
-  /* margin-top: 1vh; */
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+} */
+
+/* .content2{content: 'سوابق تحصیلی';  display: inline-block;} */
+
+.dot1:hover:after {
+  content: "صفحه اصلی";
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
   border-radius: 5px;
   text-align: center;
   font: 0.8em sans-serif;
 }
 
+.dot2:hover:after {
+  content: 'سوابق تحصیلی';
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}
 
+.dot3:hover:after {
+  content: 'مقالات';
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}
+
+.dot4:hover:after {
+  content: 'مهارت ها';
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}
+
+.dot5:hover:after {
+  content: 'تجارب';
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}
+
+.dot6:hover:after {
+  content: 'تماس با ما';
+  display: inline-block;
+  background-color: rgba(255,215,0,0.5);
+  width: 8vw;
+  height: 2vh;
+  margin-left: -8vw;
+  border-radius: 5px;
+  text-align: center;
+  font: 0.8em sans-serif;
+}

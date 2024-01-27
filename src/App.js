@@ -65,12 +65,12 @@ function App() {
   return (
     <div>
       <div>    
-        <div title='صفحه اصلی' className='circle dot1' onClick={scrollToMarginPage1} />
-        <div title='سوابق تحصیلی' className='circle dot2' onClick={scrollToMarginPage2} />
-        <div title='مقالات' className='circle dot3' onClick={scrollToMarginPage3} />
-        <div title='مهارت ها' className='circle dot4' onClick={scrollToMarginPage4} />
-        <div title='تجارب' className='circle dot5' onClick={scrollToMarginPage5} />
-        <div title='تماس با ما' className='circle dot6' onClick={scrollToMarginPage6} />
+        <div className='circle dot1' onClick={scrollToMarginPage1} />
+        <div className='circle dot2' onClick={scrollToMarginPage2} />
+        <div className='circle dot3' onClick={scrollToMarginPage3} />
+        <div className='circle dot4' onClick={scrollToMarginPage4} />
+        <div className='circle dot5' onClick={scrollToMarginPage5} />
+        <div className='circle dot6' onClick={scrollToMarginPage6} />
       </div>
 
       <One/>
