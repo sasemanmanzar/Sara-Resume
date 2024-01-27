@@ -24,3 +24,27 @@
 }
 
 .topSkill1 {margin-top: 10vh;}
+
+table {
+    position: absolute;
+    border: 1px solid;
+    color: #08f437;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    width: 80vw;
+  }
+
+  tr {
+    border: 1px solid;
+    color: #f46308;
+  }
+
+  th {
+    border: 1px solid;
+    color: #f40814;
+  }
+
+  td {
+    border: 1px solid;
+    color: #089ef4;
+  }
