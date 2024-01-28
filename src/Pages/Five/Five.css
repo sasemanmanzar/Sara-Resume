@@ -31,30 +31,81 @@
     overflow: scroll;
     background-color: rgba(220, 189, 90, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* width: 50vw; */
-    width: 70vw;
-    height: 70vh;
-    margin-left: 15vw;
     border-radius: 8px;
-    padding: 20px 0 20px 0;
+    height: 70vh;
+    width: 60vw;
+    margin-left: 20vw;
+    /* padding: 50px; */
 }
 
 .boxExp p {
-    text-align: center;
+    text-align: right;
     color: #020202;
     font: 1em sans-serif;
-    margin-top: auto;
+    /* margin-top: auto; */
     padding: 1px 30px 1px 30px;
 }
 
 .picIconBluePencil {
-    margin-left: 53vw;
-    /* margin-top: 180px; */
-    margin-top: 220px;
-    width: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
     position: absolute;
     z-index: 1;
     background-color: #faf7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    margin-top: 5vh;
+    margin-left: 50vw;
+}
+
+#TitelBP {
+    font-weight: bold;
+    padding-top: 9vh;
+    padding-right: 12vw;
+}
+
+#TextBP1 {
+    font-weight: bold;
+    padding-top: 4vh;
+    padding-right: 6vw;
+    color: rgb(8,46,108);
+}
+
+#TextBP2 {
+    font-weight: bold;
+    padding-right: 6vw;
+    color: rgb(8,46,108);
+    font-style: italic;
+}
+
+#TextBP3 {
+    padding-right: 6vw;
+    padding-left: 6vw;
+    /* font-style: italic; */
+}
+
+#TextBP03{ padding-right: 6vw; padding-left: 6vw;}
+
+#TextBP4, #TextBP5, #TextBP6  {
+    padding-right: 6vw;
+    padding-left: 6vw;
+    /* font-style: italic; */
+    /* list-style-type: square; */
+}
+
+#LinkDownload {
+    /* padding-right: 6vw;
+    padding-left: 6vw; */
+    font-style: normal;
+    background-color: #faf7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    margin-left: 6vw;
+    margin-right: 42vw;
+    padding: 8px;
+    text-align: center;
+}
+
+#LinkDownload a {
+    text-decoration: none;
+    color: rgb(8,46,108);
+    /* padding: 8px; */
 }
