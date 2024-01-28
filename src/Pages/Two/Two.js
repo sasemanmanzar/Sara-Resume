@@ -1,4 +1,4 @@
-import './Two.css'
+import './Two.css';
 
 function Two(){
 

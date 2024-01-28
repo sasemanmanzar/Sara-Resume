@@ -1,14 +1,14 @@
-import './Three.css'
+import './Three.css';
 
-const newTab = () => {
-    window.open(this.href);
-    return true;
-};
+// const newTab = () => {
+//     window.open(this.href);
+//     return true;
+// };
 
-const afterPress = () => {
-    window.open(this.href);
-    return true;
-}
+// const afterPress = () => {
+//     window.open(this.href);
+//     return true;
+// }
 
 function Three(){
 

@@ -1,4 +1,4 @@
-import './Four.css'
+import './Four.css';
 
 //مهارت ها
 

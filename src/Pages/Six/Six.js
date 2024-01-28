@@ -1,11 +1,11 @@
-import './Six.css'
+import './Six.css';
 
 function Six(){
 
     return(
-        <>
-        <div id='IdSix' className='six'>Page six</div>
-        </>
+        <div id='IdSix' className='six'>
+            
+        </div>
     );
 }
 
