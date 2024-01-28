@@ -1,4 +1,5 @@
-import './Five.css'
+import './Five.css';
+import iconBluePencil from '../../Pic/iconBluePencil.gif';
 
 function Five(){
 
@@ -6,6 +7,7 @@ function Five(){
         <div id='IdFive' className='five'>
             <div className='smallBoxExp topExp1'><p>تجارب</p></div>
 
+            <img className='picIconBluePencil' src={iconBluePencil} alt="" />
             <div className='boxExp topExp2'>
             <p id="">برنامه نقاشی مداد آبی، زبان پروژه اندروید، منتشرشده در کافه بازار</p>
             <p id="">تعداد نصب +۳۰۰۰</p>

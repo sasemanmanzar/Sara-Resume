@@ -38,3 +38,23 @@
     border-radius: 8px;
     padding: 20px 0 20px 0;
 }
+
+.boxExp p {
+    text-align: center;
+    color: #020202;
+    font: 1em sans-serif;
+    margin-top: auto;
+    padding: 1px 30px 1px 30px;
+}
+
+.picIconBluePencil {
+    margin-left: 53vw;
+    /* margin-top: 180px; */
+    margin-top: 220px;
+    width: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    background-color: #faf7f7;
+}
