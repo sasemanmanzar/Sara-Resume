@@ -58,18 +58,30 @@
     padding: 10px;
   }
 
-  #NameP6 {
+  #NameP6 input{
+    /* position: absolute; */
     background-color: blueviolet;
+    /* width: 20vw; */
+    /* width: 30vw; */
   }
 
-  #EmailP6 {
+  #EmailP6 input{
+    /* position: absolute; */
     background-color: aqua;
+    /* width: 50%; */
+    /* width: 30vw; */
   }
 
-  #TitleP6 {
+  #TitleP6 input{
     background-color: bisque;
+    /* width: 30vw; */
   }
 
-  #TextP6 {
+  #TextP6 input{
     background-color: rgb(255, 0, 0);
+  }
+
+  #SubmitP6 {
+    background-color: aquamarine;
+    text-align: center;
   }
