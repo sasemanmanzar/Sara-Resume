@@ -55,7 +55,7 @@
     /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: rgba(220, 189, 90, 0.7);
     border-radius: 8px;
-    padding: 40px;
+    padding: 40px 50px 40px 50px;
   }
 
   #NameP6 input , #EmailP6 input {
@@ -98,7 +98,14 @@
   #EmailP6  { background-color: blue;}
   #TitleP6  { background-color: blueviolet;}
   #TextP6  { background-color: crimson;} */
-  
+
 /* 
  ضمن تشکر
   پیام شما ارسال شد در اسرع وقت پاسخ خواهم داد */
+
+
+  .contact-form {
+    padding: 300px;
+    direction: rtl;
+    /* background-color: aqua; */
+  }
