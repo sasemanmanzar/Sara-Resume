@@ -25,6 +25,8 @@
 
 .topCallMe1 {margin-top: 10vh;}
 
+
+/* 
 .boxCallMe {
     position: absolute;
     overflow: scroll;
@@ -34,13 +36,40 @@
     height: 70vh;
     width: 60vw;
     margin-left: 20vw;
-    /* padding: 50px; */
-}
+} */
 
-.boxCallMe p {
+/* .boxCallMe p {
     text-align: right;
     color: #020202;
     font: 1em sans-serif;
-    /* margin-top: auto; */
     padding: 1px 30px 1px 30px;
-}
+} */
+
+.tableP6 {
+    position: absolute;
+    /* border: 1px solid; */
+    /* color: #08f437; */
+    margin-left: 10vw;
+    margin-top: 30vh;
+    width: 80vw;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: rgba(220, 189, 90, 0.7);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  #NameP6 {
+    background-color: blueviolet;
+  }
+
+  #EmailP6 {
+    background-color: aqua;
+  }
+
+  #TitleP6 {
+    background-color: bisque;
+  }
+
+  #TextP6 {
+    background-color: rgb(255, 0, 0);
+  }

@@ -7,7 +7,7 @@ function Four(){
     return(
         <div id='IdFour' className='four'>
             <div className='smallBoxSkill topSkill1'><p>مهارت ها</p></div>
-            <table>
+            <table className='tableP4'>
                 {/* <tr>
                     <th>زبان خارجه</th>
                     <th></th>
