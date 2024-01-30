@@ -18,7 +18,7 @@ function Six(){
                     <td id="TextP6" colspan="2"><input type="text" value="متن پیام"/></td>
                 </tr>
                 <tr>
-                    <td id="SubmitP6" colspan="2"><input type="submit" value="Submit"/></td>
+                    <td id="SubmitP6" colspan="2"><input type="submit" value="ارسال"/></td>
                 </tr>
             </table>
             

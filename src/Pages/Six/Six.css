@@ -55,51 +55,46 @@
     /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: rgba(220, 189, 90, 0.7);
     border-radius: 8px;
-    padding: 10px;
-  }
-
-  #NameP6 {
-    /* position: absolute; */
-    background-color: blueviolet;
-    /* width: 20vw; */
-    /* width: 30vw; */
-  }
-
-  #EmailP6 {
-    /* position: absolute; */
-    background-color: aqua;
-    /* width: 50%; */
-    /* width: 30vw; */
-  }
-
-  #TitleP6 {
-    background-color: bisque;
-    /* width: 30vw; */
-  }
-
-  #TextP6 {
-    background-color: rgb(255, 0, 0);
-  }
-
-  #SubmitP6 {
-    background-color: aquamarine;
-    text-align: center;
+    padding: 40px;
   }
 
   #NameP6 input , #EmailP6 input {
     width: 98%;
     direction: rtl;
+    /* border-radius: 1px; */
+    height: 20px;
+    /* padding: 10px; */
   }
 
   #TitleP6 input {
     width: 99%;
     direction: rtl;
+    height: 20px;
   }
 
   #TextP6 input {
     width: 99%;
     direction: rtl;
+    /* height: 100px; */
+    height: 30vh;
   }
-  /* #EmailP6 input {
-    width: 98%;
-  } */
+
+  #SubmitP6 {
+    /* background-color: aquamarine; */
+    text-align: center;
+    /* height: 40px; */
+  }
+
+  #SubmitP6 input{
+    width: 22%;
+    /* height: 40px; */
+    background-color: rgba(220, 189, 90, 0.7);
+  }
+  
+
+  /* #NameP6  {background-color: aqua;}
+  #EmailP6  { background-color: blue;}
+  #TitleP6  { background-color: blueviolet;}
+  #TextP6  { background-color: crimson;} */
+
+  
