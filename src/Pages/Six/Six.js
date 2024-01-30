@@ -27,6 +27,7 @@ function Six(){
       }
 
 
+
     return(
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
@@ -66,6 +67,24 @@ function Six(){
                 <br/>
                 <input type="submit" value="Send" />
             </form>
+
+            {/* <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                </script>
+                <script type="text/javascript">
+                (function(){
+                    emailjs.init("YOUR_PUBLIC_KEY");
+                })();
+            </script> */}
+
+            {/* <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                </script>
+                <script type="text/javascript">
+                {() => {
+                    emailjs.init("9U64idXn07ZppBH-Q");
+                }}();
+            </script> */}
 
         </div>
     );
