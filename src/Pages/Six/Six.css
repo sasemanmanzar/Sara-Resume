@@ -91,6 +91,15 @@
     direction: rtl;
   }
 
+  #TitleP6 input {
+    width: 99%;
+    direction: rtl;
+  }
+
+  #TextP6 input {
+    width: 99%;
+    direction: rtl;
+  }
   /* #EmailP6 input {
     width: 98%;
   } */
