@@ -49,35 +49,35 @@
     position: absolute;
     /* border: 1px solid; */
     /* color: #08f437; */
-    margin-left: 10vw;
-    margin-top: 30vh;
-    width: 80vw;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 25vh;
     /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: rgba(220, 189, 90, 0.7);
     border-radius: 8px;
     padding: 10px;
   }
 
-  #NameP6 input{
+  #NameP6 {
     /* position: absolute; */
     background-color: blueviolet;
     /* width: 20vw; */
     /* width: 30vw; */
   }
 
-  #EmailP6 input{
+  #EmailP6 {
     /* position: absolute; */
     background-color: aqua;
     /* width: 50%; */
     /* width: 30vw; */
   }
 
-  #TitleP6 input{
+  #TitleP6 {
     background-color: bisque;
     /* width: 30vw; */
   }
 
-  #TextP6 input{
+  #TextP6 {
     background-color: rgb(255, 0, 0);
   }
 
@@ -85,3 +85,12 @@
     background-color: aquamarine;
     text-align: center;
   }
+
+  #NameP6 input , #EmailP6 input {
+    width: 98%;
+    direction: rtl;
+  }
+
+  /* #EmailP6 input {
+    width: 98%;
+  } */

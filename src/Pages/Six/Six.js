@@ -8,14 +8,14 @@ function Six(){
 
             <table className='tableP6'>
                 <tr>
-                    <td id="NameP6"><input type="text" value="NameP6"/></td>
-                    <td id="EmailP6"><input type="text" value="EmailP6"/></td>
+                    <td id="EmailP6"><input type="text" value="ایمیل"/></td>
+                    <td id="NameP6"><input type="text" value="نام"/></td>
                 </tr>
                 <tr>
-                    <td id="TitleP6" colspan="2"><input type="text" value="TitleP6"/></td>
+                    <td id="TitleP6" colspan="2"><input type="text" value="موضوع"/></td>
                 </tr>
                 <tr>
-                    <td id="TextP6" colspan="2"><input type="text" value="TextP6"/></td>
+                    <td id="TextP6" colspan="2"><input type="text" value="متن پیام"/></td>
                 </tr>
                 <tr>
                     <td id="SubmitP6" colspan="2"><input type="submit" value="Submit"/></td>
