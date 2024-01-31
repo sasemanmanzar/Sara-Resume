@@ -37,29 +37,40 @@ function Six(){
     Text: "متن پیام"
     });
 
-    const updateInfoSendEmail = () => {
-        SetInfo(previousState => {
-          return { ...previousState, Name: "blue" }
-        });
-      }
+
+        // const [fieldValue, setFieldValue] = React.useState('');
+        // const handleBlur = (e) => setFieldValue(e.target.value);   
+        // console.log(fieldValue);
+        // return <input onBlur={handleBlur} />;
+
+    // const updateInfoSendEmail = (e) => {
+        // SetInfo(previousState => {
+        //   return { ...previousState, Name: "blue" }
+        // });
+
+        // SetInfo(previousState => {
+        //   return { ...previousState, Name: e.target.value }
+        // });
+
+        // let x = document.getElementById("fname");
+        // x.value = x.value.toUpperCase();
+    //   }
 
     return(
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
-            {/* <div>sara {InfoSendEmail.Email} </div> */}
-
             <form action=''>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="text" name="EmailP6" value={InfoSendEmail.Email} /></td>
-                        <td id="NameP6"><input type="text" name="NameP6" value={InfoSendEmail.Name} /></td>
+                        <td id="EmailP6"><input type="text" name="EmailP6" Value={InfoSendEmail.Email} onChange={e => SetInfo(e.target.value)} /></td>
+                        <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onBlur={e => SetInfo(e.target.value)} /></td>
                     </tr>
                     <tr>
-                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" value={InfoSendEmail.Title}/></td>
+                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue={InfoSendEmail.Title}/></td>
                     </tr>
                     <tr>
-                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" value={InfoSendEmail.Text}/></td>
+                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text}/></td>
                     </tr>
                     <tr>
                         <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
@@ -67,13 +78,7 @@ function Six(){
                 </table>
             </form>
 
-            {/* <form className='tableP6' action=''>
-                <input type="text" name="EmailP6" value="ایمیل"/>
-                <input type="text" id="NameP6" name="NameP6" />
-                <input type="text" id="TitleP6" name="TitleP6" value="موضوع"/>
-                <input  type="text" id="TextP6" name="TextP6" value="متن پیام"/>
-                <input type="submit" id="SubmitP6" name="SubmitP6" value="ارسال"/>
-            </form> */}
+            
 
             {/* <form className="contact-form" onSubmit={sendEmail}>
                 <input type="hidden" name="contact_number" />
