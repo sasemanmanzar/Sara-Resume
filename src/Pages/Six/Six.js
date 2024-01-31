@@ -32,25 +32,33 @@ function Six(){
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
-            {/* <form action=''>
+            <form action=''>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="text" name="EmailP6" value="ایمیل"/></td>
-                        <td id="NameP6"><input type="text" name="NameP6" value="نام"/></td>
+                        <td id="EmailP6"><input type="text" name="EmailP6" /></td>
+                        <td id="NameP6"><input type="text" name="NameP6" /></td>
                     </tr>
                     <tr>
-                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" value="موضوع"/></td>
+                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" /></td>
                     </tr>
                     <tr>
-                        <td id="TextP6" colspan="2"><input type="text" name="TextP6" value="متن پیام"/></td>
+                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" /></td>
                     </tr>
                     <tr>
                         <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
                     </tr>
                 </table>
+            </form>
+
+            {/* <form className='tableP6' action=''>
+                <input type="text" name="EmailP6" value="ایمیل"/>
+                <input type="text" id="NameP6" name="NameP6" />
+                <input type="text" id="TitleP6" name="TitleP6" value="موضوع"/>
+                <input  type="text" id="TextP6" name="TextP6" value="متن پیام"/>
+                <input type="submit" id="SubmitP6" name="SubmitP6" value="ارسال"/>
             </form> */}
 
-            <form className="contact-form" onSubmit={sendEmail}>
+            {/* <form className="contact-form" onSubmit={sendEmail}>
                 <input type="hidden" name="contact_number" />
                 <br/>
                 <label>نام</label>
@@ -66,7 +74,7 @@ function Six(){
                 <textarea name="html_message" />
                 <br/>
                 <input type="submit" value="Send" />
-            </form>
+            </form> */}
 
             {/* <script type="text/javascript"
                         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">

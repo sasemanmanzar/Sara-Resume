@@ -72,11 +72,14 @@
     height: 20px;
   }
 
-  #TextP6 input {
+  #TextP6 textarea {
     width: 99%;
     direction: rtl;
     /* height: 100px; */
     height: 30vh;
+    overflow: scroll;
+    resize: vertical;
+    max-height: 40vh;
   }
 
   #SubmitP6 {
