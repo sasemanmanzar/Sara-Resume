@@ -12,30 +12,6 @@ function Six(){
         Text: "متن پیام"
         });
 
-        // const updateInfoSendName = (previousState) => {
-        //     SetInfo(() => {
-        //     return { ...previousState, Name: previousState.target.value }
-        //     });
-        // };
-        
-        // const updateInfoSendEmail = (previousState) => {
-        //     SetInfo(() => {
-        //     return { ...previousState, Email: previousState.target.value }
-        //     });
-        // }
-
-        // const updateInfoSendTitle = (previousState) => {
-        //     SetInfo(() => {
-        //     return { ...previousState, Title: previousState.target.value }
-        //     });
-        // };
-        
-        // const updateInfoSendText = (previousState) => {
-        //     SetInfo(() => {
-        //     return { ...previousState, Text: previousState.target.value }
-        //     });
-        // }
-
         const updateInfoSendName = (e) => {
             SetInfo((previousState) => {
             return { ...previousState, Name: e.target.value }
@@ -60,37 +36,12 @@ function Six(){
             });
         }
 
-        const updateText = (e) => {
-            // const sara = e;
-            SetInfo(previousState => {
-              return { ...previousState, Text: e.target.value }
-            });
-          }
-
-        //Test
-        const [testValue , Settestvalue] = useState(''); 
-
-        // const Nemidonam = () => {
-        //     Settestvalue(
-        //         ()=>{
-        //             return(<div className='bbbbb'> 
-        //             {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
-        //             </div>);
-        //         }
-        //     );
-        // }
-
-        // Settestvalue () => {}
-        // const buttonTest = () => {
-        //     return(
-        //         Settestvalue(
-        //             ()=>{
-        //                 return("dd");
-        //             }
-        //         )
-        //     );
-        // }
-
+        // const updateText = (e) => {
+        //     // const sara = e;
+        //     SetInfo(previousState => {
+        //       return { ...previousState, Text: e.target.value }
+        //     });
+        //   }
 
     return(
         <div id='IdSix' className='six'>
@@ -117,8 +68,6 @@ function Six(){
             <div className='bbbbb'> 
                 {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
             </div>
-            {/* <div className='bbbbb'>{testValue}</div>
-            <button className='bTest' onClick={Settestvalue}> Test </button> */}
         </div>
     );
 }

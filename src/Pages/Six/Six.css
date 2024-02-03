@@ -113,13 +113,9 @@
     /* background-color: aqua; */
   }
 
+  /* test: */
   .bbbbb{
     background-color: white;
-    width: 500px;
-    height: 500px;
-  }
-
-  .bTest {
-    position: absolute;
-    margin-top: 20vh;
+    width: 200px;
+    height: 200px;
   }
