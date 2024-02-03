@@ -87,14 +87,14 @@ function Six(){
             <form action=''>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="text" name="EmailP6" Value={InfoSendEmail.Email} onBlur={updateInfoSendEmail} /></td>
-                        <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onBlur={updateInfoSendName} /></td>
+                        <td id="EmailP6"><input type="text" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                        <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
                     </tr>
                     <tr>
-                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" Value={InfoSendEmail.Title} onBlur={updateInfoSendTitle} /></td>
+                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
                     </tr>
                     <tr>
-                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text} onBlur={updateInfoSendText} /></td>
+                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
                     </tr>
                     <tr>
                         <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
