@@ -30,12 +30,36 @@ function Six(){
     // function Sname() { const[ nameP6, setName ]= useState("نام"); }
     
     
-    const [InfoSendEmail, SetInfo] = useState({
-    Name: "نام",
-    Email: "ایمیل",
-    Title: "موضوع",
-    Text: "متن پیام"
-    });
+        const [InfoSendEmail, SetInfo] = useState({
+        Name: "نام",
+        Email: "ایمیل",
+        Title: "موضوع",
+        Text: "متن پیام"
+        });
+
+        const updateInfoSendName = (previousState) => {
+            SetInfo(() => {
+            return { ...previousState, Name: previousState.target.value }
+            });
+        };
+        
+        const updateInfoSendEmail = (previousState) => {
+            SetInfo(() => {
+            return { ...previousState, Email: previousState.target.value }
+            });
+        }
+
+        const updateInfoSendTitle = (previousState) => {
+            SetInfo(() => {
+            return { ...previousState, Title: previousState.target.value }
+            });
+        };
+        
+        const updateInfoSendText = (previousState) => {
+            SetInfo(() => {
+            return { ...previousState, Text: previousState.target.value }
+            });
+        }
 
 
         // const [fieldValue, setFieldValue] = React.useState('');
@@ -63,19 +87,23 @@ function Six(){
             <form action=''>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="text" name="EmailP6" Value={InfoSendEmail.Email} onChange={e => SetInfo(e.target.value)} /></td>
-                        <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onBlur={e => SetInfo(e.target.value)} /></td>
+                        <td id="EmailP6"><input type="text" name="EmailP6" Value={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                        <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onBlur={updateInfoSendName} /></td>
                     </tr>
                     <tr>
-                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue={InfoSendEmail.Title}/></td>
+                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue={InfoSendEmail.Title} onBlur={updateInfoSendTitle} /></td>
                     </tr>
                     <tr>
-                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text}/></td>
+                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text} onBlur={updateInfoSendText} /></td>
                     </tr>
                     <tr>
                         <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
+                        {/* <td>{InfoSendEmail.Name}</td> */}
                     </tr>
                 </table>
+                <div className='bbbbb'> 
+                {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
+                </div>
             </form>
 
             
