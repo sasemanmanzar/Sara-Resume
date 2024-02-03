@@ -4,31 +4,6 @@ import { useState } from 'react';
 
 
 function Six(){
-
-    // function sendEmail(e) {
-    //     e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-    
-    //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-    //       .then((result) => {
-    //           window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-    //       }, (error) => {
-    //           console.log(error.text);
-    //       });
-    //   }
-
-    // function sendEmail(e) {
-    //     e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-    
-    //     emailjs.sendForm('service_y8ycm1s', 'template_3gx9e0d', e.target, '9U64idXn07ZppBH-Q')
-    //       .then((result) => {
-    //           window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-    //       }, (error) => {
-    //           console.log(error.text);
-    //       });
-    //   }
-
-    // function Sname() { const[ nameP6, setName ]= useState("نام"); }
-    
     
         const [InfoSendEmail, SetInfo] = useState({
         Name: "نام",
@@ -37,48 +12,85 @@ function Six(){
         Text: "متن پیام"
         });
 
-        const updateInfoSendName = (previousState) => {
-            SetInfo(() => {
-            return { ...previousState, Name: previousState.target.value }
+        // const updateInfoSendName = (previousState) => {
+        //     SetInfo(() => {
+        //     return { ...previousState, Name: previousState.target.value }
+        //     });
+        // };
+        
+        // const updateInfoSendEmail = (previousState) => {
+        //     SetInfo(() => {
+        //     return { ...previousState, Email: previousState.target.value }
+        //     });
+        // }
+
+        // const updateInfoSendTitle = (previousState) => {
+        //     SetInfo(() => {
+        //     return { ...previousState, Title: previousState.target.value }
+        //     });
+        // };
+        
+        // const updateInfoSendText = (previousState) => {
+        //     SetInfo(() => {
+        //     return { ...previousState, Text: previousState.target.value }
+        //     });
+        // }
+
+        const updateInfoSendName = (e) => {
+            SetInfo((previousState) => {
+            return { ...previousState, Name: e.target.value }
             });
         };
         
-        const updateInfoSendEmail = (previousState) => {
-            SetInfo(() => {
-            return { ...previousState, Email: previousState.target.value }
+        const updateInfoSendEmail = (e) => {
+            SetInfo((previousState) => {
+            return { ...previousState, Email: e.target.value }
             });
         }
 
-        const updateInfoSendTitle = (previousState) => {
-            SetInfo(() => {
-            return { ...previousState, Title: previousState.target.value }
+        const updateInfoSendTitle = (e) => {
+            SetInfo((previousState) => {
+            return { ...previousState, Title: e.target.value }
             });
         };
         
-        const updateInfoSendText = (previousState) => {
-            SetInfo(() => {
-            return { ...previousState, Text: previousState.target.value }
+        const updateInfoSendText = (e) => {
+            SetInfo((previousState) => {
+            return { ...previousState, Text: e.target.value }
             });
         }
 
+        const updateText = (e) => {
+            // const sara = e;
+            SetInfo(previousState => {
+              return { ...previousState, Text: e.target.value }
+            });
+          }
 
-        // const [fieldValue, setFieldValue] = React.useState('');
-        // const handleBlur = (e) => setFieldValue(e.target.value);   
-        // console.log(fieldValue);
-        // return <input onBlur={handleBlur} />;
+        //Test
+        const [testValue , Settestvalue] = useState(''); 
 
-    // const updateInfoSendEmail = (e) => {
-        // SetInfo(previousState => {
-        //   return { ...previousState, Name: "blue" }
-        // });
+        // const Nemidonam = () => {
+        //     Settestvalue(
+        //         ()=>{
+        //             return(<div className='bbbbb'> 
+        //             {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
+        //             </div>);
+        //         }
+        //     );
+        // }
 
-        // SetInfo(previousState => {
-        //   return { ...previousState, Name: e.target.value }
-        // });
+        // Settestvalue () => {}
+        // const buttonTest = () => {
+        //     return(
+        //         Settestvalue(
+        //             ()=>{
+        //                 return("dd");
+        //             }
+        //         )
+        //     );
+        // }
 
-        // let x = document.getElementById("fname");
-        // x.value = x.value.toUpperCase();
-    //   }
 
     return(
         <div id='IdSix' className='six'>
@@ -98,52 +110,15 @@ function Six(){
                     </tr>
                     <tr>
                         <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
-                        {/* <td>{InfoSendEmail.Name}</td> */}
                     </tr>
                 </table>
-                <div className='bbbbb'> 
-                {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
-                </div>
             </form>
 
-            
-
-            {/* <form className="contact-form" onSubmit={sendEmail}>
-                <input type="hidden" name="contact_number" />
-                <br/>
-                <label>نام</label>
-                <input type="text" name="from_name" />
-                <br/>
-                <label>ایمیل</label>
-                <input type="email" name="from_email" />
-                <br/>
-                <label>موضوع</label>
-                <input type="text" name="subject" />
-                <br/>
-                <label>متن پیام</label>
-                <textarea name="html_message" />
-                <br/>
-                <input type="submit" value="Send" />
-            </form> */}
-
-            {/* <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-                </script>
-                <script type="text/javascript">
-                (function(){
-                    emailjs.init("YOUR_PUBLIC_KEY");
-                })();
-            </script> */}
-
-            {/* <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-                </script>
-                <script type="text/javascript">
-                {() => {
-                    emailjs.init("9U64idXn07ZppBH-Q");
-                }}();
-            </script> */}
-
+            <div className='bbbbb'> 
+                {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
+            </div>
+            {/* <div className='bbbbb'>{testValue}</div>
+            <button className='bTest' onClick={Settestvalue}> Test </button> */}
         </div>
     );
 }
