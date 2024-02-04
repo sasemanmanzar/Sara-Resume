@@ -9,7 +9,7 @@ import Six from './Pages/Six/Six';
 
 //baraye send email: check konam age farghi nadare pak konam:
 import React from 'react';
-import ContactForm from './Pages/Six/ContactForm';
+// import ContactForm from './Pages/Six/ContactForm';
 
 
 // import Test from './Pages/test';
@@ -84,8 +84,8 @@ function App() {
       <Three/>
       <Four/>
       <Five/>
-      {/* <Six/> */}
-      <ContactForm />
+      <Six/>
+      {/* <ContactForm /> */}
 
     </div>
   );

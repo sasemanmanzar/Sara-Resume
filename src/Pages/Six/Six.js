@@ -54,11 +54,46 @@ function Six(){
         //     //   alert("hi");
         //   }
 
+        //Send Email:
+        const [isSubmitting, setIsSubmitting] = useState(false);
+        const [stateMessage, setStateMessage] = useState(null);
+        const sendEmail = (e) => {
+            e.persist();
+            e.preventDefault();
+            setIsSubmitting(true);
+            emailjs
+              .sendForm(
+                  "service_y8ycm1s",
+                  "template_3gx9e0d",
+                e.target,
+                "9U64idXn07ZppBH-Q"
+              )
+              .then(
+                (result) => {
+                  setStateMessage('Message sent!');
+                  setIsSubmitting(false);
+                  setTimeout(() => {
+                    setStateMessage(null);
+                  }, 5000); // hide message after 5 seconds
+                },
+                (error) => {
+                  setStateMessage('Something went wrong, please try again later');
+                  setIsSubmitting(false);
+                  setTimeout(() => {
+                    setStateMessage(null);
+                  }, 5000); // hide message after 5 seconds
+                }
+              );
+            
+            // Clears the form after sending the email
+            e.target.reset();
+          };
+
     return(
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
-            <form action=''>
+            <form action='' onSubmit={sendEmail}>
                 <table className='tableP6'>
                     <tr>
                         <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
@@ -71,13 +106,17 @@ function Six(){
                         <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
                     </tr>
                     <tr>
-                        <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال"/></td>
+                        <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
                     </tr>
                 </table>
             </form>
 
             <div className='bbbbb'> 
                 {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
+
+                <br/>
+                {stateMessage} 
+                <br/>
             </div>
         </div>
     );
