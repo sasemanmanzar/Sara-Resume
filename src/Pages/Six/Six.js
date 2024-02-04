@@ -1,6 +1,7 @@
 import './Six.css';
 // import emailjs from 'emailjs-com';
 import { useState } from 'react';
+import TestEmail from './TestEmail';
 
 
 function Six(){
@@ -36,6 +37,21 @@ function Six(){
             });
         }
 
+        // function sendEmail(e) {
+        //     e.preventDefault();  //This is important, i'm not sure why, but the email won't send without it
+        
+        //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        //       .then((result) => {
+        //           window.location.reload();  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+        //           alert("ok");
+        //       }, (error) => {
+        //           console.log(error.text);
+        //           alert("badi");
+        //       });
+
+        //     //   alert("hi");
+        //   }
+
         // const updateText = (e) => {
         //     // const sara = e;
         //     SetInfo(previousState => {
@@ -47,10 +63,10 @@ function Six(){
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
-            <form action=''>
+            <form action='' onSubmit={TestEmail}>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="text" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                        <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
                         <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
                     </tr>
                     <tr>
