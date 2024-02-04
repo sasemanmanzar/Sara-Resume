@@ -92,6 +92,9 @@ function Six(){
             <form action='' onSubmit={sendEmail}>
                 <table className='tableP6'>
                     <tr>
+                        <td id="message"><div>{stateMessage}</div></td>
+                    </tr>
+                    <tr>
                         <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
                         <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
                     </tr>
@@ -107,13 +110,13 @@ function Six(){
                 </table>
             </form>
 
-            <div className='bbbbb'> 
+            {/* <div className='bbbbb'> 
                 {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
 
                 <br/>
                 {stateMessage} 
                 <br/>
-            </div>
+            </div> */}
         </div>
     );
 }
