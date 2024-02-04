@@ -63,10 +63,10 @@ function Six(){
             setIsSubmitting(true);
             emailjs
               .sendForm(
-                  "service_y8ycm1s",
-                  "template_3gx9e0d",
+                "service_qd0n7rq",
+                "template_7f8yxne",
                 e.target,
-                "9U64idXn07ZppBH-Q"
+                "H_fCnKXEmTQla3tEH"
               )
               .then(
                 (result) => {
@@ -123,3 +123,8 @@ function Six(){
 }
 
 export default Six;
+
+
+// process.env.REACT_APP_SERVICE_ID = "service_y8ycm1s";
+    // process.env.REACT_APP_TEMPLATE_ID = "template_3gx9e0d";
+    // process.env.REACT_APP_PUBLIC_KEY = "9U64idXn07ZppBH-Q";
