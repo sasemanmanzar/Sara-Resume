@@ -3,9 +3,9 @@ import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
 
-    process.env.REACT_APP_SERVICE_ID = "service_y8ycm1s";
-    process.env.REACT_APP_TEMPLATE_ID = "template_3gx9e0d";
-    process.env.REACT_APP_PUBLIC_KEY = "9U64idXn07ZppBH-Q";
+    // process.env.REACT_APP_SERVICE_ID = "service_y8ycm1s";
+    // process.env.REACT_APP_TEMPLATE_ID = "template_3gx9e0d";
+    // process.env.REACT_APP_PUBLIC_KEY = "9U64idXn07ZppBH-Q";
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [stateMessage, setStateMessage] = useState(null);
@@ -15,10 +15,10 @@ const ContactForm = () => {
       setIsSubmitting(true);
       emailjs
         .sendForm(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
+            "service_y8ycm1s",
+            "template_3gx9e0d",
           e.target,
-          process.env.REACT_APP_PUBLIC_KEY
+          "9U64idXn07ZppBH-Q"
         )
         .then(
           (result) => {
