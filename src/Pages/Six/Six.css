@@ -24,7 +24,22 @@
 }
 
 .topCallMe1 {margin-top: 10vh;}
+.topCallMe2 {margin-top: 25vh;}
 
+.message{
+  position: absolute;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 35vw;
+  z-index: 1;
+}
+.message p {
+  text-align: center;
+  color: rgba(8,46,108,0.85);
+  font: 1em sans-serif;
+  margin-top: auto;
+  padding-top: 12px;
+}
 
 /* 
 .boxCallMe {
@@ -105,6 +120,10 @@
 /* 
  ضمن تشکر
   پیام شما ارسال شد در اسرع وقت پاسخ خواهم داد */
+
+  
+/* پیام شما ارسال شد */
+
 
 
   .contact-form {

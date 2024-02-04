@@ -66,14 +66,17 @@ function Six(){
               )
               .then(
                 (result) => {
-                  setStateMessage('Message sent!');
+                //   setStateMessage('Message sent!');
+                // پیام شما ارسال شد
+                  setStateMessage('پیام شما ارسال شد');
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);
                   }, 5000); // hide message after 5 seconds
                 },
                 (error) => {
-                  setStateMessage('Something went wrong, please try again later');
+                //   setStateMessage('Something went wrong, please try again later');
+                  setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);
@@ -89,11 +92,10 @@ function Six(){
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
+            <div className='message topCallMe2'><p>{stateMessage}</p></div>
+
             <form action='' onSubmit={sendEmail}>
                 <table className='tableP6'>
-                    <tr>
-                        <td id="message"><div>{stateMessage}</div></td>
-                    </tr>
                     <tr>
                         <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
                         <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
