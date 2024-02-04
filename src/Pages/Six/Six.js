@@ -1,10 +1,6 @@
 import './Six.css';
 import { useState } from 'react';
-
-// import emailjs from 'emailjs-com';
-// import SendEmail from './SendEmail';
 import emailjs from '@emailjs/browser';
-
 
 function Six(){
     
@@ -125,6 +121,15 @@ function Six(){
 export default Six;
 
 
+//silver_moon:
 // process.env.REACT_APP_SERVICE_ID = "service_y8ycm1s";
-    // process.env.REACT_APP_TEMPLATE_ID = "template_3gx9e0d";
-    // process.env.REACT_APP_PUBLIC_KEY = "9U64idXn07ZppBH-Q";
+// process.env.REACT_APP_TEMPLATE_ID = "template_3gx9e0d";
+// process.env.REACT_APP_PUBLIC_KEY = "9U64idXn07ZppBH-Q";
+
+//s.am@gmail:
+// .sendForm(
+//     "service_qd0n7rq",
+//     "template_7f8yxne",
+//     e.target,
+//     "H_fCnKXEmTQla3tEH"
+//   )
