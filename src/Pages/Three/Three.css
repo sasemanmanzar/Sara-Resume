@@ -74,3 +74,10 @@ hr {
 #link{
     text-align: center;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+    color: rgb(8,46,108);
+}
