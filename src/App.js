@@ -6,12 +6,6 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
-
-//baraye send email: check konam age farghi nadare pak konam:
-import React from 'react';
-// import ContactForm from './Pages/Six/ContactForm';
-
-
 // import Test from './Pages/test';
 
 function App() {
@@ -85,7 +79,6 @@ function App() {
       <Four/>
       <Five/>
       <Six/>
-      {/* <ContactForm /> */}
 
     </div>
   );
