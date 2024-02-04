@@ -1,7 +1,9 @@
 import './Six.css';
-// import emailjs from 'emailjs-com';
 import { useState } from 'react';
-import TestEmail from './TestEmail';
+
+// import emailjs from 'emailjs-com';
+// import SendEmail from './SendEmail';
+import emailjs from '@emailjs/browser';
 
 
 function Six(){
@@ -52,18 +54,11 @@ function Six(){
         //     //   alert("hi");
         //   }
 
-        // const updateText = (e) => {
-        //     // const sara = e;
-        //     SetInfo(previousState => {
-        //       return { ...previousState, Text: e.target.value }
-        //     });
-        //   }
-
     return(
         <div id='IdSix' className='six'>
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
-            <form action='' onSubmit={TestEmail}>
+            <form action=''>
                 <table className='tableP6'>
                     <tr>
                         <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
