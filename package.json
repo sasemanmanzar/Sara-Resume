@@ -2,7 +2,7 @@
   "name": "sara-asm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sasemanmanzar.github.io/sara-asm/",
+  "homepage": "http://sara-asemanmanzar.ir",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.17.0",
