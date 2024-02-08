@@ -1,6 +1,7 @@
 import './Six.css';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+// import { useRef } from 'react';
 
 function Six(){
     
@@ -34,6 +35,10 @@ function Six(){
             return { ...previousState, Text: e.target.value }
             });
         }
+
+        // const cancelCourse = () => { 
+        //   document.getElementById("create-form").reset();
+        // }
 
         // function sendEmail(e) {
         //     e.preventDefault();  //This is important, i'm not sure why, but the email won't send without it
@@ -86,6 +91,11 @@ function Six(){
             
             // Clears the form after sending the email
             e.target.reset();
+            
+            InfoSendEmail.Name = "نام";
+            InfoSendEmail.Email = "ایمیل";
+            InfoSendEmail.Title = "موضوع";
+            InfoSendEmail.Text = "متن پیام";
           };
 
     return(
@@ -94,7 +104,7 @@ function Six(){
 
             <div className='message topCallMe2'><p>{stateMessage}</p></div>
 
-            <form action='' onSubmit={sendEmail}>
+            <form action='' id="create-form" onSubmit={sendEmail}>
                 <table className='tableP6'>
                     <tr>
                         <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
