@@ -64,10 +64,10 @@ function Six(){
             setIsSubmitting(true);
             emailjs
               .sendForm(
-                "service_qd0n7rq",
-                "template_7f8yxne",
+                "service_j56d6jg",
+                "template_rhny40k",
                 e.target,
-                "H_fCnKXEmTQla3tEH"
+                "zwWGq0AksnbQJwxz9"
               )
               .then(
                 (result) => {
@@ -107,7 +107,7 @@ function Six(){
             <form action='' id="create-form" onSubmit={sendEmail}>
                 <table className='tableP6'>
                     <tr>
-                        <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                        <td id="EmailP6"><input type="email" name="EmailP6" defaultValue={InfoSendEmail.Email} onChange={updateInfoSendEmail}  /></td>
                         <td id="NameP6"><input type="text" name="NameP6" defaultValue={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
                     </tr>
                     <tr>
