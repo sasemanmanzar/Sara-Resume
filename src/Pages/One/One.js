@@ -44,8 +44,10 @@ function One(){
 
     return(
         <div id='IdOne' className='one'>
-             <img className='picSara' src={picSara} alt="" />
-             <div className='textPageOne'>سارا آسمان منظر</div>
+            <div className='boxPicText'>
+                <img className='picSara' src={picSara} alt="" />
+                <div className='textPageOne'>سارا آسمان منظر</div>
+             </div>
              
              <div className='circlePageOne circlePageOne1' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
              <div className='circlePageOne circlePageOne2' onClick={scrollToMarginPage5}><p>تجارب</p></div>
