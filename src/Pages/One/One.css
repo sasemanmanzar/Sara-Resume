@@ -8,52 +8,41 @@
 }
 
 .boxPicText {
-  width: 30vw;
-  /* max-height: 20vh; */
   position: absolute;
-  /* background-color: aqua; */
-  margin-top: 25vh;
-  margin-left: 35vw;
-  direction: rtl;
   display: flex;
+  width: 26vw;
+  /* max-height: 20vh; */
+  margin-top: 25vh;
+  margin-left: 37vw;
+  direction: rtl;
   /* flex-direction: column; */
+  /* background-color: aqua; */
 }
 
 .picSara {
-    /* margin-left: 53vw; */
-    /* margin-top: 220px; */
-    width: 35%;
+    width: 40%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    /* position: absolute; */
-    /* padding-bottom: 0px; */
-    /* margin-bottom: 0px; */
     position: relative;
-    /* bottom: 0; */
     margin-top: auto;
     /* align-self: flex-end; */
 }
 
 
 .textPageOne{
-    /* margin-left: 36vw; */
-    /* margin-top: 335px; */
-    /* position: absolute; */
     width: 65%;
     max-height: 20px;
     background-color: rgba(220, 189, 90, 0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 50px 10px 50px;
     border-radius: 8px;
-    /* font: 1.2em sans-serif; */
+    font-family: Vazir, sans-serif;
     font-weight: bold;
+    font-size: 1.1vw;
     direction: rtl;
     text-align: center;
-    /* position: relative; */
-    /* position: absolute; */
-    /* bottom: 0; */
     margin-top: auto;
     margin-right: 3px;
+    padding: 10px 0px 10px 0px;
  }
 
  /* .textcirclePageOne1 {
@@ -92,6 +81,7 @@
   /* align-items: center;  */
   /* vertical-align:middle; */
   padding-top: 40px;
+  font-family: Vazir, sans-serif;
 }
 
 .circlePageOne1:hover{z-index: 1;}
