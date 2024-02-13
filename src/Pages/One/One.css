@@ -10,10 +10,11 @@
 .boxPicText {
   position: absolute;
   display: flex;
-  width: 26vw;
-  /* max-height: 20vh; */
+  /* width: 26vw; */
+  /* margin-left: 37vw; */
+  width: 400px;
+  margin-left: 36vw;
   margin-top: 25vh;
-  margin-left: 37vw;
   direction: rtl;
   /* flex-direction: column; */
   /* background-color: aqua; */
@@ -37,7 +38,8 @@
     border-radius: 8px;
     font-family: Vazir, sans-serif;
     font-weight: bold;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
+    font-size: medium;
     direction: rtl;
     text-align: center;
     margin-top: auto;
