@@ -14,6 +14,7 @@
   /* margin-left: 37vw; */
   width: 400px;
   margin-left: 36vw;
+  /* margin-right: 10vw; */
   margin-top: 25vh;
   direction: rtl;
   /* flex-direction: column; */
@@ -36,8 +37,8 @@
     background-color: rgba(220, 189, 90, 0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    font-family: Vazir, sans-serif;
-    font-weight: bold;
+    /* font-family: Vazir, sans-serif; */
+    font-weight: 600;
     /* font-size: 1.1vw; */
     font-size: medium;
     direction: rtl;
@@ -83,7 +84,7 @@
   /* align-items: center;  */
   /* vertical-align:middle; */
   padding-top: 40px;
-  font-family: Vazir, sans-serif;
+  /* font-family: Vazir, sans-serif; */
 }
 
 .circlePageOne1:hover{z-index: 1;}
