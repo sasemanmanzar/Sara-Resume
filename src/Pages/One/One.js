@@ -1,5 +1,6 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
+import React, { useCallback, useState } from 'react';
 
 function One(){
 
@@ -42,8 +43,29 @@ function One(){
           }
       };
 
+      // const [isMoreSara , setMoreSara] = useState(false);
+      // const onSaraClick = useCallback( () => { setMoreSara(!isMoreSara); } , [isMoreSara] );
+      // const infoClassSara = (isMoreSara ?  "Rectangle-Large" : "sara_area Rectangle");
+
+      // const [isWidthTurningPoint, setAnimation] = useState(false);
+      // const onSaraClick = useCallback( () => { setAnimation(!isWidthTurningPoint); } , [isWidthTurningPoint] );
+      // const infoClassSara = (isWidthTurningPoint ?  "Rectangle-Large" : "sara_area Rectangle");
+
+
+      var Width1 = document.documentElement.clientWidth;
+      var Width2 = document.body.clientWidth;
+      var Width3 = window.innerWidth;
+      var Width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+      // window.screen.width;
+
+      // const [WhatClientWidth, setClientWidth] = useState('0');
+      // setClientWidth({Width});
+      // setCar({color: "blue"})
+
     return(
         <div id='IdOne' className='one'>
+            <div>{Width1} <br/> {Width2} <br/> {Width3} <br/> </div>
+
             <div className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />
                 <div className='textPageOne'>سارا آسمان منظر</div>
