@@ -5,6 +5,21 @@
     background-image:url('../../Pic/darkBlue1.jpg');
     position: relative;
     /* position: static; */
+
+    /* Used if the image is unavailable */
+    background-color: #cccccc; 
+
+    /* You must set a specified height */
+    height: 892px; 
+
+    /* Center the image */
+    background-position: center; 
+
+    /* Do not repeat the image */
+    background-repeat: no-repeat; 
+
+    /* Resize the background image to cover the entire container */
+    background-size: cover; 
 }
 
 .boxPicText {

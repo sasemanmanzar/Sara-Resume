@@ -43,6 +43,24 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
+
+    /* The image used */
+    /* background-image: url('Pic/darkBlue1.jpg'); */
+
+    /* Used if the image is unavailable */
+    /* background-color: #cccccc;  */
+
+    /* You must set a specified height */
+    /* height: 500px;  */
+
+    /* Center the image */
+    /* background-position: center;  */
+
+    /* Do not repeat the image */
+    /* background-repeat: no-repeat;  */
+
+    /* Resize the background image to cover the entire container */
+    /* background-size: cover;  */
 }
 
 .circle {
