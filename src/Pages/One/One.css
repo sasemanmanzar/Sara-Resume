@@ -99,12 +99,18 @@
 .circlePageOne5:hover{z-index: 1;}
 .circlePageOne6:hover{z-index: 1;}
 
-  
-/* @media (max-device-width: 640px){
-  .sara{
-    background-color: aqua;
+@media screen and (max-width: 640px){
+  .circlePageOne{
+    /* background-color: aqua; */
+    width: 70px;
+    height: 70px;
   }
-} */
-
-/* @media screen and (max-width: 640px){
-} */
+  .circlePageOne1 p,
+  .circlePageOne2 p,
+  .circlePageOne3 p ,
+  .circlePageOne4 p ,
+  .circlePageOne5 p{
+    padding-top: 0px; 
+    font-size: small;
+  }
+}
