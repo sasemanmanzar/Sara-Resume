@@ -10,15 +10,20 @@
 .boxPicText {
   position: absolute;
   display: flex;
+  direction: rtl;
   /* width: 26vw; */
   /* margin-left: 37vw; */
   width: 400px;
   margin-left: 36vw;
-  /* margin-right: 10vw; */
   margin-top: 25vh;
-  direction: rtl;
   /* flex-direction: column; */
   /* background-color: aqua; */
+}
+
+@media screen and (max-width: 640px){
+  .boxPicText{
+    width: 300px;
+    }
 }
 
 .picSara {
@@ -95,3 +100,11 @@
 .circlePageOne6:hover{z-index: 1;}
 
   
+/* @media (max-device-width: 640px){
+  .sara{
+    background-color: aqua;
+  }
+} */
+
+/* @media screen and (max-width: 640px){
+} */
