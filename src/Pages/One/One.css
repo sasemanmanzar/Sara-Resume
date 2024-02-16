@@ -22,7 +22,8 @@
 
 @media screen and (max-width: 640px){
   .boxPicText{
-    width: 300px;
+    width: 320px;
+    margin-left: 25vw;
     }
 }
 
@@ -101,9 +102,8 @@
 
 @media screen and (max-width: 640px){
   .circlePageOne{
-    /* background-color: aqua; */
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
   .circlePageOne1 p,
   .circlePageOne2 p,
@@ -113,4 +113,9 @@
     padding-top: 0px; 
     font-size: small;
   }
+  .circlePageOne1 {margin-left: 25vw;}
+  .circlePageOne2 {margin-left: 35vw; margin-top: 65vh;}
+  .circlePageOne3 {margin-left: 45vw;}
+  .circlePageOne4 {margin-left: 55vw; margin-top: 65vh;}
+  .circlePageOne5 {margin-left: 65vw;}
 }
