@@ -19,9 +19,10 @@
   /* flex-direction: column; */
   /* background-color: aqua; */
 }
+
 @keyframes animationPic {
-  from {width: 400px;}
-  to {width: 320px;}
+  from {width: 400px; margin-left: 36vw;}
+  to {width: 320px; margin-left: 25vw;}
 }
 
 /* @media (max-width: 900px) and (min-width: 600px){
@@ -32,7 +33,7 @@
 } */
 
 /* @media screen and (max-width: 640px){} */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   .boxPicText{
     animation-name: animationPic;
     animation-duration: 4s;
@@ -114,7 +115,13 @@
 .circlePageOne5:hover{z-index: 1;}
 .circlePageOne6:hover{z-index: 1;}
 
-@media screen and (max-width: 640px){
+
+@keyframes animationCircle {
+  from {margin-top: 55vh;}
+  to {margin-top: 65vh;}
+}
+
+@media screen and (max-width: 800px){
   .circlePageOne{
     width: 100px;
     height: 100px;
@@ -128,16 +135,16 @@
     font-size: small;
   }
   .circlePageOne1 {margin-left: 25vw;}
-  .circlePageOne2 {margin-left: 35vw; margin-top: 65vh;}
+  .circlePageOne2 {margin-left: 35vw; margin-top: 65vh; animation-name: animationCircle; animation-duration: 4s;}
   .circlePageOne3 {margin-left: 45vw;}
-  .circlePageOne4 {margin-left: 55vw; margin-top: 65vh;}
-  .circlePageOne5 {margin-left: 65vw; animation-name: example; animation-duration: 4s;}
+  .circlePageOne4 {margin-left: 55vw; margin-top: 65vh; animation-name: animationCircle; animation-duration: 4s;}
+  .circlePageOne5 {margin-left: 65vw;}
 }
 
-@keyframes example {
+/* @keyframes example {
   from {background-color: red;}
   to {background-color: yellow;}
-}
+} */
 
 /* div {
   width: 100px;

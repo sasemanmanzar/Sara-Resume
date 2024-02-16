@@ -51,22 +51,8 @@ function One(){
       // const onSaraClick = useCallback( () => { setAnimation(!isWidthTurningPoint); } , [isWidthTurningPoint] );
       // const infoClassSara = (isWidthTurningPoint ?  "Rectangle-Large" : "sara_area Rectangle");
 
-
-      // var Width1 = document.documentElement.clientWidth;
-      // var Width2 = document.body.clientWidth;
-      // var Width3 = window.innerWidth;
       // var Width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-      // window.screen.width;
-
-      // const sara =  window.innerHeight;
-      // const [WhatClientWidth, setClientWidth] = useState('0');
-      // setClientWidth({Width});
-      // setCar({color: "blue"})
-
-      
-      // useEffect(() => {
-      //   function setClientWidth() { return(WhatClientWidth = window.innerWidth);  } ;
-      // });
+     
 
         const [width, setWidth]   = useState(window.innerWidth);
         const [height, setHeight] = useState(window.innerHeight);
