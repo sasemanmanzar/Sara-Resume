@@ -26,18 +26,27 @@
   position: absolute;
   display: flex;
   direction: rtl;
-  /* width: 26vw; */
-  /* margin-left: 37vw; */
   width: 400px;
-  margin-left: 36vw;
-  margin-top: 25vh;
-  /* flex-direction: column; */
-  /* background-color: aqua; */
+  /* margin-left: 36vw; */
+  /* margin-top: 25vh; */
+  /* width: 30%; */
+  left: 35%;
+  top: 25%;
+  /* background-color: yellowgreen; */
+  /* animation-play-state: paused; */
+  /* animation: none !important; */
+  /* animation-play-state: running; */
+
 }
 
 @keyframes animationPic {
-  from {width: 400px; margin-left: 36vw;}
-  to {width: 320px; margin-left: 25vw;}
+  from {width: 400px;}
+  to {width: 320px;}
+}
+
+@keyframes animationPicInverse {
+  from {width: 320px;}
+  to {width: 400px;}
 }
 
 /* @media (max-width: 900px) and (min-width: 600px){
@@ -47,15 +56,36 @@
     }
 } */
 
-/* @media screen and (max-width: 640px){} */
+
 @media screen and (max-width: 800px){
   .boxPicText{
+    /* animation-play-state: running; */
     animation-name: animationPic;
     animation-duration: 4s;
-    margin-left: 25vw;
+    /* margin-left: 25vw; */
     width: 320px;
     }
 }
+
+@media screen and (min-width: 800px){
+  .boxPicText{
+    /* animation-play-state: running; */
+    animation-name: animationPicInverse;
+    animation-duration: 4s;
+    /* margin-left: 25vw; */
+    width: 400px;
+    }
+    /* .pageLoad{
+      animation: none !important;
+    } */
+}
+
+/* .pageLoad *{
+  animation: none !important;
+  animation-duration: 0.001s !important; 
+
+} */
+
 
 .picSara {
     width: 40%;
@@ -73,9 +103,7 @@
     background-color: rgba(220, 189, 90, 0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    /* font-family: Vazir, sans-serif; */
     font-weight: 600;
-    /* font-size: 1.1vw; */
     font-size: medium;
     direction: rtl;
     text-align: center;
@@ -84,11 +112,6 @@
     padding: 10px 0px 10px 0px;
  }
 
- /* .textcirclePageOne1 {
-    position: absolute;
-    font: 1.2em sans-serif;
-    font-weight: bold;
-} */
 
 .circlePageOne {
   border-radius: 50%;

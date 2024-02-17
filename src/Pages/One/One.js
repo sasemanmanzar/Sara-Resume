@@ -4,6 +4,37 @@ import React, { useCallback, useState, useEffect } from 'react';
 
 function One(){
 
+  // function handleLogoDisplay() {
+  //   if (window.innerWidth < 768) {
+  //     document.getElementById("smallLogo").style.display = "block"
+  //     document.getElementById("bigLogo").style.display = "none"
+  //   } else {
+  //     document.getElementById("smallLogo").style.display = "none"
+  //     document.getElementById("bigLogo").style.display = "block"
+  //   }
+  // }
+  
+  // window.addEventListener('resize', handleLogoDisplay);
+
+  // function sizePage(){
+  //   if (window.innerWidth < 799){
+  //     document.getElementById('boxPicText').style.backgroundColor = "yellow";
+
+  //     document.getElementById('boxPicText').style.animation = "none";
+  //   }
+  //   else{
+  //     document.getElementById('boxPicText').style.backgroundColor = "red";
+  //   }
+  // }
+  
+  // window.addEventListener('load', sizePage);
+
+
+
+    // window.addEventListener("load", () => {
+    //       document.body.classList.remove("pageLoad");
+    //     });
+
     // const button = () => {
     //     alert("Hi!");
     // }
@@ -65,11 +96,12 @@ function One(){
             return () => window.removeEventListener("resize", updateDimensions);
         }, []);
 
+
     return(
         <div id='IdOne' className='one'>
             <div style={{color:"red"}}>{width} <br/> {height}  </div>
 
-            <div className='boxPicText'>
+            <div id="boxPicText" className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />
                 <div className='textPageOne'>سارا آسمان منظر</div>
              </div>
