@@ -3,6 +3,11 @@
     width: 100vw;
     height: 100vh;
     background-image:url('../../Pic/darkBlue1.jpg');
+    background-color: #cccccc; 
+    height: 892px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 .smallBoxExp {
