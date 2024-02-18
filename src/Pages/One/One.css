@@ -57,7 +57,7 @@
 } */
 
 
-/* @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
   .boxPicText{
     animation-name: animationPic;
     animation-duration: 4s;
@@ -71,7 +71,7 @@
     animation-duration: 4s;
     width: 400px;
     }
-} */
+}
 
 /* .pageLoad *{
   animation: none !important;

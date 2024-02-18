@@ -90,7 +90,8 @@ function One(){
         const [width, setWidth]   = useState(window.innerWidth);
         const [height, setHeight] = useState(window.innerHeight);
 
-        const previousWidthValue = useRef("");
+        const previousWidthValue = useRef(width);
+        // const previousWidthValue = useRef("");
         const previousHeightValue = useRef("");
 
         useEffect(() => {
@@ -112,25 +113,35 @@ function One(){
         }, []);
 
         function handleAnimation() {
+          document.getElementById("boxPicText").style.backgroundColor = "blue";
 
-          if (previousWidthValue.current > 800 && width <= 800 && width < previousWidthValue.current) {
-            document.getElementById("boxPicText").style.animationName = "animationPic";
-            document.getElementById("boxPicText").style.animationDuration = "4s";            
-          } 
-          if (previousWidthValue.current < 800 && width > 800 && previousWidthValue.current < width){
-            document.getElementById("boxPicText").style.animationName = "animationPicInverse";
-            document.getElementById("boxPicText").style.animationDuration = "4s";
-          }
+          // if (previousWidthValue.current == width){
+          //   document.getElementById("boxPicText").style.backgroundColor = "blue";
+          //   document.getElementById("boxPicText").style.animationPlayState = "running";
+          // }
+          // else {
+          //   document.getElementById("boxPicText").style.backgroundColor = "red";
+          //   document.getElementById("boxPicText").style.animationPlayState = "paused";
+          // }
+
+          // if (previousWidthValue.current > 800 && width <= 800 && width < previousWidthValue.current) {
+          //   document.getElementById("boxPicText").style.animationName = "animationPic";
+          //   document.getElementById("boxPicText").style.animationDuration = "4s";            
+          // } 
+          // if (previousWidthValue.current < 800 && width > 800 && previousWidthValue.current < width){
+          //   document.getElementById("boxPicText").style.animationName = "animationPicInverse";
+          //   document.getElementById("boxPicText").style.animationDuration = "4s";
+          // }
 
         }
-        useEffect(() => {
-          window.addEventListener("resize", handleAnimation);
-          return () => window.removeEventListener("resize", handleAnimation);
-      }, []);
+        // useEffect(() => {
+        //     window.addEventListener("unload", handleAnimation);
+        //     return () => window.removeEventListener("unload", handleAnimation);
+        // }, []);
 
 
     return(
-        <div id='IdOne' className='one'>
+        <div id='IdOne' className='one' onload={handleAnimation}>
             <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
 
             <div id="boxPicText" className='boxPicText'>
