@@ -85,15 +85,7 @@ function One(){
       // var Width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
      
 
-      // function handleAnimation() {
-      //   if (window.innerWidth < 768) {
-      //     document.getElementById("smallLogo").style.display = "block"
-      //     document.getElementById("bigLogo").style.display = "none"
-      //   } else {
-      //     document.getElementById("smallLogo").style.display = "none"
-      //     document.getElementById("bigLogo").style.display = "block"
-      //   }
-      // }
+      
 
         const [width, setWidth]   = useState(window.innerWidth);
         const [height, setHeight] = useState(window.innerHeight);
@@ -119,7 +111,22 @@ function One(){
             return () => window.removeEventListener("resize", updateDimensions);
         }, []);
 
-        
+        function handleAnimation() {
+
+          if (previousWidthValue.current > 800 && width <= 800 && width < previousWidthValue.current) {
+            document.getElementById("boxPicText").style.animationName = "animationPic";
+            document.getElementById("boxPicText").style.animationDuration = "4s";            
+          } 
+          if (previousWidthValue.current < 800 && width > 800 && previousWidthValue.current < width){
+            document.getElementById("boxPicText").style.animationName = "animationPicInverse";
+            document.getElementById("boxPicText").style.animationDuration = "4s";
+          }
+
+        }
+        useEffect(() => {
+          window.addEventListener("resize", handleAnimation);
+          return () => window.removeEventListener("resize", handleAnimation);
+      }, []);
 
 
     return(

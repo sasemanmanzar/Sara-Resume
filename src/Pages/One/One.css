@@ -57,28 +57,21 @@
 } */
 
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
   .boxPicText{
-    /* animation-play-state: running; */
     animation-name: animationPic;
     animation-duration: 4s;
-    /* margin-left: 25vw; */
     width: 320px;
     }
 }
 
 @media screen and (min-width: 800px){
   .boxPicText{
-    /* animation-play-state: running; */
     animation-name: animationPicInverse;
     animation-duration: 4s;
-    /* margin-left: 25vw; */
     width: 400px;
     }
-    /* .pageLoad{
-      animation: none !important;
-    } */
-}
+} */
 
 /* .pageLoad *{
   animation: none !important;
