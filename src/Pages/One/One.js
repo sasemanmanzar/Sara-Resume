@@ -1,6 +1,6 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, useRef } from 'react';
 
 function One(){
 
@@ -85,21 +85,46 @@ function One(){
       // var Width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
      
 
+      // function handleAnimation() {
+      //   if (window.innerWidth < 768) {
+      //     document.getElementById("smallLogo").style.display = "block"
+      //     document.getElementById("bigLogo").style.display = "none"
+      //   } else {
+      //     document.getElementById("smallLogo").style.display = "none"
+      //     document.getElementById("bigLogo").style.display = "block"
+      //   }
+      // }
+
         const [width, setWidth]   = useState(window.innerWidth);
         const [height, setHeight] = useState(window.innerHeight);
+
+        const previousWidthValue = useRef("");
+        const previousHeightValue = useRef("");
+
+        useEffect(() => {
+          previousWidthValue.current = width;
+        }, [width]);
+
+        useEffect(() => {
+          previousHeightValue.current = height;
+        }, [height]);
+        
         const updateDimensions = () => {
             setWidth(window.innerWidth);
             setHeight(window.innerHeight);
         }
+
         useEffect(() => {
             window.addEventListener("resize", updateDimensions);
             return () => window.removeEventListener("resize", updateDimensions);
         }, []);
 
+        
+
 
     return(
         <div id='IdOne' className='one'>
-            <div style={{color:"red"}}>{width} <br/> {height}  </div>
+            <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
 
             <div id="boxPicText" className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />
