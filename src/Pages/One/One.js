@@ -1,43 +1,8 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-import React, { useCallback, useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function One(){
-
-  // function handleLogoDisplay() {
-  //   if (window.innerWidth < 768) {
-  //     document.getElementById("smallLogo").style.display = "block"
-  //     document.getElementById("bigLogo").style.display = "none"
-  //   } else {
-  //     document.getElementById("smallLogo").style.display = "none"
-  //     document.getElementById("bigLogo").style.display = "block"
-  //   }
-  // }
-  
-  // window.addEventListener('resize', handleLogoDisplay);
-
-  // function sizePage(){
-  //   if (window.innerWidth < 799){
-  //     document.getElementById('boxPicText').style.backgroundColor = "yellow";
-
-  //     document.getElementById('boxPicText').style.animation = "none";
-  //   }
-  //   else{
-  //     document.getElementById('boxPicText').style.backgroundColor = "red";
-  //   }
-  // }
-  
-  // window.addEventListener('load', sizePage);
-
-
-
-    // window.addEventListener("load", () => {
-    //       document.body.classList.remove("pageLoad");
-    //     });
-
-    // const button = () => {
-    //     alert("Hi!");
-    // }
 
       const scrollToMarginPage2 = () => {
         const marginDot2 = document.getElementById('IdTwo'); 
@@ -85,13 +50,11 @@ function One(){
       // var Width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
      
 
-      
-
         const [width, setWidth]   = useState(window.innerWidth);
         const [height, setHeight] = useState(window.innerHeight);
 
-        const previousWidthValue = useRef(width);
-        // const previousWidthValue = useRef("");
+        // const previousWidthValue = useRef(width);
+        const previousWidthValue = useRef("");
         const previousHeightValue = useRef("");
 
         useEffect(() => {
@@ -112,37 +75,13 @@ function One(){
             return () => window.removeEventListener("resize", updateDimensions);
         }, []);
 
-        function handleAnimation() {
-          document.getElementById("boxPicText").style.backgroundColor = "blue";
-
-          // if (previousWidthValue.current == width){
-          //   document.getElementById("boxPicText").style.backgroundColor = "blue";
-          //   document.getElementById("boxPicText").style.animationPlayState = "running";
-          // }
-          // else {
-          //   document.getElementById("boxPicText").style.backgroundColor = "red";
-          //   document.getElementById("boxPicText").style.animationPlayState = "paused";
-          // }
-
-          // if (previousWidthValue.current > 800 && width <= 800 && width < previousWidthValue.current) {
-          //   document.getElementById("boxPicText").style.animationName = "animationPic";
-          //   document.getElementById("boxPicText").style.animationDuration = "4s";            
-          // } 
-          // if (previousWidthValue.current < 800 && width > 800 && previousWidthValue.current < width){
-          //   document.getElementById("boxPicText").style.animationName = "animationPicInverse";
-          //   document.getElementById("boxPicText").style.animationDuration = "4s";
-          // }
-
-        }
-        // useEffect(() => {
-        //     window.addEventListener("unload", handleAnimation);
-        //     return () => window.removeEventListener("unload", handleAnimation);
-        // }, []);
-
+        // function handleAnimation() {
+        //   document.getElementById("boxPicText").style.backgroundColor = "blue";
+        // }
 
     return(
         <div id='IdOne' className='one'>
-            {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div> */}
+            <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
 
             <div id="boxPicText" className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />

@@ -32,22 +32,17 @@
   /* width: 30%; */
   left: 35%;
   top: 25%;
-  /* background-color: yellowgreen; */
-  /* animation-play-state: paused; */
-  /* animation: none !important; */
-  /* animation-play-state: running; */
-
 }
 
-@keyframes animationPic {
+/* @keyframes animationPic {
   from {width: 400px;}
   to {width: 320px;}
-}
+} */
 
-@keyframes animationPicInverse {
+/* @keyframes animationPicInverse {
   from {width: 320px;}
   to {width: 400px;}
-}
+} */
 
 /* @media (max-width: 900px) and (min-width: 600px){
   .boxPicText{
@@ -62,7 +57,7 @@
     /* animation-name: animationPic; */
     /* animation-duration: 4s; */
     width: 320px;
-    transition: width 4s;
+    transition: all 4s;
     }
 }
 
@@ -71,16 +66,9 @@
     /* animation-name: animationPicInverse; */
     /* animation-duration: 4s; */
     width: 400px;
-    transition: width 4s;
+    transition: all 4s;
     }
 }
-
-/* .pageLoad *{
-  animation: none !important;
-  animation-duration: 0.001s !important; 
-
-} */
-
 
 .picSara {
     width: 40%;
