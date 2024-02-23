@@ -81,7 +81,7 @@ function One(){
 
     return(
         <div id='IdOne' className='one'>
-            <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
+            {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div> */}
 
             <div id="boxPicText" className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />

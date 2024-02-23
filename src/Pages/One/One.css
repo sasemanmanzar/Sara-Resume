@@ -26,10 +26,10 @@
   position: absolute;
   display: flex;
   direction: rtl;
-  width: 400px;
+  /* width: 400px; */
   /* margin-left: 36vw; */
   /* margin-top: 25vh; */
-  /* width: 30%; */
+  width: 30%;
   left: 35%;
   top: 25%;
 }
@@ -56,7 +56,8 @@
   .boxPicText{
     /* animation-name: animationPic; */
     /* animation-duration: 4s; */
-    width: 320px;
+    /* width: 320px; */
+    width: 20%;
     transition: all 4s;
     }
 }
@@ -65,7 +66,8 @@
   .boxPicText{
     /* animation-name: animationPicInverse; */
     /* animation-duration: 4s; */
-    width: 400px;
+    /* width: 400px; */
+    width: 30%;
     transition: all 4s;
     }
 }
@@ -109,6 +111,9 @@
   /* margin-left: 30vw; */
   position: absolute;
 }
+.circlePageOne:hover{ background-color: rgba(220, 189, 90, 0.85); }
+.circlePageOne p ::hover {color: black;}
+
 .circlePageOne1 {margin-left: 25vw;}
 .circlePageOne2 {margin-left: 35vw;}
 .circlePageOne3 {margin-left: 45vw;}
@@ -125,7 +130,7 @@
   text-align: center; 
   /* align-items: center;  */
   /* vertical-align:middle; */
-  padding-top: 40px;
+  padding-top: 35px;
   /* font-family: Vazir, sans-serif; */
 }
 
@@ -137,28 +142,52 @@
 .circlePageOne6:hover{z-index: 1;}
 
 
-@keyframes animationCircle {
+/* @keyframes animationCircle {
   from {margin-top: 55vh;}
   to {margin-top: 65vh;}
-}
+} */
 
 @media screen and (max-width: 800px){
   .circlePageOne{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    top: 5%;
+    transition: all 4s;
   }
   .circlePageOne1 p,
   .circlePageOne2 p,
   .circlePageOne3 p ,
   .circlePageOne4 p ,
   .circlePageOne5 p{
-    padding-top: 0px; 
+    padding-top: 20px; 
     font-size: small;
   }
-  .circlePageOne1 {margin-left: 25vw;}
-  .circlePageOne2 {margin-left: 35vw; margin-top: 65vh; animation-name: animationCircle; animation-duration: 4s;}
+  .circlePageOne1 {margin-left: 15vw;}
+  .circlePageOne2 {margin-left: 30vw;}
   .circlePageOne3 {margin-left: 45vw;}
-  .circlePageOne4 {margin-left: 55vw; margin-top: 65vh; animation-name: animationCircle; animation-duration: 4s;}
+  .circlePageOne4 {margin-left: 60vw;}
+  .circlePageOne5 {margin-left: 75vw;}
+}
+
+
+@media screen and (min-width: 800px){
+  .circlePageOne{
+    width: 140px;
+    height: 140px;
+    transition: all linear 2s;
+  }
+  .circlePageOne1 p,
+  .circlePageOne2 p,
+  .circlePageOne3 p ,
+  .circlePageOne4 p ,
+  .circlePageOne5 p{
+    padding-top: 40px; 
+    font-size: large;
+  }
+  .circlePageOne1 {margin-left: 25vw;}
+  .circlePageOne2 {margin-left: 35vw;}
+  .circlePageOne3 {margin-left: 45vw;}
+  .circlePageOne4 {margin-left: 55vw;}
   .circlePageOne5 {margin-left: 65vw;}
 }
 
