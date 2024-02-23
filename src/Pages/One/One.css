@@ -59,17 +59,19 @@
 
 @media screen and (max-width: 800px){
   .boxPicText{
-    animation-name: animationPic;
-    animation-duration: 4s;
+    /* animation-name: animationPic; */
+    /* animation-duration: 4s; */
     width: 320px;
+    transition: width 4s;
     }
 }
 
 @media screen and (min-width: 800px){
   .boxPicText{
-    animation-name: animationPicInverse;
-    animation-duration: 4s;
+    /* animation-name: animationPicInverse; */
+    /* animation-duration: 4s; */
     width: 400px;
+    transition: width 4s;
     }
 }
 
