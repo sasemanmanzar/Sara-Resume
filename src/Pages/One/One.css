@@ -13,7 +13,8 @@
     height: 892px; 
 
     /* Center the image */
-    background-position: center; 
+    /* background-position: center;  */
+    background-position: right;
 
     /* Do not repeat the image */
     background-repeat: no-repeat; 
@@ -26,10 +27,11 @@
   position: absolute;
   display: flex;
   direction: rtl;
-  /* width: 400px; */
+  width: 400px;
   /* margin-left: 36vw; */
   /* margin-top: 25vh; */
-  width: 30%;
+  /* width: 30%; */
+  /* min-width: 30%; */
   left: 35%;
   top: 25%;
 }
@@ -56,8 +58,10 @@
   .boxPicText{
     /* animation-name: animationPic; */
     /* animation-duration: 4s; */
-    /* width: 320px; */
-    width: 20%;
+    width: 320px;
+    /* width: 20%; */
+    left: 25%;
+    top: 35%;
     transition: all 4s;
     }
 }
@@ -66,8 +70,10 @@
   .boxPicText{
     /* animation-name: animationPicInverse; */
     /* animation-duration: 4s; */
-    /* width: 400px; */
-    width: 30%;
+    width: 400px;
+    /* width: 30%; */
+    left: 35%;
+    top: 25%;
     transition: all 4s;
     }
 }
@@ -182,7 +188,7 @@
   .circlePageOne4 p ,
   .circlePageOne5 p{
     padding-top: 40px; 
-    font-size: large;
+    font-size:medium;
   }
   .circlePageOne1 {margin-left: 25vw;}
   .circlePageOne2 {margin-left: 35vw;}
