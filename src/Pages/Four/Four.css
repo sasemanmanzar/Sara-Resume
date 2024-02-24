@@ -5,7 +5,8 @@
     background-image:url('../../Pic/darkBlue2.jpg');
     background-color: #cccccc; 
     height: 892px; 
-    background-position: center; 
+    /* background-position: center;  */
+    background-position: right;
     background-repeat: no-repeat; 
     background-size: cover; 
 }
