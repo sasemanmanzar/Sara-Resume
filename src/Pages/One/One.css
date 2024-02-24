@@ -13,7 +13,6 @@
     height: 892px; 
 
     /* Center the image */
-    /* background-position: center;  */
     background-position: right;
 
     /* Do not repeat the image */
@@ -28,39 +27,26 @@
   display: flex;
   direction: rtl;
   width: 400px;
-  /* margin-left: 36vw; */
-  /* margin-top: 25vh; */
-  /* width: 30%; */
-  /* min-width: 30%; */
   left: 35%;
+  /* right: 35%; */
   top: 25%;
 }
 
-/* @keyframes animationPic {
-  from {width: 400px;}
-  to {width: 320px;}
-} */
-
-/* @keyframes animationPicInverse {
-  from {width: 320px;}
-  to {width: 400px;}
-} */
-
-/* @media (max-width: 900px) and (min-width: 600px){
-  .boxPicText{
-    animation-name: animationPic;
-    animation-duration: 4s;
-    }
-} */
-
-
 @media screen and (max-width: 800px){
   .boxPicText{
-    /* animation-name: animationPic; */
-    /* animation-duration: 4s; */
     width: 320px;
-    /* width: 20%; */
     left: 25%;
+    /* right: 25%; */
+    top: 35%;
+    transition: all 4s;
+    }
+}
+
+@media screen and (max-width: 400px){
+  .boxPicText{
+    width: 220px;
+    left: 25%;
+    /* right: 25%; */
     top: 35%;
     transition: all 4s;
     }
@@ -68,11 +54,9 @@
 
 @media screen and (min-width: 800px){
   .boxPicText{
-    /* animation-name: animationPicInverse; */
-    /* animation-duration: 4s; */
     width: 400px;
-    /* width: 30%; */
     left: 35%;
+    /* right: 35%; */
     top: 25%;
     transition: all 4s;
     }
