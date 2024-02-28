@@ -81,19 +81,20 @@ function One(){
 
     return(
         <div id='IdOne' className='one'>
-            <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
+            {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div> */}
 
             <div id="boxPicText" className='boxPicText'>
                 <img className='picSara' src={picSara} alt="" />
                 <div className='textPageOne'>سارا آسمان منظر</div>
              </div>
              
-             <div className='circlePageOne circlePageOne1' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
-             <div className='circlePageOne circlePageOne2' onClick={scrollToMarginPage5}><p>تجارب</p></div>
-             <div className='circlePageOne circlePageOne3' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
-             <div className='circlePageOne circlePageOne4' onClick={scrollToMarginPage3}><p>مقالات</p></div>
-             <div className='circlePageOne circlePageOne5' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
-
+             <div id="Circles" className='boxCircles'>
+                <div className='circlePageOne circlePageOne1' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
+                <div className='circlePageOne circlePageOne2' onClick={scrollToMarginPage5}><p>تجارب</p></div>
+                <div className='circlePageOne circlePageOne3' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
+                <div className='circlePageOne circlePageOne4' onClick={scrollToMarginPage3}><p>مقالات</p></div>
+                <div className='circlePageOne circlePageOne5' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
+             </div>
         </div>
     );
 }
