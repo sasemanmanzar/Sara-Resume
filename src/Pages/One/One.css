@@ -155,13 +155,6 @@
     .circlePageOne4 p ,
     .circlePageOne5 p 
     {
-      /* background-color: aqua; */
-      /* padding: 0;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      vertical-align: middle; */
-
       padding: 0;
       transform:  translateX(0%) translateY(5vh) rotate(-90deg);
       transition: all 4s;
@@ -178,6 +171,32 @@
     transition: all 4s;
   }
 }
+
+@media screen and (max-width: 940px){
+  .circlePageOne1 p ,
+  .circlePageOne2 p ,
+  .circlePageOne3 p ,
+  .circlePageOne4 p ,
+  .circlePageOne5 p 
+  {
+    font-size: small;
+    transition: all 4s;
+  }
+}
+
+@media screen and (min-width: 940px){
+.circlePageOne1 p ,
+.circlePageOne2 p ,
+.circlePageOne3 p ,
+.circlePageOne4 p ,
+.circlePageOne5 p 
+{
+  /* font-size: large; */
+  transition: all 4s;
+}
+}
+
+
 
 /* @keyframes animationCircle {
   from {margin-top: 55vh;}
