@@ -96,7 +96,7 @@
   display: flex;
   top: 55vh;
   left: 25vw;
-  /* background-color: aqua; */
+  /* background-color:blueviolet; */
   width: 50vw;
   height: 140px;
 }
@@ -136,11 +136,8 @@
 {
   color: aliceblue; 
   text-align: center; 
-  /* padding-top: 35px; */
-  padding-top: 27%;
-  /* font-family: Vazir, sans-serif; */
-  /* align-items: center;  */
-  /* vertical-align:middle; */
+  padding-top: 5vh;
+  /* position: absolute; */
 }
 
 .circlePageOne1:hover{z-index: 1;}
@@ -150,6 +147,28 @@
 .circlePageOne5:hover{z-index: 1;}
 .circlePageOne6:hover{z-index: 1;}
 
+
+@media screen and (max-width: 1300px){
+    .circlePageOne1 p ,
+    .circlePageOne2 p ,
+    .circlePageOne3 p ,
+    .circlePageOne4 p ,
+    .circlePageOne5 p 
+    {
+      /* background-color: aqua; */
+      /* padding: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      vertical-align: middle; */
+
+      padding: 0;
+
+      /* transform:  translateX(-50%) translateY(-50%) rotate(-90deg); */
+      transform:  translateX(0%) translateY(180%) rotate(-90deg);
+      transition: all 4s;
+    }
+}
 
 /* @keyframes animationCircle {
   from {margin-top: 55vh;}
