@@ -163,11 +163,20 @@
       vertical-align: middle; */
 
       padding: 0;
-
-      /* transform:  translateX(-50%) translateY(-50%) rotate(-90deg); */
-      transform:  translateX(0%) translateY(180%) rotate(-90deg);
+      transform:  translateX(0%) translateY(5vh) rotate(-90deg);
       transition: all 4s;
     }
+}
+
+@media screen and (min-width: 1300px){
+  .circlePageOne1 p ,
+  .circlePageOne2 p ,
+  .circlePageOne3 p ,
+  .circlePageOne4 p ,
+  .circlePageOne5 p 
+  {
+    transition: all 4s;
+  }
 }
 
 /* @keyframes animationCircle {
