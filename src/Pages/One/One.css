@@ -15,7 +15,7 @@
 
 .boxAll{
   position: absolute;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   left: 25vw;
   top: 25vh;
 }
@@ -28,7 +28,7 @@
   width: 400px;
   /* left: 35%; */
   /* top: 25%; */
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   left: 11vw;
   padding-bottom: 10vh;
 }
@@ -63,6 +63,7 @@
     /* left: 25%; */
     /* top: 35%; */
     transition: all 4s;
+    left: 0;
     }
 }
 
@@ -73,6 +74,7 @@
     /* top: 35%; */
     transition: all 4s;
     /* background-color: blueviolet; */
+    left: 0;
     }
 }
 
@@ -82,6 +84,7 @@
     /* left: 35%; */
     /* top: 25%; */
     transition: all 4s;
+    left: 11vw;
     }
 }
 
@@ -95,7 +98,7 @@
   /* left: 25vw; */
   width: 50vw;
   height: 140px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .circlePageOne {
