@@ -5,8 +5,8 @@
     background-image:url('../../Pic/darkBlue2.jpg');
     background-color: #cccccc; 
     height: 892px; 
-    /* background-position: center;  */
-    background-position: right;
+    background-position: center; 
+    /* background-position: right; */
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -53,7 +53,7 @@
 .smallBox p {
     text-align: center;
     color: #faf7f7;
-    font: 1.3em sans-serif;
+    /* font: 1.3em sans-serif; */
     margin-top: auto;
     padding-top: 5px;
 }
