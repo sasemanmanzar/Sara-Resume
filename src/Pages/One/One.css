@@ -8,7 +8,7 @@
 
     background-color: #cccccc; 
     height: 892px; 
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -26,9 +26,6 @@
   display: flex;
   direction: rtl;
   width: 400px;
-  /* left: 35%; */
-  /* top: 25%; */
-  /* background-color: aquamarine; */
   left: 11vw;
   padding-bottom: 10vh;
 }
@@ -56,37 +53,6 @@
     margin-right: 3px;
     padding: 10px 0px 10px 0px;
  }
-
- @media screen and (max-width: 800px){
-  .boxPicText{
-    width: 320px;
-    /* left: 25%; */
-    /* top: 35%; */
-    transition: all 4s;
-    left: 0;
-    }
-}
-
-@media screen and (max-width: 400px){
-  .boxPicText{
-    width: 220px;
-    /* left: 25%; */
-    /* top: 35%; */
-    transition: all 4s;
-    /* background-color: blueviolet; */
-    left: 0;
-    }
-}
-
-@media screen and (min-width: 800px){
-  .boxPicText{
-    width: 400px;
-    /* left: 35%; */
-    /* top: 25%; */
-    transition: all 4s;
-    left: 11vw;
-    }
-}
 
 /* Circles: */
 
@@ -123,24 +89,14 @@
 }
 
 
-/* @media screen and (max-width: 1300px){
-    .circlePageOne p {
-      padding: 0;
-      transform:  translateX(0%) translateY(5vh) rotate(-90deg);
-      transition: all 4s;
-    }
-}
-
-@media screen and (min-width: 1300px){
-    .circlePageOne p {
-      transition: all 4s;
-    }
-} */
-
 @media screen and (max-width: 1300px){
   .boxAll{
     left: 20vw;
-    /* top: 25vh; */
+    transition: all 4s;
+  }
+  .boxPicText{
+    width: 380px;
+    left: 14vw;
     transition: all 4s;
   }
   .boxCircles{
@@ -148,35 +104,40 @@
     transition: all 4s;
   }
   .circlePageOne p {
-    /* font-size: medium; */
-    /* padding: 0;
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg); */
     transition: all 4s;
   }
 }
-
 @media screen and (min-width: 1300px){
-  .circlePageOne p {
-    transition: all 4s;
-  }
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
 
 @media screen and (max-width: 1200px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    width: 360px;
+    left: 12vw;
+    transition: all 4s;
+  }
+  .boxCircles{transition: all 4s;}
   .circlePageOne p {
     font-size: medium;
-    /* padding: 0;
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg); */
     transition: all 4s;
   }
 }
-
 @media screen and (min-width: 1200px){
-  .circlePageOne p {
-    transition: all 4s;
-  }
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
 
 @media screen and (max-width: 1000px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
   .circlePageOne p {
     font-size: small;
     padding: 0;
@@ -184,72 +145,211 @@
     transition: all 4s;
   }
 }
-
 @media screen and (min-width: 1000px){
-  .circlePageOne p {
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+@media screen and (max-width: 950px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    left: 10vw;
     transition: all 4s;
   }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
+@media screen and (min-width: 950px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+
+@media screen and (max-width: 900px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    left: 9vw;
+    transition: all 4s;
+  }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 900px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
 
 @media screen and (max-width: 800px){
-  .boxCircles{
-    /* height: 160px; */
-    /* background-color: #cccccc; */
-    /* width: 60vw; */
-    /* height: 160px; */
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    width: 320px;
+    left: 10vw;
     transition: all 4s;
   }
-  .circlePageOne p {
-    /* height: 140px; */
-    /* background-color: aquamarine; */
-    /* font-size: small;
-    padding: 0;
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg); */
-    transition: all 4s;
-  }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
-
 @media screen and (min-width: 800px){
-  .circlePageOne p {
-    transition: all 4s;
-  }
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
   .boxAll{
     left: 15vw;
-    /* top: 25vh; */
+    transition: all 4s;
+  }
+  .boxPicText{
+    left: 13vw;
     transition: all 4s;
   }
   .boxCircles{
-    /* height: 160px; */
     width: 70vw;
     transition: all 4s;
   }
-  .circlePageOne p {
-    transition: all 4s;
-  }
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 750px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
 
+@media screen and (max-width: 700px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    left: 11vw;
+    transition: all 4s;
+  }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 700px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+
+@media screen and (max-width: 650px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    left: 8vw;
+    transition: all 4s;
+  }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
 @media screen and (min-width: 650px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+@media screen and (max-width: 600px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{
+    left: 6vw;
+    transition: all 4s;
+  }
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 600px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+@media screen and (max-width: 550px){
+  .boxAll{
+    left: 10vw;
+    transition: all 4s;
+  }
+  .boxPicText{
+    left: 9vw;
+    /* width: 320px; */
+    transition: all 4s;
+  }
+  .boxCircles{
+    width: 80vw;
+    transition: all 4s;
+  }
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 550px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+@media screen and (max-width: 500px){
+  .boxAll{
+    /* left: 10vw; */
+    transition: all 4s;
+  }
+  .boxPicText{
+    left: 8vw;
+    width: 280px;
+    transition: all 4s;
+  }
+  .boxCircles{
+    /* width: 80vw; */
+    transition: all 4s;
+  }
+  .circlePageOne p {transition: all 4s;}
+}
+@media screen and (min-width: 500px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+@media screen and (max-width: 300px){
+  .boxAll{
+    left: 2vw;
+    transition: all 4s;
+  }
+  .boxPicText{
+    display:grid;
+    left: -18vw;
+    transition: all 4s;
+  }
+  .boxCircles{
+    width: 96vw;
+    /* height: 180px; */
+    transition: all 4s;
+  }
   .circlePageOne p {
+    font-size: xx-small;
+    /* padding-top: 0;
+    padding-right: 0vw; */
     transition: all 4s;
   }
 }
-
-
-/* @media screen and (max-width: 940px){
-    .circlePageOne p {
-      font-size: small;
-      transition: all 4s;
-    }
+@media screen and (min-width: 300px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
 }
 
-@media screen and (min-width: 940px){
-    .circlePageOne p {
-      transition: all 4s;
-    }
-} */
+
 
 
 /* @keyframes example {
