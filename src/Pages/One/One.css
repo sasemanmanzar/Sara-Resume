@@ -13,13 +13,24 @@
     background-size: cover; 
 }
 
-.boxPicText {
+.boxAll{
   position: absolute;
+  background-color: chartreuse;
+  left: 25vw;
+  top: 25vh;
+}
+
+.boxPicText {
+  position: relative;
+  /* position: absolute; */
   display: flex;
   direction: rtl;
   width: 400px;
-  left: 35%;
-  top: 25%;
+  /* left: 35%; */
+  /* top: 25%; */
+  background-color: aquamarine;
+  left: 11vw;
+  padding-bottom: 10vh;
 }
 
 .picSara {
@@ -49,8 +60,8 @@
  @media screen and (max-width: 800px){
   .boxPicText{
     width: 320px;
-    left: 25%;
-    top: 35%;
+    /* left: 25%; */
+    /* top: 35%; */
     transition: all 4s;
     }
 }
@@ -58,8 +69,8 @@
 @media screen and (max-width: 400px){
   .boxPicText{
     width: 220px;
-    left: 25%;
-    top: 35%;
+    /* left: 25%; */
+    /* top: 35%; */
     transition: all 4s;
     /* background-color: blueviolet; */
     }
@@ -68,8 +79,8 @@
 @media screen and (min-width: 800px){
   .boxPicText{
     width: 400px;
-    left: 35%;
-    top: 25%;
+    /* left: 35%; */
+    /* top: 25%; */
     transition: all 4s;
     }
 }
@@ -77,12 +88,14 @@
 /* Circles: */
 
 .boxCircles {
-  position: absolute;
+  position: relative;
+  /* position: absolute; */
   display: flex;
-  top: 55vh;
-  left: 25vw;
+  /* top: 55vh; */
+  /* left: 25vw; */
   width: 50vw;
   height: 140px;
+  background-color: blueviolet;
 }
 
 .circlePageOne {

@@ -81,20 +81,22 @@ function One(){
 
     return(
         <div id='IdOne' className='one'>
-            {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div> */}
+            <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>
 
-             <div id="boxPicText" className='boxPicText'>
-                <img className='picSara' src={picSara} alt="" />
-                <div className='textPageOne'>سارا آسمان منظر</div>
-             </div>
-             
-             <div id="Circles" className='boxCircles'>
-                <div className='circlePageOne' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
-                <div className='circlePageOne' onClick={scrollToMarginPage5}><p>تجارب</p></div>
-                <div className='circlePageOne' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
-                <div className='circlePageOne' onClick={scrollToMarginPage3}><p>مقالات</p></div>
-                <div className='circlePageOne' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
-             </div>
+            <div className='boxAll'>
+              <div id="boxPicText" className='boxPicText'>
+                  <img className='picSara' src={picSara} alt="" />
+                  <div className='textPageOne'>سارا آسمان منظر</div>
+              </div>
+              
+              <div id="Circles" className='boxCircles'>
+                  <div className='circlePageOne' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage5}><p>تجارب</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage3}><p>مقالات</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
+              </div>
+            </div>
         </div>
     );
 }
