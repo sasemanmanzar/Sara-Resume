@@ -6,19 +6,10 @@
     position: relative;
     /* position: static; */
 
-    /* Used if the image is unavailable */
     background-color: #cccccc; 
-
-    /* You must set a specified height */
     height: 892px; 
-
-    /* Center the image */
     background-position: right;
-
-    /* Do not repeat the image */
     background-repeat: no-repeat; 
-
-    /* Resize the background image to cover the entire container */
     background-size: cover; 
 }
 
@@ -31,7 +22,31 @@
   top: 25%;
 }
 
-@media screen and (max-width: 800px){
+.picSara {
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    position: relative;
+    margin-top: auto;
+    /* align-self: flex-end; */
+}
+
+.textPageOne{
+    width: 65%;
+    max-height: 20px;
+    background-color: rgba(220, 189, 90, 0.85);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: medium;
+    direction: rtl;
+    text-align: center;
+    margin-top: auto;
+    margin-right: 3px;
+    padding: 10px 0px 10px 0px;
+ }
+
+ @media screen and (max-width: 800px){
   .boxPicText{
     width: 320px;
     left: 25%;
@@ -59,32 +74,6 @@
     }
 }
 
-.picSara {
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    position: relative;
-    margin-top: auto;
-    /* align-self: flex-end; */
-}
-
-
-.textPageOne{
-    width: 65%;
-    max-height: 20px;
-    background-color: rgba(220, 189, 90, 0.85);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: medium;
-    direction: rtl;
-    text-align: center;
-    margin-top: auto;
-    margin-right: 3px;
-    padding: 10px 0px 10px 0px;
- }
-
-
 /* Circles: */
 
 .boxCircles {
@@ -106,36 +95,20 @@
   /* position: absolute; */
   position: relative;
 }
+
 .circlePageOne:hover{ background-color: rgba(220, 189, 90, 0.85); }
 .circlePageOne p ::hover {color: black;}
 
-.circlePageOne1 p ,
-.circlePageOne2 p ,
-.circlePageOne3 p ,
-.circlePageOne4 p ,
-.circlePageOne5 p 
-{
+.circlePageOne p {
   color: aliceblue; 
   text-align: center; 
   padding-top: 5vh;
   /* position: absolute; */
 }
 
-.circlePageOne1:hover{z-index: 1;}
-.circlePageOne2:hover{z-index: 1;}
-.circlePageOne3:hover{z-index: 1;}
-.circlePageOne4:hover{z-index: 1;}
-.circlePageOne5:hover{z-index: 1;}
-.circlePageOne6:hover{z-index: 1;}
-
 
 @media screen and (max-width: 1300px){
-    .circlePageOne1 p ,
-    .circlePageOne2 p ,
-    .circlePageOne3 p ,
-    .circlePageOne4 p ,
-    .circlePageOne5 p 
-    {
+    .circlePageOne p {
       padding: 0;
       transform:  translateX(0%) translateY(5vh) rotate(-90deg);
       transition: all 4s;
@@ -143,38 +116,22 @@
 }
 
 @media screen and (min-width: 1300px){
-  .circlePageOne1 p ,
-  .circlePageOne2 p ,
-  .circlePageOne3 p ,
-  .circlePageOne4 p ,
-  .circlePageOne5 p 
-  {
-    transition: all 4s;
-  }
+    .circlePageOne p {
+      transition: all 4s;
+    }
 }
 
 @media screen and (max-width: 940px){
-  .circlePageOne1 p ,
-  .circlePageOne2 p ,
-  .circlePageOne3 p ,
-  .circlePageOne4 p ,
-  .circlePageOne5 p 
-  {
-    font-size: small;
-    transition: all 4s;
-  }
+    .circlePageOne p {
+      font-size: small;
+      transition: all 4s;
+    }
 }
 
 @media screen and (min-width: 940px){
-.circlePageOne1 p ,
-.circlePageOne2 p ,
-.circlePageOne3 p ,
-.circlePageOne4 p ,
-.circlePageOne5 p 
-{
-  /* font-size: large; */
-  transition: all 4s;
-}
+    .circlePageOne p {
+      transition: all 4s;
+    }
 }
 
 
