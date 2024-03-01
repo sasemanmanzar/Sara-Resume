@@ -266,24 +266,17 @@
     transition: all 4s;
   }
   .boxCircles{
-    /* padding: 10px; */
     transform:  translateX(0%) translateY(5vh) rotate(-90deg);
-    /* width: 80vw; */
     height: 250px;
     transition: all 4s;
   }
   .circlePageOne {
     border-radius: 10px;
     margin: 5px;
-    /* position: relative; */
   }
   .circlePageOne p {
-    /* direction: rtl; */
     vertical-align: middle;
-    /* text-align: center; */
-    /* padding-left: 40px; */
     padding: 50px 0 50px 0; 
-    /* padding: 0; */
     transform:  translateX(0%) translateY(5vh) rotate(90deg);
     transition: all 4s;
   }
