@@ -17,7 +17,7 @@
     height: 80vh;
     top: 110vh;
     left: 20vw;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .smallBox1 {
@@ -42,12 +42,14 @@
     width: 20%;
     height: 7%;
     left: 80%;
-    top: 5%;
+    /* top: 5%; */
     background-color: rgba(8,46,108,0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* margin-left: 40vw; */
     /* margin-top: 5vh; */
     border-radius: 8px;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
 }
 
 .box {
@@ -64,7 +66,7 @@
     padding: 20px 0 20px 0;
     width: 100%;
     height: 30%;
-    top: 6%;
+    /* top: 6%; */
 }
 
 /* .top1 {margin-top: 15vh;}
@@ -111,3 +113,33 @@
     font-style: italic;
     /* color: rgb(8,46,108); */
 }
+
+@media screen and (max-width: 800px){
+    .boxPage2 {
+        width: 80vw;
+        left: 10vw;
+        transition: all 4s;
+    }
+  }
+  @media screen and (min-width: 800px){
+    .boxPage2{transition: all 4s;}
+  }
+
+
+  @media screen and (max-width: 600px){
+    .smallBox1 {
+        width: 50%;
+        left: 25%;
+        margin-bottom: 5vh; 
+        transition: all 4s;     
+    }
+    .smallBox { 
+        width: 30%;
+        left: 70%;
+        transition: all 4s;   
+    }
+  }
+  @media screen and (min-width: 600px){
+    .smallBox1{transition: all 4s;}
+    .smallBox{transition: all 4s;}
+  }
