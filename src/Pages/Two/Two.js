@@ -1,9 +1,28 @@
 import './Two.css';
+import React, { useState, useEffect } from 'react';
+
 
 function Two(){
 
+        const [width, setWidth]   = useState(window.innerWidth);
+        const [height, setHeight] = useState(window.innerHeight);
+        
+        const updateDimensions = () => {
+            setWidth(window.innerWidth);
+            setHeight(window.innerHeight);
+        }
+
+        useEffect(() => {
+            window.addEventListener("resize", updateDimensions);
+            return () => window.removeEventListener("resize", updateDimensions);
+        }, []);
+
+
+
     return(
         <div id='IdTwo' className='two'>
+            {/* <div style={{color:"red"}}>{width} <br/> {height} </div> */}
+            <div className='boxPage2'>
             <div className='smallBox1 top1'><p>سوابق تحصیلی</p></div>
             <div className='smallBox top2'><p>کارشناسی ارشد</p></div>
             <div className='box top3'>
@@ -22,7 +41,7 @@ function Two(){
                     <p id='prise'>رتبه اول فارغ التحصیلان دوره کارشناسی رشته مهندسی فناوری اطلاعات</p>
                     <p id='project'>پروژه پایانی: مدارس و دانشگاه های هوشمند / استاد راهنما: جناب آقای دکتر اصغر زمانی</p>
             </div>
-
+            </div>
         </div>
     );
 }
