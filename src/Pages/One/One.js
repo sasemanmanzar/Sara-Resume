@@ -94,7 +94,7 @@ function One(){
                   <div className='circlePageOne' onClick={scrollToMarginPage5}><p>تجارب</p></div>
                   <div className='circlePageOne' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
                   <div className='circlePageOne' onClick={scrollToMarginPage3}><p>مقالات</p></div>
-                  <div className='circlePageOne' onClick={scrollToMarginPage2}><p>سوابق تحصیلی</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage2}><p>تحصیلات</p></div>
               </div>
             </div>
         </div>

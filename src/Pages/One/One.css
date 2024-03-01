@@ -258,7 +258,45 @@
   .circlePageOne p {transition: all 4s;}
 }
 
+/* For mobile: */
 @media screen and (max-width: 600px){
+  .boxAll{top: 15vh; transition: all 4s;}
+  .boxPicText{
+    left: 8vw;
+    transition: all 4s;
+  }
+  .boxCircles{
+    /* padding: 10px; */
+    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
+    /* width: 80vw; */
+    height: 250px;
+    transition: all 4s;
+  }
+  .circlePageOne {
+    border-radius: 10px;
+    margin: 5px;
+    /* position: relative; */
+  }
+  .circlePageOne p {
+    /* direction: rtl; */
+    vertical-align: middle;
+    /* text-align: center; */
+    /* padding-left: 40px; */
+    padding: 50px 0 50px 0; 
+    /* padding: 0; */
+    transform:  translateX(0%) translateY(5vh) rotate(90deg);
+    transition: all 4s;
+  }
+}
+@media screen and (min-width: 600px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne {transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+/* @media screen and (max-width: 600px){
   .boxAll{transition: all 4s;}
   .boxPicText{
     left: 6vw;
@@ -272,16 +310,15 @@
   .boxPicText{transition: all 4s;}
   .boxCircles{transition: all 4s;}
   .circlePageOne p {transition: all 4s;}
-}
+} */
 
-@media screen and (max-width: 550px){
+/* @media screen and (max-width: 550px){
   .boxAll{
     left: 10vw;
     transition: all 4s;
   }
   .boxPicText{
     left: 9vw;
-    /* width: 320px; */
     transition: all 4s;
   }
   .boxCircles{
@@ -299,7 +336,6 @@
 
 @media screen and (max-width: 500px){
   .boxAll{
-    /* left: 10vw; */
     transition: all 4s;
   }
   .boxPicText{
@@ -308,7 +344,6 @@
     transition: all 4s;
   }
   .boxCircles{
-    /* width: 80vw; */
     transition: all 4s;
   }
   .circlePageOne p {transition: all 4s;}
@@ -332,13 +367,10 @@
   }
   .boxCircles{
     width: 96vw;
-    /* height: 180px; */
     transition: all 4s;
   }
   .circlePageOne p {
     font-size: xx-small;
-    /* padding-top: 0;
-    padding-right: 0vw; */
     transition: all 4s;
   }
 }
@@ -347,7 +379,7 @@
   .boxPicText{transition: all 4s;}
   .boxCircles{transition: all 4s;}
   .circlePageOne p {transition: all 4s;}
-}
+} */
 
 
 
