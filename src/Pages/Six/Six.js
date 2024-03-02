@@ -100,6 +100,7 @@ function Six(){
 
     return(
         <div id='IdSix' className='six'>
+            {/* <div className='boxAll'> */}
             <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
 
             <div className='message topCallMe2'><p>{stateMessage}</p></div>
@@ -129,7 +130,8 @@ function Six(){
                 {stateMessage} 
                 <br/>
             </div> */}
-        </div>
+            </div>
+        // </div>
     );
 }
 

@@ -8,10 +8,16 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    /* position: relative; */
 }
+
+/* .boxAll{
+  position: absolute;
+} */
 
 .smallBoxCallMe {
     position: absolute;
+    /* position: relative; */
     width: 30vw;
     height: 5vh;
     margin-left: 35vw;
@@ -33,6 +39,7 @@
 
 .message{
   position: absolute;
+  /* position: relative; */
   width: 30vw;
   height: 5vh;
   margin-left: 35vw;
@@ -67,6 +74,7 @@
 
 .tableP6 {
     position: absolute;
+    /* position: relative; */
     /* border: 1px solid; */
     /* color: #08f437; */
     width: 60vw;
@@ -143,3 +151,22 @@
     width: 200px;
     height: 200px;
   }
+
+/* Mobile: */
+  /* @media screen and (max-width: 600px){
+    .smallBox1 {
+        width: 50%;
+        left: 25%;
+        margin-bottom: 5vh; 
+        transition: all 4s;     
+    }
+    .smallBox { 
+        width: 30%;
+        left: 70%;
+        transition: all 4s;   
+    }
+  }
+  @media screen and (min-width: 600px){
+    .smallBox1{transition: all 4s;}
+    .smallBox{transition: all 4s;}
+  } */
