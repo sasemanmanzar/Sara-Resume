@@ -149,3 +149,13 @@
     .smallBox1 {transition: all 4s;}
     .smallBox {transition: all 4s;}
   }
+
+  @media screen and (max-width: 450px){
+    .boxPage2 {
+        margin-top: 6vh;
+        transition: all 4s;
+    }
+  }
+  @media screen and (min-width: 450px){
+    .boxPage2{transition: all 4s;}
+  }
