@@ -76,6 +76,7 @@
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
   position: fixed;
+  z-index: 1;
 }
 
 .dot1 {margin-top:40vh;}
@@ -86,89 +87,34 @@
 .dot6 {margin-top:65vh;}
 
 
-/* .circle:hover:after {
-  content: "صفحه اصلی";
+.circle:hover:after {
+  /* content: "صفحه اصلی"; */
   display: inline-block;
+  /* z-index: 1; */
   background-color: rgba(255,215,0,0.5);
   width: 8vw;
-  height: 2vh;
+  height: 2.2vh;
   margin-left: -8vw;
   border-radius: 5px;
   text-align: center;
   font: 0.8em sans-serif;
-} */
-
-/* .content2{content: 'سوابق تحصیلی';  display: inline-block;} */
-
-.dot1:hover:after {
-  content: "صفحه اصلی";
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
 }
 
-.dot2:hover:after {
-  content: 'سوابق تحصیلی';
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
-}
+.dot1:hover:after {content: "صفحه اصلی";}
+.dot2:hover:after {content: 'سوابق تحصیلی';}
+.dot3:hover:after {content: 'مقالات';}
+.dot4:hover:after {content: 'مهارت ها';}
+.dot5:hover:after {content: 'تجارب';}
+.dot6:hover:after {content: 'تماس با ما';}
 
-.dot3:hover:after {
-  content: 'مقالات';
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
+/* For mobile: */
+@media screen and (max-width: 600px){
+  .circle:hover:after {
+    width: 15vw;
+    margin-left: -15vw;
+    transition: all 4s;
+  }
 }
-
-.dot4:hover:after {
-  content: 'مهارت ها';
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
-}
-
-.dot5:hover:after {
-  content: 'تجارب';
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  /* width: 8vw; */
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
-}
-
-.dot6:hover:after {
-  content: 'تماس با ما';
-  display: inline-block;
-  background-color: rgba(255,215,0,0.5);
-  width: 5vw;
-  height: 2vh;
-  margin-left: -5vw;
-  border-radius: 5px;
-  text-align: center;
-  font: 0.8em sans-serif;
+@media screen and (min-width: 600px){
+  .circle:hover:after{transition: all 4s;}
 }
