@@ -114,3 +114,38 @@
     color: rgb(8,46,108);
     /* padding: 8px; */
 }
+
+/* For mobile: */
+@media screen and (max-width: 600px){
+    .boxExp{
+        /* height: 70vh;
+        width: 60vw;
+        margin-left: 20vw; */
+        width: 80vw;
+        margin-left: 10vw;
+        transition: all 4s;
+    }
+    #TitelBP {
+        /* font-weight: bold; */
+        /* padding-top: 9vh; */
+        /* padding-right: 12vw; */
+        padding-right: 22vh;
+        transition: all 4s;
+    }
+  }
+  @media screen and (min-width: 600px){
+    .boxExp {transition: all 4s;}
+    #TitelBP {transition: all 4s;}
+  }
+
+  /* For mobile: */
+@media screen and (max-width: 450px){
+    #TitelBP {
+        padding-right: 17vh;
+        transition: all 4s;
+    }
+  }
+  @media screen and (min-width: 450px){
+    .boxExp {transition: all 4s;}
+    #TitelBP {transition: all 4s;}
+  }
