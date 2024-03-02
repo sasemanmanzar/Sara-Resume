@@ -289,6 +289,42 @@
   .circlePageOne p {transition: all 4s;}
 }
 
+
+/* For mobile: */
+@media screen and (max-width: 450px){
+  .boxAll{top: 15vh; transition: all 4s;}
+  .boxPicText{
+    left: -1vw;
+    /* top:auto; */
+    transition: all 4s;
+  }
+  .boxCircles{
+    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
+    height: 250px;
+    width: 350px;
+    margin: 0 0 0 -30px;
+    transition: all 4s;
+  }
+  .circlePageOne {
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .circlePageOne p {
+    vertical-align: middle;
+    padding: 50px 0 50px 0; 
+    transform:  translateX(0%) translateY(5vh) rotate(90deg);
+    transition: all 4s;
+  }
+}
+@media screen and (min-width: 450px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne {transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+
 /* @media screen and (max-width: 600px){
   .boxAll{transition: all 4s;}
   .boxPicText{
