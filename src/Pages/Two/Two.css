@@ -3,6 +3,11 @@
     width: 100vw;
     height: 100vh;
     background-image:url('../../Pic/darkBlue2.jpg');
+
+    /* background-image:url('../../Pic/darkBlue1.jpg');
+    transform:  translateX(180deg) translateY(0) rotate(180deg);
+    transform: translateY(90deg); */
+
     background-color: #cccccc; 
     height: 892px; 
     background-position: center; 
