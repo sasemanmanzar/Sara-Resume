@@ -91,7 +91,8 @@
   /* content: "صفحه اصلی"; */
   display: inline-block;
   /* z-index: 1; */
-  background-color: rgba(255,215,0,0.5);
+  /* background-color: rgba(255,215,0,0.5); */
+  background-color: #cccccc;
   width: 8vw;
   height: 2.2vh;
   margin-left: -8vw;
