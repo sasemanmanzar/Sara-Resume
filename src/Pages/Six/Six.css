@@ -153,8 +153,13 @@
   }
 
 /* Mobile: */
-  /* @media screen and (max-width: 600px){
-    .smallBox1 {
+  @media screen and (max-width: 600px){
+    .tableP6 {
+      width: 80vw;
+      margin-left: 10vw;
+      transition: all 4s;     
+    }
+    /* .smallBox1 {
         width: 50%;
         left: 25%;
         margin-bottom: 5vh; 
@@ -164,9 +169,10 @@
         width: 30%;
         left: 70%;
         transition: all 4s;   
-    }
+    } */
   }
   @media screen and (min-width: 600px){
-    .smallBox1{transition: all 4s;}
-    .smallBox{transition: all 4s;}
-  } */
+    .tableP6 {transition: all 4s;}
+    /* .smallBox1{transition: all 4s;}
+    .smallBox{transition: all 4s;} */
+  }
