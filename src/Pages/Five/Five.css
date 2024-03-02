@@ -23,9 +23,9 @@
 .smallBoxExp p {
     text-align: center;
     color: #faf7f7;
-    font: 1.3em sans-serif;
+    /* font: 1.3em sans-serif; */
     margin-top: auto;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .topExp1 {margin-top: 10vh;}
