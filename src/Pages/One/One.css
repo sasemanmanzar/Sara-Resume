@@ -54,6 +54,11 @@
     margin-top: auto;
     margin-right: 3px;
     padding: 10px 0px 10px 0px;
+
+    /* color: aliceblue; */
+    display: grid;
+    align-content: center;
+    justify-items: center;
  }
 
 /* Circles: */
@@ -78,17 +83,21 @@
   cursor: pointer;
   /* position: absolute; */
   position: relative;
+
+  color: aliceblue;
+  display: grid;
+  align-content: center;
+  justify-items: center;
 }
 
-.circlePageOne:hover{ background-color: rgba(220, 189, 90, 0.85); }
-.circlePageOne p ::hover {color: black;}
+.circlePageOne:hover{ background-color: rgba(220, 189, 90, 0.85); color: black;}
+/* .circlePageOne p ::hover {color: black;} */
 
-.circlePageOne p {
+/* .circlePageOne p {
   color: aliceblue; 
   text-align: center; 
   padding-top: 5vh;
-  /* position: absolute; */
-}
+} */
 
 
 @media screen and (max-width: 1300px){

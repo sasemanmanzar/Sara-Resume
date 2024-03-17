@@ -90,11 +90,17 @@ function One(){
               </div>
               
               <div id="Circles" className='boxCircles'>
-                  <div className='circlePageOne' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
+
+                  {/* <div className='circlePageOne' onClick={scrollToMarginPage6}><p>تماس با ما</p></div>
                   <div className='circlePageOne' onClick={scrollToMarginPage5}><p>تجارب</p></div>
                   <div className='circlePageOne' onClick={scrollToMarginPage4}><p>مهارت ها</p></div>
                   <div className='circlePageOne' onClick={scrollToMarginPage3}><p>مقالات</p></div>
-                  <div className='circlePageOne' onClick={scrollToMarginPage2}><p>تحصیلات</p></div>
+                  <div className='circlePageOne' onClick={scrollToMarginPage2}><p>تحصیلات</p></div> */}
               </div>
             </div>
         </div>
