@@ -84,9 +84,14 @@
 .smallBox p {
     text-align: center;
     color: #faf7f7;
-    /* font: 1.3em sans-serif; */
     margin-top: auto;
     padding-top: 12px;
+
+    /* position: relative;
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+    justify-items: center; */
 }
 
 .box p {
