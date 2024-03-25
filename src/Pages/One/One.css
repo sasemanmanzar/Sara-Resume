@@ -20,10 +20,14 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  width: 50vw;
-  height: 50vh;
-  left: 25vw;
-  top: 25vh;
+  /* width: 50vw; */
+  /* height: 50vh; */
+  /* left: 25vw; */
+  /* top: 25vh; */
+  
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
 
   /* background-color: chartreuse; */
 }
@@ -97,6 +101,81 @@
   padding-top: 5vh;
 } */
 
+
+
+@media screen and (max-width: 720px){
+  .boxAll{
+    /* top: 30%; */
+    transition: all 4s;
+  }
+  .boxPicText{
+    transition: all 4s;
+  }
+  .boxCircles{
+    /* margin-top: 5px; */
+    /* transform:  translateX(0%) translateY(5vh) rotate(-90deg); */
+    transform:  translateX(0%) translateY(0%) rotate(-90deg);
+    transition: all 4s;
+    /* background-color: cornflowerblue; */
+    margin: 150px 123px;
+  }
+  .circlePageOne {
+    border-radius: 10px;
+    /* margin: 5px; */
+    /* vertical-align: middle; */
+    /* padding: 50px 0 50px 0;  */
+    /* transform:  translateX(0%) translateY(5vh) rotate(90deg); */
+    transform:  translateX(0%) translateY(0%) rotate(90deg);
+    width: 300px;
+    height: 50px;
+    /* margin:  0 -245px 0 0 ; */
+    margin: 0 -123px;
+    /* background-color: aquamarine; */
+    /* padding: 0 200px; */
+  }
+
+  .circlePageOne p {
+    transition: all 4s;
+  }
+}
+@media screen and (min-width: 720px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+}
+
+/* @media screen and (max-width: 450px){
+  .boxAll{top: 15vh; transition: all 4s;}
+  .boxPicText{
+    left: -1vw;
+    transition: all 4s;
+  }
+  .boxCircles{
+    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
+    height: 250px;
+    width: 350px;
+    margin: 0 0 0 -30px;
+    transition: all 4s;
+  }
+  .circlePageOne {
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .circlePageOne p {
+    vertical-align: middle;
+    padding: 50px 0 50px 0; 
+    transform:  translateX(0%) translateY(5vh) rotate(90deg);
+    transition: all 4s;
+  }
+} */
+/* @media screen and (min-width: 450px){
+  .boxAll{transition: all 4s;}
+  .boxPicText{transition: all 4s;}
+  .boxCircles{transition: all 4s;}
+  .circlePageOne {transition: all 4s;}
+  .circlePageOne p {transition: all 4s;}
+} */
 
 /* ...................................................................... */
 
