@@ -102,9 +102,9 @@
 @media screen and (max-width: 720px){
     .boxPage2 {
         width: 80vw;
-        transition: all 4s;
+        transition: all 1s;
     }
   }
   @media screen and (min-width: 720px){
-    .boxPage2{transition: all 4s;}
+    .boxPage2{transition: all 1s;}
   }
