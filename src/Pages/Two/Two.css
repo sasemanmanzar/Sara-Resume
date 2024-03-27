@@ -24,14 +24,7 @@
     top:130%;
     left: 50%;
     transform: translate3d(-50%,-30%, 0);
-
     width: 60vw;
-
-    /* width: 60vw;
-    height: 80vh;
-    top: 110vh;
-    left: 20vw; */
-
     /* background-color: aqua; */
 }
 
@@ -59,8 +52,6 @@
     background-color: rgba(8,46,108,0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    /* margin-top: 2%; */
-    /* margin-bottom: 0.5%; */
     margin-top: 30px;
     margin-bottom: 5px;
     left: 50%;
@@ -83,24 +74,6 @@
     font: 1em sans-serif;
     margin-top: auto;
 }
-
-
-
-/* .smallBox1 p ,
-.smallBox p {
-    text-align: center;
-    color: #faf7f7;
-    margin-top: auto;
-    padding-top: 12px;
-} */
-
-/* .box p {
-    text-align: center;
-    color: #020202;
-    font: 1em sans-serif;
-    margin-top: auto;
-    padding: 1px 20px 1px 20px;
-} */
 
 #subject{
     font-weight: bold;
@@ -135,50 +108,3 @@
   @media screen and (min-width: 720px){
     .boxPage2{transition: all 4s;}
   }
-
-
-/* @media screen and (max-width: 800px){
-    .boxPage2 {
-        width: 80vw;
-        left: 10vw;
-        transition: all 4s;
-    }
-  }
-  @media screen and (min-width: 800px){
-    .boxPage2{transition: all 4s;}
-  }
-
-
-  @media screen and (max-width: 600px){
-    .boxPage2 {
-        margin-top: 2vh;
-        transition: all 4s;
-    }
-    .smallBox1 {
-        width: 50%;
-        left: 25%;
-        margin-bottom: 5vh; 
-        transition: all 4s;     
-    }
-    .smallBox {
-        width: 30%;
-        left: 70%;
-        margin-top: 2vh;
-        transition: all 4s;
-    }
-  }
-  @media screen and (min-width: 600px){
-    .boxPage2{transition: all 4s;}
-    .smallBox1 {transition: all 4s;}
-    .smallBox {transition: all 4s;}
-  }
-
-  @media screen and (max-width: 450px){
-    .boxPage2 {
-        margin-top: 6vh;
-        transition: all 4s;
-    }
-  }
-  @media screen and (min-width: 450px){
-    .boxPage2{transition: all 4s;}
-  } */
