@@ -18,100 +18,101 @@
 
 .boxPage2 {
     position: absolute;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    top:130%;
+    left: 50%;
+    transform: translate3d(-50%,-30%, 0);
+
     width: 60vw;
+
+    /* width: 60vw;
     height: 80vh;
     top: 110vh;
-    left: 20vw;
+    left: 20vw; */
+
     /* background-color: aqua; */
 }
 
 .smallBox1 {
-    /* position: absolute; */
     position: relative;
-    /* width: 30vw; */
-    /* height: 5vh; */
-    width: 40%;
-    height: 7%;
-    left: 30%;
-    /* margin-left: 10vw; */
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    width: 300px;
+    height: 50px;
     background-color: rgba(8,46,108,0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
+    color: #faf7f7;
 }
 
 .smallBox {
-    /* position: absolute; */
     position: relative;
-    /* width: 10vw;
-    height: 5vh; */
-    width: 20%;
-    height: 7%;
-    left: 80%;
-    /* top: 5%; */
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    width: 200px;
+    height: 50px;
+    color: #faf7f7;
     background-color: rgba(8,46,108,0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* margin-left: 40vw; */
-    /* margin-top: 5vh; */
     border-radius: 8px;
-    margin-top: 2%;
-    margin-bottom: 0.5%;
+    /* margin-top: 2%; */
+    /* margin-bottom: 0.5%; */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    left: 50%;
+    transform: translate3d(-50%,0, 0);
 }
 
 .box {
-    /* position: absolute; */
     position: relative;
+    display: grid;
+    align-content: center;
+    justify-items: center;
     overflow: scroll;
     background-color: rgba(220, 189, 90, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* width: 50vw; */
-    /* height: 20vh; */
-    /* margin-left: 25vw; */
-    /* margin-top: 1vh; */
     border-radius: 8px;
-    padding: 20px 0 20px 0;
     width: 100%;
-    height: 30%;
-    /* top: 6%; */
+    height: 200px;
+    text-align: center;
+    color: #020202;
+    font: 1em sans-serif;
+    margin-top: auto;
 }
 
-/* .top1 {margin-top: 15vh;}
-.top2 {margin-top: 25vh;}
-.top3 {margin-top: 31vh;}
-.top4 {margin-top: 61vh;}
-.top5 {margin-top: 67vh;} */
 
-.smallBox1 p ,
+
+/* .smallBox1 p ,
 .smallBox p {
     text-align: center;
     color: #faf7f7;
     margin-top: auto;
     padding-top: 12px;
+} */
 
-    /* position: relative;
-    color: aliceblue;
-    display: grid;
-    align-content: center;
-    justify-items: center; */
-}
-
-.box p {
-    /* text-align: right; */
+/* .box p {
     text-align: center;
     color: #020202;
     font: 1em sans-serif;
     margin-top: auto;
     padding: 1px 20px 1px 20px;
-}
+} */
 
 #subject{
-    padding-top: 15px;
     font-weight: bold;
+    padding-bottom: 10px;
+    /* padding-top: 40px; */
 }
 
 #university{
     color: rgb(8,46,108);
     font: 0.95em sans-serif;
     font-weight: bold;
+    padding-bottom: 15px;
 }
 
 #prise{
@@ -121,10 +122,22 @@
 
 #project{
     font-style: italic;
+    padding: 0 50px;
     /* color: rgb(8,46,108); */
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 720px){
+    .boxPage2 {
+        width: 80vw;
+        transition: all 4s;
+    }
+  }
+  @media screen and (min-width: 720px){
+    .boxPage2{transition: all 4s;}
+  }
+
+
+/* @media screen and (max-width: 800px){
     .boxPage2 {
         width: 80vw;
         left: 10vw;
@@ -168,4 +181,4 @@
   }
   @media screen and (min-width: 450px){
     .boxPage2{transition: all 4s;}
-  }
+  } */
