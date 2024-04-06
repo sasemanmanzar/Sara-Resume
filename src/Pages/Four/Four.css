@@ -44,28 +44,40 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-top: 50px;
   padding: 5%;
-}
-
-.value {
-  width: 100px;
-  height: 30px;
-  border: 1px solid;
-  border-radius: 8px;
 }
 
 .boxs{
   /* padding: 100px; */
   /* background-color: aqua; */
   padding-bottom: 10px;
+  width: 400px;
+  color: rgb(8,46,108);
 }
 
-#DataMining{
-  background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 0.7) 20%);
+.value {
+  /* width: 100px; */
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;background: linear-gradient(to right, rgba(8,46,108,0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
+  /* transition: all 2s; */
 }
 
+#DataMining{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
+#AndroidDevelopment{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
+#FrontEnd {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 1) 10%);}
+#CSS{background: linear-gradient(to right, rgba(8,46,108,0.7) 95%, rgba(255, 255, 255, 1) 5%);}
+#JavaScript{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
+#ReactJs{background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 1) 10%);}
+#Research{background: linear-gradient(to right, rgba(8,46,108,0.7) 100%, rgba(255, 255, 255, 1) 0%);}
+#PersianLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 100%, rgba(255, 255, 255, 1) 0%);}
+#EnglishLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 70%, rgba(255, 255, 255, 1) 30%);}
+#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 50%, rgba(255, 255, 255, 1) 50%);}
 
 /* .RightSkill{
   position:relative;
