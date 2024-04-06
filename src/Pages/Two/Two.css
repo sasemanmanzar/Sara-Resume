@@ -21,9 +21,11 @@
     display: grid;
     align-content: center;
     justify-items: center;
-    top:130%;
+    /* top:130%; */
+    top: 100%;
     left: 50%;
-    transform: translate3d(-50%,-30%, 0);
+    /* transform: translate3d(-50%,-30%, 0); */
+    transform: translate3d(-50%, 70px , 0);
     width: 60vw;
     /* background-color: aqua; */
 }
@@ -33,7 +35,7 @@
     display: grid;
     align-content: center;
     justify-items: center;
-    width: 300px;
+    width: 400px;
     height: 50px;
     background-color: rgba(8,46,108,0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

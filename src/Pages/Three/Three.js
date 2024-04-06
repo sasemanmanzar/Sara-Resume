@@ -14,8 +14,45 @@ function Three(){
 
     return(
         <div id='IdThree' className='three'>
+            <div className='boxPage3'>
+            <div className='smallBoxPaper'>مقالات</div>
+            <div className='boxPaper right'>
+                <div id='title'>طراحی بستر نرم افزاری تحلیل داده کاربران در بازی ها و طبقه بندی شاخص های ضروری</div>
+                <div id="nameConf">کنفرانس تحقیقات بازی های دیجیتال، گرایش ها، فناوری ها و کاربرد ها</div>
+                {/* <div id="date">دوم و سوم آذر ماه سال ۱۳۹۶، دانشگاه علم و صنعت، تهران</div> */}
+            </div>
+            <div className='boxPaper left'>
+                <div id="title">بررسی فرآیند داده کاوی و طبقه بندی راهکارهای حل مشکلات در مرحله پیش پردازش داده ها</div>
+                <div id="nameConf"> کنفرانس بین المللی پژوهش در مهندسی، علوم و تکنولوژی</div>
+            </div>
+            <div className='boxPaper right'>
+                <div id='title'>بیان و استخراج نیازمندی های امنیتی با استفاده از بهترین روش های موجود</div>
+                <div id="nameConf"> همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+            </div>
+            <div className='boxPaper left'>
+                <div id='title'>معرفی موثرترین اصول تست نرم افزار و ارزیابی معیار هاي پوشش منطقی براي توابع عادي فصلی</div>
+                <div id="nameConf">دومین همایش ملی فناوری های نوین در مهندسی برق و کامپیوتر</div>
+            </div>
+            <div className='boxPaper right'>
+                <div id='title'>طبقه بندی راهکارهای پیش پردازش داده در داده کاوی و کشف دانش</div>
+                <div id="nameConf"> هفتمین کنفرانس ملی و اولین کنفرانس بین المللی مدیریت دانش</div>
+            </div>
+            <div className='boxPaper left'>
+                <div id='title'>اجرای موفق مهندسی نیازمندی ها با بهترین ابزارهای مطرح و مقایسه و ارزیابی آنها با معیارهای موجود</div>
+                <div id="nameConf">همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+            </div>
+            <div className='boxPaper right'>
+                <div id='title'>بررسی و بهبود فرآیند تست نرم افزار براساس آزمون جهش</div>
+                <div id="nameConf"> اولين کنفرانس ملّي الگوريتم‌هاي فراابتکاري و کاربردهاي آن در علوم و مهندسی</div>
+            </div>
+            <div className='boxPaper left'>
+                <div id='title'>مدیریت ارتباط با مشتری و پیاده سازی آن در سازمان</div>
+                <div id="nameConf"> همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+            </div>
+            </div>
+
             {/* <div className='foldedCorner'><div className='fold'></div></div> */}
-        <div className='smallBoxPaper topPaper1'><p>مقالات</p></div>
+        {/* <div className='smallBoxPaper topPaper1'><p>مقالات</p></div>
         <div className='boxPaper topPaper2'>
             <p id='title'>طراحی بستر نرم افزاری تحلیل داده کاربران در بازی ها و طبقه بندی شاخص های ضروری</p>
             <p id="name">محمد محسن آسمان منظر، سارا آسمان منظر، بهروز مینایی</p>
@@ -23,7 +60,6 @@ function Three(){
             <p id="date">دوم و سوم آذر ماه سال ۱۳۹۶، دانشگاه علم و صنعت، تهران</p>
             <p id="link"><a href="https://civilica.com/doc/696919" target="_blank">https://civilica.com/doc/696919</a></p>
             <hr/>
-            {/* <p id='title'><a href="https://civilica.com/doc/398506" target="_blank">بررسی فرآیند داده کاوی و طبقه بندی راهکارهای حل مشکلات در مرحله پیش پردازش داده ها</a></p> */}
             <p id="title">بررسی فرآیند داده کاوی و طبقه بندی راهکارهای حل مشکلات در مرحله پیش پردازش داده ها</p>
             <p id="name">سارا آسمان منظر</p>
             <p id="nameConf"> کنفرانس بین المللی پژوهش در مهندسی، علوم و تکنولوژی</p>
@@ -64,7 +100,7 @@ function Three(){
             <p id="nameConf"> همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</p>
             <p id="date">هشتم و نهم مرداد ماه سال ۱۳۹۳</p>
             <p id="link"><a href="https://civilica.com/doc/304120" target="_blank">https://civilica.com/doc/304120</a></p>
-        </div>
+        </div> */}
         </div>
     );
 }
