@@ -86,3 +86,32 @@ a:hover,
 a:active{
     color: rgb(8,46,108);
 }
+
+
+/* .foldedCorner {
+    position: absolute;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    top: 210%;
+    left: 6%;
+}
+.fold {
+    position: relative;
+    background-color: red;
+    width: 90px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+}
+
+.fold::before {
+    content: "";
+    position: absolute;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    border-color: aquamarine;
+    display: block;
+    width: 0;
+    box-shadow: #cccccc;
+} */

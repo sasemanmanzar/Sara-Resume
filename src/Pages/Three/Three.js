@@ -14,6 +14,7 @@ function Three(){
 
     return(
         <div id='IdThree' className='three'>
+            {/* <div className='foldedCorner'><div className='fold'></div></div> */}
         <div className='smallBoxPaper topPaper1'><p>مقالات</p></div>
         <div className='boxPaper topPaper2'>
             <p id='title'>طراحی بستر نرم افزاری تحلیل داده کاربران در بازی ها و طبقه بندی شاخص های ضروری</p>
