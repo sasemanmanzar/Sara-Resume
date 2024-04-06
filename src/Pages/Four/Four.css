@@ -4,99 +4,172 @@
     height: 100vh;
     background-image:url('../../Pic/darkBlue2.jpg');
     background-color: #cccccc; 
-    /* height: 892px;  */
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 
-.smallBoxSkill {
+.boxPage4{
     position: absolute;
-    width: 30vw;
-    height: 5vh;
-    margin-left: 35vw;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    top: 300%;
+    left: 50%;
+    transform: translate3d(-50%, 70px , 0);
+    width: 60vw;
+}
+
+.smallBoxSkill {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    width: 400px;
+    height: 50px;
     background-color: rgba(8,46,108,0.85);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-}
-
-.smallBoxSkill p {
-    text-align: center;
     color: #faf7f7;
-    /* font: 1.3em sans-serif; */
-    margin-top: auto;
-    padding-top: 10px;
 }
 
-.topSkill1 {margin-top: 10vh;}
+.boxSkill {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-items: left;
+  overflow: scroll;
+  background-color: rgba(220, 189, 90, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  padding: 5%;
+}
 
-.tableP4 {
-    position: absolute;
-    /* border: 1px solid; */
-    /* color: #08f437; */
-    margin-left: 10vw;
-    margin-top: 30vh;
-    width: 80vw;
-    background-color: rgba(255, 255, 255, 0.7);
+.value {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.boxs{
+  /* padding: 100px; */
+  /* background-color: aqua; */
+  padding-bottom: 10px;
+}
+
+#DataMining{
+  background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 0.7) 20%);
+}
+
+
+/* .RightSkill{
+  position:relative;
+  width: 50%;
+  background-color: rgb(255, 0, 191);
+  left: 25%;
+} */
+
+/* .LeftSkill{
+  position: relative;
+  width: 50%;
+  background-color: rgb(242, 255, 0);
+  right: 25%;
+} */
+
+/* .tableP4 {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    overflow: scroll;
+    background-color: rgba(220, 189, 90, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    top: 50px;
   }
 
-  /* tr {
+  tr {
     border: 1px solid;
-    color: #f46308;
-  } */
+    
+  }
 
-  /* th {
+  th {
     border: 1px solid;
-    color: #f40814;
-  } */
+  }
 
-  /* td {
+  td {
     border: 1px solid;
     color: #089ef4;
+    width: 400px;
+  }
+
+  #titleTP4{
+    color: #000;
+    
+  }
+  #blank-middel{
+    height: 30px;
   } */
 
-  #s1, #s01, #s001, #s0001, #s00001,
+  /* #s1, #s01, #s001, #s0001, #s00001,
   #sk1, #sk01, #sk001, #sk0001, #sk00001 {
     width: 35vw;
     height: 3vh;
     border: 1px solid;
     color: rgb(8,46,108);
-  }
+  } */
 
-  #s2, #s02, #s002, #s0002, #s00002,
+  /* #s2, #s02, #s002, #s0002, #s00002,
   #sk2, #sk02, #sk002, #sk0002, #sk00002 {
     width: 10vw;
     height: 3vh;
     border: none;
-  }
+  } */
 
-  #s3, #s03, #s003, #s0003, #s00003,
+  /* #s3, #s03, #s003, #s0003, #s00003,
   #sk3, #sk03, #sk003, #sk0003, #sk00003 {
     width: 35vw;
     height: 3vh;
     border: 1px solid;
     color: rgb(8,46,108);
-  }
+  } */
 
-  #sk1, #sk01, #sk001, #sk0001, #sk00001,
+  /* #sk1, #sk01, #sk001, #sk0001, #sk00001,
   #sk2, #sk02, #sk002, #sk0002, #sk00002,
   #sk3, #sk03, #sk003, #sk0003, #sk00003 {
     color: rgb(8,46,108);
-  }
+  } */
 
-  #s1, #s01, #s001, #s0001, #s00001,
+  /* #s1, #s01, #s001, #s0001, #s00001,
   #s2, #s02, #s002, #s0002, #s00002,
   #s3, #s03, #s003, #s0003, #s00003 {
     border: none;
     text-align: left;
     height: 3vh;
     padding-top: 12px;
-    /* color: gold; */
-  }
+  } */
 
-  #sk1 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
+  
+
+  #sk1 {background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 0.7) 20%);}
+  #sk01 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk001 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk0001 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk00001 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk3 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk03 {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 0.7) 10%);}
+  #sk003 {background: linear-gradient(to right, rgba(8,46,108,0.7) 100%, rgba(255, 255, 255, 0.7) 0%);}
+  #sk0003 {background: linear-gradient(to right, rgba(8,46,108,0.7) 70%, rgba(255, 255, 255, 0.7) 30%);}
+  #sk00003 {background: linear-gradient(to right, rgba(8,46,108,0.7) 50%, rgba(255, 255, 255, 0.7) 50%);}
+
+  /* #sk1 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 80%, rgba(255, 255, 255, 0.7) 20%);}
   #sk01 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
   #sk001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
   #sk0001 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
@@ -105,7 +178,7 @@
   #sk03 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 90%, rgba(255, 255, 255, 0.7) 10%);}
   #sk003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 100%, rgba(255, 255, 255, 0.7) 0%);}
   #sk0003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 70%, rgba(255, 255, 255, 0.7) 30%);}
-  #sk00003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 50%, rgba(255, 255, 255, 0.7) 50%);}
+  #sk00003 {background: linear-gradient(to right, rgba(220, 189, 90, 0.85) 50%, rgba(255, 255, 255, 0.7) 50%);} */
 
 
 /* .progress:after {
