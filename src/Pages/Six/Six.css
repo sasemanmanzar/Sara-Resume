@@ -11,32 +11,31 @@
     /* position: relative; */
 }
 
-/* .boxAll{
+.boxPage6{
   position: absolute;
-} */
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  top: 500%;
+  left: 50%;
+  transform: translate3d(-50%, 70px , 0);
+  width: 60vw;
+  /* background-color: cadetblue; */
+}
 
 .smallBoxCallMe {
-    position: absolute;
-    /* position: relative; */
-    width: 30vw;
-    height: 5vh;
-    /* height: 40px; */
-    margin-left: 35vw;
-    background-color: rgba(8,46,108,0.85);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: 400px;
+  height: 50px;
+  background-color: rgba(8,46,108,0.85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  color: #faf7f7;
 }
 
-.smallBoxCallMe p {
-    text-align: center;
-    color: #faf7f7;
-    /* font: 1.3em sans-serif; */
-    margin-top: auto;
-    padding-top: 10px;
-}
-
-.topCallMe1 {margin-top: 10vh;}
-.topCallMe2 {margin-top: 25vh;}
 
 .message{
   position: absolute;
@@ -74,17 +73,27 @@
 } */
 
 .tableP6 {
-    position: absolute;
-    /* position: relative; */
-    /* border: 1px solid; */
-    /* color: #08f437; */
+    /* position: absolute;
     width: 60vw;
     margin-left: 20vw;
     margin-top: 25vh;
-    /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: rgba(220, 189, 90, 0.7);
     border-radius: 8px;
-    padding: 40px 50px 40px 50px;
+    padding: 40px 50px 40px 50px; */
+
+    position: relative;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    align-content: center;
+    /* justify-items: left; */
+    overflow: scroll;
+    background-color: rgba(220, 189, 90, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 50px;
+    padding: 5%;
   }
 
   #NameP6 input , #EmailP6 input {
@@ -154,26 +163,13 @@
   }
 
 /* Mobile: */
-  @media screen and (max-width: 600px){
+  /* @media screen and (max-width: 600px){
     .tableP6 {
       width: 80vw;
       margin-left: 10vw;
       transition: all 4s;     
     }
-    /* .smallBox1 {
-        width: 50%;
-        left: 25%;
-        margin-bottom: 5vh; 
-        transition: all 4s;     
-    }
-    .smallBox { 
-        width: 30%;
-        left: 70%;
-        transition: all 4s;   
-    } */
   }
   @media screen and (min-width: 600px){
     .tableP6 {transition: all 4s;}
-    /* .smallBox1{transition: all 4s;}
-    .smallBox{transition: all 4s;} */
-  }
+  } */

@@ -100,29 +100,29 @@ function Six(){
 
     return(
         <div id='IdSix' className='six'>
-            {/* <div className='boxAll'> */}
-            <div className='smallBoxCallMe topCallMe1'><p>تماس با ما</p></div>
+          <div className='boxPage6'>
+              <div className='smallBoxCallMe'><div>تماس با ما</div></div>
 
-            <div className='message topCallMe2'><p>{stateMessage}</p></div>
+              <div className='message'><div>{stateMessage}</div></div>
 
-            <form action='' id="create-form" onSubmit={sendEmail}>
-                <table className='tableP6'>
-                    <tr>
-                        <td id="EmailP6"><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
-                        <td id="NameP6"><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
-                    </tr>
-                    <tr>
-                        <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
-                    </tr>
-                    <tr>
-                        <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
-                    </tr>
-                    <tr>
-                        <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
-                    </tr>
-                </table>
-            </form>
-
+              <form action='' id="create-form" onSubmit={sendEmail}>
+                  <table className='tableP6'>
+                      <tr>
+                          <td id="EmailP6"><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                          <td id="NameP6"><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
+                      </tr>
+                      <tr>
+                          <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
+                      </tr>
+                      <tr>
+                          <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
+                      </tr>
+                      <tr>
+                          <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
+                      </tr>
+                  </table>
+              </form>
+            </div>
             {/* <div className='bbbbb'> 
                 {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
 
@@ -130,7 +130,7 @@ function Six(){
                 {stateMessage} 
                 <br/>
             </div> */}
-            </div>
+        </div>
         // </div>
     );
 }
