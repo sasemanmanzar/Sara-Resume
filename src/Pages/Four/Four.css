@@ -18,6 +18,8 @@
     left: 50%;
     transform: translate3d(-50%, 70px , 0);
     width: 60vw;
+    /* background-color: cadetblue; */
+
 }
 
 .smallBoxSkill {
