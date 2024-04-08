@@ -36,10 +36,95 @@
   color: #faf7f7;
 }
 
+.boxForm{
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  overflow: scroll;
+  background-color: rgba(220, 189, 90, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 30px;
+  direction: rtl;
+}
 
-.message{
+.boxFormInside{
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  overflow: scroll;
+  margin: 30px;
+
+  /* background-color: aqua; */
+}
+
+.NameEmailP6{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-items: center;
+  overflow: scroll;
+  /* background-color: rgb(19, 106, 106); */
+}
+
+.NameP6 input, .EmailP6 input {
+  width: 25vw;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid rgba(8,46,108,0.85);
+  border-radius: 5px;
+}
+
+.TitleP6 input{
+  width: calc(100% - 25px);
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid rgba(8,46,108,0.85);
+  border-radius: 5px;
+}
+
+.TextP6 textarea{
+  /* width: 50vw; */
+  width: calc(100% - 25px);
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid rgba(8,46,108,0.85);
+  border-radius: 5px;
+  overflow: scroll;
+  resize: vertical;
+  height: 30vh;
+  max-height: 40vh;
+}
+
+.SubmitP6 input{
+  width: 180px;
+  padding: 10px;
+  margin: 2px;
+  background-color: rgba(8,46,108,0.7);
+  border: 1px solid rgba(8,46,108,0.85);
+  color: #faf7f7;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: calc(50% - 90px);
+}
+
+/* .EmailP6 input{
+  width: 15vw;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+} */
+
+
+
+
+/* .message{
   position: absolute;
-  /* position: relative; */
   width: 30vw;
   height: 5vh;
   margin-left: 35vw;
@@ -51,7 +136,7 @@
   font: 1em sans-serif;
   margin-top: auto;
   padding-top: 12px;
-}
+} */
 
 /* 
 .boxCallMe {
@@ -72,48 +157,33 @@
     padding: 1px 30px 1px 30px;
 } */
 
-.tableP6 {
-    /* position: absolute;
-    width: 60vw;
-    margin-left: 20vw;
-    margin-top: 25vh;
-    background-color: rgba(220, 189, 90, 0.7);
-    border-radius: 8px;
-    padding: 40px 50px 40px 50px; */
-
+/* .tableP6 {
     position: relative;
-    /* display: grid; */
-    /* grid-template-columns: auto auto; */
     align-content: center;
-    /* justify-items: left; */
     overflow: scroll;
     background-color: rgba(220, 189, 90, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
     width: 100%;
-    /* height: 100%; */
     margin-top: 50px;
     padding: 5%;
-  }
+  } */
 
-  #NameP6 input , #EmailP6 input {
+  /* #NameP6 input , #EmailP6 input {
     width: 98%;
     direction: rtl;
-    /* border-radius: 1px; */
     height: 20px;
-    /* padding: 10px; */
   }
 
   #TitleP6 input {
     width: 99%;
     direction: rtl;
     height: 20px;
-  }
+  } */
 
-  #TextP6 textarea {
+  /* #TextP6 textarea {
     width: 99%;
     direction: rtl;
-    /* height: 100px; */
     height: 30vh;
     overflow: scroll;
     resize: vertical;
@@ -121,18 +191,15 @@
   }
 
   #SubmitP6 {
-    /* background-color: aquamarine; */
     text-align: center;
-    /* height: 40px; */
   }
 
   #SubmitP6 input{
     width: 22%;
-    /* height: 40px; */
     background-color: rgba(220, 189, 90, 0.7);
     padding: 8px;
     font-weight: bold;
-  }
+  } */
   
 
   /* #NameP6  {background-color: aqua;}
@@ -149,18 +216,17 @@
 
 
 
-  .contact-form {
+  /* .contact-form {
     padding: 300px;
     direction: rtl;
-    /* background-color: aqua; */
-  }
+  } */
 
   /* test: */
-  .bbbbb{
+  /* .bbbbb{
     background-color: white;
     width: 200px;
     height: 200px;
-  }
+  } */
 
 /* Mobile: */
   /* @media screen and (max-width: 600px){

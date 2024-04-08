@@ -103,26 +103,38 @@ function Six(){
           <div className='boxPage6'>
               <div className='smallBoxCallMe'><div>تماس با ما</div></div>
 
-              <div className='message'><div>{stateMessage}</div></div>
+              {/* <div className='message'><div>{stateMessage}</div></div> */}
 
-              <form action='' id="create-form" onSubmit={sendEmail}>
-                  <table className='tableP6'>
-                      <tr>
-                          <td id="EmailP6"><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
-                          <td id="NameP6"><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
-                      </tr>
-                      <tr>
-                          <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
-                      </tr>
-                      <tr>
-                          <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
-                      </tr>
-                      <tr>
-                          <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
-                      </tr>
-                  </table>
-              </form>
-            </div>
+              <div className='boxForm'>
+                <div className='boxFormInside'>
+                  <form action='' id="create-form" onSubmit={sendEmail}>
+                    <div className='NameEmailP6'>
+                    <div className='NameP6'><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></div>
+                    <div className='EmailP6'><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></div>
+                    </div>
+                    <div className='TitleP6'><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></div>  
+                    <div className='TextP6'><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></div>
+                    <div className='SubmitP6'><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></div>  
+
+                      {/* <table className='tableP6'>
+                          <tr>
+                              <td id="EmailP6"><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
+                              <td id="NameP6"><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
+                          </tr>
+                          <tr>
+                              <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
+                          </tr>
+                          <tr>
+                              <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
+                          </tr>
+                          <tr>
+                              <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
+                          </tr>
+                      </table> */}
+                  </form>
+                </div>
+              </div>
+          </div>
             {/* <div className='bbbbb'> 
                 {InfoSendEmail.Name} <br/> {InfoSendEmail.Email} <br/> {InfoSendEmail.Title} <br/> {InfoSendEmail.Text} <br/>
 
@@ -131,7 +143,6 @@ function Six(){
                 <br/>
             </div> */}
         </div>
-        // </div>
     );
 }
 
