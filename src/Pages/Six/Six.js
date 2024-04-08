@@ -73,6 +73,8 @@ function Six(){
                 (result) => {
                 //   setStateMessage('Message sent!');
                 // پیام شما ارسال شد
+                alert('پیام شما ارسال شد');
+
                   setStateMessage('پیام شما ارسال شد');
                   setIsSubmitting(false);
                   setTimeout(() => {
@@ -81,6 +83,7 @@ function Six(){
                 },
                 (error) => {
                 //   setStateMessage('Something went wrong, please try again later');
+                alert('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setIsSubmitting(false);
                   setTimeout(() => {
@@ -103,9 +106,8 @@ function Six(){
           <div className='boxPage6'>
               <div className='smallBoxCallMe'><div>تماس با ما</div></div>
 
-              {/* <div className='message'><div>{stateMessage}</div></div> */}
-
               <div className='boxForm'>
+              {/* <div className='message'><div>{stateMessage}</div></div> */}
                 <div className='boxFormInside'>
                   <form action='' id="create-form" onSubmit={sendEmail}>
                     <div className='NameEmailP6'>
