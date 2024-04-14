@@ -42,6 +42,7 @@
     display: grid;
     align-content: center;
     justify-items: center;
+    text-align: right;
     overflow: scroll;
     background-color: rgba(220, 189, 90, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,6 +59,10 @@
     justify-items: right; */
     /* padding: 50px; */
     /* margin-top: auto; */
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
 }
 
@@ -168,6 +173,74 @@ ul {list-style-type: square;}
     /* color: rgb(8,46,108); */
     color: #faf7f7;
 }
+
+
+@media screen and (max-width: 720px){
+    .smallBoxExp {
+      width: 300px;
+      transition: all 1s;
+    }
+  }
+  @media screen and (min-width: 720px){
+    .smallBoxExp {transition: all 1s;}
+  }
+
+  @media screen and (max-height: 800px){
+    .boxExp {
+        height: 85%;
+        transition: all 1s;
+    }
+  }
+  @media screen and (min-height: 800px){
+    .boxExp {transition: all 1s;}
+  }
+
+  @media screen and (max-height: 720px){
+    .boxExp {
+        height: 70%;
+        transition: all 1s;
+    }
+    .boxPicText5{
+        padding-top: 100px;
+        transition: all 1s;
+    }
+  }
+  @media screen and (min-height: 720px){
+    .boxExp {transition: all 1s;}
+    .boxPicText5{transition: all 1s;}
+  }
+
+  @media screen and (max-height: 650px){
+    .boxExp {
+        height: 55%;
+        transition: all 1s;
+    }
+    .boxPicText5{
+        padding-top: 165px;
+        transition: all 1s;
+    }
+  }
+  @media screen and (min-height: 650px){
+    .boxExp {transition: all 1s;}
+    .boxPicText5{transition: all 1s;}
+  }
+
+  /* @media screen and (max-height: 590px){
+    .boxExp {
+        height: 55%;
+        transition: all 1s;
+    }
+    .boxPicText5{
+        padding-top: 165px;
+        transition: all 1s;
+    }
+  }
+  @media screen and (min-height: 590px){
+    .boxExp {transition: all 1s;}
+    .boxPicText5{transition: all 1s;}
+  } */
+
+  
 
 /* #LinkDownload {
     font-style: normal;
