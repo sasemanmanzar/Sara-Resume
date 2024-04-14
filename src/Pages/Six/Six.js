@@ -4,6 +4,16 @@ import emailjs from '@emailjs/browser';
 // import { useRef } from 'react';
 
 function Six(){
+
+  // function changeDisplay() {
+  //   var x = document.getElementById("boxAlert");
+  //   return x;
+  //   // if (x.style.display === "none") {
+  //   //   x.style.display = "block";
+  //   // } else {
+  //   //   x.style.display = "none";
+  //   // }
+  // }
     
         const [InfoSendEmail, SetInfo] = useState({
         Name: "نام",
@@ -56,6 +66,7 @@ function Six(){
         //   }
 
         //Send Email:
+        const [isBoxAlert, setBoxAlert] = useState(false);
         const [isSubmitting, setIsSubmitting] = useState(false);
         const [stateMessage, setStateMessage] = useState(null);
         const sendEmail = (e) => {
@@ -74,20 +85,23 @@ function Six(){
                 //   setStateMessage('Message sent!');
                 // پیام شما ارسال شد
                 // alert('پیام شما ارسال شد');
-
-                  setStateMessage('پیام شما ارسال شد');
+                  setBoxAlert(true);
+                  setStateMessage('پیام شما با موفقیت ارسال شد. متشکرم');
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);
+                    setBoxAlert(false);
                   }, 5000); // hide message after 5 seconds
                 },
                 (error) => {
                 //   setStateMessage('Something went wrong, please try again later');
                 // alert('خطایی رخ داده است. لطفا دوباره تلاش کنید');
+                  setBoxAlert(true);
                   setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);
+                    setBoxAlert(false);
                   }, 5000); // hide message after 5 seconds
                 }
               );
@@ -101,6 +115,45 @@ function Six(){
             InfoSendEmail.Text = "متن پیام";
           };
 
+
+          // const [isSubmitting, setIsSubmitting] = useState(false);
+
+          // const [saraTestDisplay, setSaraTest] = useState("none");
+          // const setSaraTest("grid");
+
+          // function myFunction() {
+          //   var x = document.getElementById("myDIV");
+          //   if (x.style.display === "none") {
+          //     x.style.display = "block";
+          //   } else {
+          //     x.style.display = "none";
+          //   }
+          // }
+
+          // const x = document.getElementById("boxAlert");
+
+          // if(isSubmitting){
+          //   document.getElementById("boxAlert").style.display = "grid";
+          // }
+          // else{
+          //   document.getElementById("boxAlert").style.display = "none";
+          // }
+
+          // setStateMessage
+
+          // var  y = "sara";
+          // if(setStateMessage == null){
+          //   y = 'null-bod';
+          //   // x.style.display = "grid";
+          // }
+          // else{
+          //   y = 'else-null';
+          //   // x.style.display = "none";
+          // }
+
+          
+
+
     return(
         <div id='IdSix' className='six'>
           <div className='boxPage6'>
@@ -108,7 +161,13 @@ function Six(){
 
               {/* <div className='boxAlert'>پیام شما با موفقیت ارسال شد. متشکرم</div> */}
               
-              <div className='boxAlert'>{stateMessage}</div>
+              {/* <div id="boxAlert" className='boxAlert'>{stateMessage}</div> */}
+              {/* <div> ggg {isSubmitting} </div> */}
+
+              <div className='boxAlert' style={{display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
+
+
+              {/* <div id="boxAlert" className='boxAlert'></div> */}
 
 
               <div className='boxForm'>

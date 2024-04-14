@@ -38,7 +38,7 @@
 
 .boxAlert{
   position: relative;
-  display: grid;
+  /* display: grid; */
   align-content: center;
   justify-items: center;
   border: 1px solid;
@@ -50,7 +50,7 @@
   height: 50px;
   margin-top: 10px;
   direction: rtl;
-  /* display: none; */
+  display: none;
 }
 
 .boxForm{
