@@ -75,6 +75,7 @@
   width: 25vw;
   padding: 10px;
   margin: 2px;
+  font: 0.8em sans-serif;
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
 }
@@ -83,6 +84,7 @@
   width: calc(100% - 25px);
   padding: 10px;
   margin: 2px;
+  font: 0.8em sans-serif;
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
 }
@@ -92,6 +94,7 @@
   width: calc(100% - 25px);
   padding: 10px;
   margin: 2px;
+  font: 0.8em sans-serif;
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
   overflow: scroll;
@@ -108,9 +111,25 @@
   border: 1px solid rgba(8,46,108,0.85);
   color: #faf7f7;
   font-weight: bold;
+  font: 0.9em sans-serif;
   border-radius: 5px;
   margin-right: calc(50% - 90px);
+  cursor: pointer;
 }
+
+.SubmitP6 input:active{
+  background-color: rgba(8,46,108, 0.9);
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+    /* color: green;
+    border-top: 2px solid #777171;
+    border-left: 2px solid #777171;
+    border-right: solid 2px #767676;
+    border-bottom: solid 2px #767676;
+    border-style: inset;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+ */
 
 /* .message{
   position: relative;
