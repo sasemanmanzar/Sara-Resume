@@ -41,6 +41,7 @@
   /* display: grid; */
   align-content: center;
   justify-items: center;
+  text-align: center;
   border: 1px solid;
   color: rgba(8,46,108,0.85);
   background-color: rgba(220, 189, 90, 0.7);
@@ -138,4 +139,20 @@
   background-color: rgba(8,46,108, 0.9);
   border: 1px solid black;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 720px){
+  .smallBoxCallMe {
+    width: 300px;
+    transition: all 1s;
+  }
+  .boxForm{
+    width: 110%; 
+    transition: all 1s;
+  }
+}
+@media screen and (min-width: 720px){
+  .smallBoxCallMe {transition: all 1s;}
+  .boxForm{transition: all 1s;}
 }
