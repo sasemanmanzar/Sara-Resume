@@ -4,17 +4,7 @@ import emailjs from '@emailjs/browser';
 // import { useRef } from 'react';
 
 function Six(){
-
-  // function changeDisplay() {
-  //   var x = document.getElementById("boxAlert");
-  //   return x;
-  //   // if (x.style.display === "none") {
-  //   //   x.style.display = "block";
-  //   // } else {
-  //   //   x.style.display = "none";
-  //   // }
-  // }
-    
+  
         const [InfoSendEmail, SetInfo] = useState({
         Name: "نام",
         Email: "ایمیل",
@@ -115,63 +105,14 @@ function Six(){
             InfoSendEmail.Text = "متن پیام";
           };
 
-
-          // const [isSubmitting, setIsSubmitting] = useState(false);
-
-          // const [saraTestDisplay, setSaraTest] = useState("none");
-          // const setSaraTest("grid");
-
-          // function myFunction() {
-          //   var x = document.getElementById("myDIV");
-          //   if (x.style.display === "none") {
-          //     x.style.display = "block";
-          //   } else {
-          //     x.style.display = "none";
-          //   }
-          // }
-
-          // const x = document.getElementById("boxAlert");
-
-          // if(isSubmitting){
-          //   document.getElementById("boxAlert").style.display = "grid";
-          // }
-          // else{
-          //   document.getElementById("boxAlert").style.display = "none";
-          // }
-
-          // setStateMessage
-
-          // var  y = "sara";
-          // if(setStateMessage == null){
-          //   y = 'null-bod';
-          //   // x.style.display = "grid";
-          // }
-          // else{
-          //   y = 'else-null';
-          //   // x.style.display = "none";
-          // }
-
-          
-
-
     return(
         <div id='IdSix' className='six'>
           <div className='boxPage6'>
               <div className='smallBoxCallMe'><div>تماس با ما</div></div>
 
-              {/* <div className='boxAlert'>پیام شما با موفقیت ارسال شد. متشکرم</div> */}
-              
-              {/* <div id="boxAlert" className='boxAlert'>{stateMessage}</div> */}
-              {/* <div> ggg {isSubmitting} </div> */}
-
               <div className='boxAlert' style={{display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
 
-
-              {/* <div id="boxAlert" className='boxAlert'></div> */}
-
-
               <div className='boxForm'>
-              {/* <div className='message'><div>{stateMessage}</div></div> */}
                 <div className='boxFormInside'>
                   <form action='' id="create-form" onSubmit={sendEmail}>
                     <div className='NameEmailP6'>
@@ -182,21 +123,6 @@ function Six(){
                     <div className='TextP6'><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></div>
                     <div className='SubmitP6'><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></div>  
 
-                      {/* <table className='tableP6'>
-                          <tr>
-                              <td id="EmailP6"><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></td>
-                              <td id="NameP6"><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></td>
-                          </tr>
-                          <tr>
-                              <td id="TitleP6" colspan="2"><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></td>
-                          </tr>
-                          <tr>
-                              <td id="TextP6" colspan="2"><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></td>
-                          </tr>
-                          <tr>
-                              <td id="SubmitP6" colspan="2"><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></td>
-                          </tr>
-                      </table> */}
                   </form>
                 </div>
               </div>
