@@ -73,7 +73,7 @@ function Six(){
                 (result) => {
                 //   setStateMessage('Message sent!');
                 // پیام شما ارسال شد
-                alert('پیام شما ارسال شد');
+                // alert('پیام شما ارسال شد');
 
                   setStateMessage('پیام شما ارسال شد');
                   setIsSubmitting(false);
@@ -83,7 +83,7 @@ function Six(){
                 },
                 (error) => {
                 //   setStateMessage('Something went wrong, please try again later');
-                alert('خطایی رخ داده است. لطفا دوباره تلاش کنید');
+                // alert('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setIsSubmitting(false);
                   setTimeout(() => {
@@ -105,6 +105,11 @@ function Six(){
         <div id='IdSix' className='six'>
           <div className='boxPage6'>
               <div className='smallBoxCallMe'><div>تماس با ما</div></div>
+
+              {/* <div className='boxAlert'>پیام شما با موفقیت ارسال شد. متشکرم</div> */}
+              
+              <div className='boxAlert'>{stateMessage}</div>
+
 
               <div className='boxForm'>
               {/* <div className='message'><div>{stateMessage}</div></div> */}
