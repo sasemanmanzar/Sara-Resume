@@ -122,6 +122,41 @@
   .textBoxs {transition: all 1s;}
 }
 
+@media screen and (max-height: 750px){
+  .boxSkill {
+    padding-top: 50%;
+    height: 30%;
+    transition: all 1s;
+    /* background-color: blue; */
+  }
+}
+@media screen and (min-height: 750px){
+  .boxSkill {transition: all 1s;}
+}
+
+@media screen and (max-height: 700px){
+  .boxSkill {
+    padding-top: 40%;
+    height: 25%;
+    transition: all 1s;
+    /* background-color: aquamarine; */
+  }
+}
+@media screen and (min-height: 700px){
+  .boxSkill {transition: all 1s;}
+}
+
+@media screen and (max-height: 650px){
+  .boxSkill {
+    padding-top: 60%;
+    height: 20%;
+    transition: all 1s;
+    /* background-color: chartreuse; */
+  }
+}
+@media screen and (min-height: 650px){
+  .boxSkill {transition: all 1s;}
+}
 
 /* .RightSkill{
   position:relative;
