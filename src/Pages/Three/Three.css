@@ -15,13 +15,13 @@
     display: grid;
     align-content: center;
     justify-items: center;
+    text-align: center;
     top: 200%;
     left: 50%;
     transform: translate3d(-50%, 70px , 0);
     width: 60vw;
     /* background-color: aqua; */
     /* background-color: cadetblue; */
-
 }
 
 .smallBoxPaper {
@@ -80,6 +80,18 @@
 #date {
     font-style: italic;
 }
+
+@media screen and (max-width: 720px){
+    .smallBoxPaper {
+      width: 300px;
+      transition: all 1s;
+    }
+  }
+  @media screen and (min-width: 720px){
+    .smallBoxPaper {transition: all 1s;}
+  }
+
+
 /* 
 .boxPaper {
     position: absolute;
