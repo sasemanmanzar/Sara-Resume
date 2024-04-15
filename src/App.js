@@ -73,12 +73,31 @@ function App() {
         <div className='circle dot6' onClick={scrollToMarginPage6} />
       </div>
 
-      <One/>
-      <Two/>
-      <Three/>
-      <Four/>
-      <Five/>
-      <Six/>
+      {/* <article className='scroller'>
+        <section><One/></section>
+        <section><Two/></section>
+        <section><Three/></section>
+        <section><Four/></section>
+        <section><Five/></section>
+        <section><Six/></section>
+      </article> */}
+
+
+      <div className='scroller'>
+        <div className='section'><One/></div>
+        <div className='section'><Two/></div>
+        <div className='section'><Three/></div>
+        <div className='section'><Four/></div>
+        <div className='section'><Five/></div>
+        <div className='section'><Six/></div>
+      </div>
+
+        {/* <One/>
+        <Two/>
+        <Three/>
+        <Four/>
+        <Five/>
+        <Six/> */}
 
     </div>
   );

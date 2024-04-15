@@ -63,6 +63,28 @@
     /* background-size: cover;  */
 }
 
+/* .scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* .scroller section {
+  scroll-snap-align: start;
+} */
+
+.section {
+  scroll-snap-align: start;
+}
+
 .circle {
   display: flex;
   width: 20px;
