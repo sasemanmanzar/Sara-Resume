@@ -8,7 +8,7 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    /* position: relative; */
+    position: relative;
 }
 
 .boxPage6{
@@ -16,7 +16,7 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  top: 500%;
+  /* top: 500%; */
   left: 50%;
   transform: translate3d(-50%, 70px , 0);
   width: 60vw;

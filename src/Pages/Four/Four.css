@@ -7,6 +7,7 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    position: relative;
 }
 
 .boxPage4{
@@ -14,7 +15,7 @@
     display: grid;
     align-content: center;
     justify-items: center;
-    top: 300%;
+    /* top: 300%; */
     left: 50%;
     transform: translate3d(-50%, 70px , 0);
     width: 60vw;
