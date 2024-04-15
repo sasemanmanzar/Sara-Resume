@@ -96,9 +96,9 @@
       transition: all 1s;
     }
   }
-  @media screen and (min-width: 720px){
+@media screen and (min-width: 720px){
     .smallBoxPaper {transition: all 1s;}
-  }
+}
 
 
   @media screen and (max-height: 860px){

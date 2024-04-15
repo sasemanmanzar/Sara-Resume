@@ -29,7 +29,6 @@
     width: 60vw;
     /* background-color: aqua; */
     /* background-color: cadetblue; */
-
 }
 
 .smallBox1 {
@@ -103,7 +102,7 @@
     /* color: rgb(8,46,108); */
 }
 
-@media screen and (max-width: 720px){
+/* @media screen and (max-width: 720px){
     .boxPage2 {
         width: 80vw;
         transition: all 1s;
@@ -111,4 +110,25 @@
   }
   @media screen and (min-width: 720px){
     .boxPage2{transition: all 1s;}
+  } */
+
+  @media screen and (max-width: 720px){
+    .smallBox1 {
+      width: 300px;
+      transition: all 1s;
+    }
+  }
+  @media screen and (min-width: 720px){
+    .smallBox1 {transition: all 1s;}
+  }
+
+  @media screen and (max-height: 700px){
+    .box{
+        height: 100px;
+        transition: all 1s;
+        /* background-color: antiquewhite; */
+    }
+  }
+  @media screen and (min-height: 700px){
+    .box {transition: all 1s;}
   }
