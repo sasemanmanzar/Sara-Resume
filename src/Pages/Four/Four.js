@@ -12,52 +12,52 @@ function Four(){
             <div className='boxSkill'>
 
                 <div className='boxs'>
-                    <div>React.Js</div>
+                    <div className='textBoxs'>React.Js</div>
                     <div id="ReactJs" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Data Mining</div>
+                    <div className='textBoxs'>Data Mining</div>
                     <div id="DataMining" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Android Development</div>
+                    <div className='textBoxs'>Android Development</div>
                     <div id="AndroidDevelopment" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Java Script</div>
+                    <div className='textBoxs'>Java Script</div>
                     <div id="JavaScript" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Front-end Development</div>
+                    <div className='textBoxs'>Front-end Development</div>
                     <div id="FrontEnd" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Cascading Style Sheets (CSS)</div>
+                    <div className='textBoxs'>Cascading Style Sheets (CSS)</div>
                     <div id="CSS" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Research</div>
+                    <div className='textBoxs'>Research</div>
                     <div id="Research" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>Persian language</div>
+                    <div className='textBoxs'>Persian language</div>
                     <div id="PersianLanguage" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>English language</div>
+                    <div className='textBoxs'>English language</div>
                     <div id="EnglishLanguage" className='value'></div>
                 </div>
 
                 <div className='boxs'>
-                    <div>German language</div>
+                    <div className='textBoxs'>German language</div>
                     <div id="GermanLanguage" className='value'></div>
                 </div>
             </div>
