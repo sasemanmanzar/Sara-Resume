@@ -104,7 +104,7 @@
       width: 70vw;
       transition: all 1s;
     }
-  }
+}
 @media screen and (min-width: 720px){
     .smallBoxPaper {transition: all 1s;}
     .boxPage3 {transition: all 1s;}
@@ -112,15 +112,23 @@
 }
 
 
-  @media screen and (max-height: 860px){
-    .allBoxPapers{
+@media screen and (max-height: 860px){
+    /* .allBoxPapers{
         grid-template-columns: auto auto;
-        /* background-color: antiquewhite; */
+        background-color: antiquewhite;
+    } */
+    .boxPaper{
+        align-content: flex-start;
+        padding: 10px 0;
+        /* width: 97%; */
+        height: 5vh;
     }
-  }
-  @media screen and (min-height: 860px){
+    /* .right { left: 0; }
+    .left  { right: 0;} */
+}
+@media screen and (min-height: 860px){
     .allBoxPapers {transition: all 1s;}
-  }
+}
 
 
 /* 
