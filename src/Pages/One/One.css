@@ -107,6 +107,16 @@
     top: -140px;
     transition: all 4s;
   }
+  .picSara {
+    /* width: 160px; */
+    width: 130px;
+    transition: all 4s;
+  }
+  .textPageOne{
+    /* padding: 10px 60px; */
+    padding: 10px 50px;
+    transition: all 4s;
+ }
   .boxCircles{
     transform:  translateX(0%) translateY(0%) rotate(-90deg);
     /* margin: 150px 123px; */
@@ -134,46 +144,45 @@
 @media screen and (min-width: 720px){
   .boxAll{transition: all 4s;}
   .boxPicText{transition: all 4s;}
+  .picSara {transition: all 4s;}
+  .textPageOne{transition: all 4s;}
   .boxCircles{transition: all 4s;}
   .circlePageOne{transition: all 4s;}
 }
 
 
+@media screen and (max-height: 700px){
+  .boxPicText{
+    /* background-color: crimson; */
+    top: -120px;
+    transition: all 4s;
+  }
+}
+@media screen and (min-height: 700px){
+  .boxPicText {transition: all 1s;}
+}
+
 
 
 @media screen and (max-width: 450px){
-
     .picSara {
       width: 100px;
       transition: all 4s;
-    }
-    
+    }   
     .textPageOne{
       font-size: small;
       padding: 10px 40px;
       transition: all 4s;
     }
-
-    .boxCircles{
-      /* margin: 150px 123px; */
-      margin: 150px 0;
-      transition: all 4s;
-    }
-
     .circlePageOne {
-      /* width: 300px;
-      height: 50px;
-      margin: 0 -123px; */
-
-      width: 200px;
-      margin: 0 -73px;
+      width: 300px;
+      margin: 0 -123px;
       transition: all 4s;
     }
 }
 @media screen and (min-width: 450px){
   .picSara{transition: all 4s;}
   .textPageOne{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
   .circlePageOne {transition: all 4s;}
 }
 
