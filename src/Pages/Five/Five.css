@@ -218,6 +218,17 @@ ul {list-style-type: square;}
     .boxExp {transition: all 1s;}
   }
 
+
+  @media screen and (max-width: 450px){
+    .smallBoxExp {
+      width: 250px;
+      transition: all 1s;
+    }
+  }
+  @media screen and (min-width: 450px){
+    .smallBoxExp {transition: all 1s;}
+  }
+
   /* @media screen and (max-height: 720px){
     .boxExp {
         height: 70%;

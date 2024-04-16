@@ -158,3 +158,13 @@
   .smallBoxCallMe {transition: all 1s;}
   .boxPage6{transition: all 1s;}
 }
+
+@media screen and (max-width: 450px){
+  .smallBoxCallMe {
+    width: 250px;
+    transition: all 1s;
+  }
+}
+@media screen and (min-width: 450px){
+  .smallBoxCallMe {transition: all 1s;}
+}

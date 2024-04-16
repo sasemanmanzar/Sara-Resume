@@ -183,6 +183,28 @@
   .boxSkill {transition: all 1s;}
 }
 
+@media screen and (max-width: 450px){
+  .smallBoxSkill {
+    width: 250px;
+    transition: all 1s;
+  }
+  .boxSkill{
+    padding: 2vh 0;
+    transition: all 1s;
+  }
+  .textBoxs{
+    width: 60vw;
+    padding-left: 12% ;
+    transition: all 1s;
+    /* background-color: rgb(30, 157, 112); */
+  }
+}
+@media screen and (min-width: 450px){
+  .smallBoxSkill {transition: all 1s;}
+  .boxSkill {transition: all 1s;}
+  .textBoxs {transition: all 1s;}
+}
+
 /* .RightSkill{
   position:relative;
   width: 50%;
