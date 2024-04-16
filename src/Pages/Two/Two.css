@@ -145,7 +145,7 @@
   @media screen and (max-height: 700px){
     .box{
       height: 100px;
-      padding: 15px;
+      padding: 15px 0;
       align-content: flex-start;
       transition: all 1s;
       /* background-color: #cccccc; */
