@@ -144,14 +144,9 @@
 
   @media screen and (max-height: 700px){
     .box{
-      /* display: flex;
-      flex-direction:column;
-      justify-content: center;
-      align-content: center;
-      justify-items: center;
-      align-items: center; */
       height: 100px;
-      /* overflow: auto; */
+      padding: 15px;
+      align-content: flex-start;
       transition: all 1s;
       /* background-color: #cccccc; */
     }
