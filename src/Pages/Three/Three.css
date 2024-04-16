@@ -159,6 +159,21 @@
     .boxPaper {transition: all 1s;}
 }
 
+@media screen and (max-width: 450px){
+    .smallBoxPaper {
+      width: 250px;
+      transition: all 1s;
+    }
+    /* .box{
+      align-content: flex-start;
+      transition: all 1s;
+    } */
+  }
+  @media screen and (min-width: 450px){
+    .smallBoxPaper {transition: all 1s;}
+    /* .box {transition: all 1s;} */
+  }
+
 
 /* 
 .boxPaper {
