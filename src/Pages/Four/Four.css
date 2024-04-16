@@ -127,11 +127,12 @@
 @media screen and (max-width: 900px){
   .boxSkill {
     grid-template-columns: auto;
-    height: 70vh;
+    height: 60vh;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     transition: all 1s;
+    /* background-color: green; */
   }
   .textBoxs{
     width: 50vw;
@@ -144,10 +145,12 @@
   .textBoxs {transition: all 1s;}
 }
 
+
 @media screen and (max-height: 750px){
   .boxSkill {
-    padding-top: 50%;
-    height: 30%;
+    /* padding-top: 50%; */
+    /* height: 30%; */
+    height: 60vh ;
     transition: all 1s;
     /* background-color: blue; */
   }
@@ -158,8 +161,8 @@
 
 @media screen and (max-height: 700px){
   .boxSkill {
-    padding-top: 40%;
-    height: 25%;
+    /* padding-top: 40%; */
+    /* height: 25%; */
     transition: all 1s;
     /* background-color: aquamarine; */
   }
@@ -170,8 +173,8 @@
 
 @media screen and (max-height: 650px){
   .boxSkill {
-    padding-top: 60%;
-    height: 20%;
+    /* padding-top: 60%; */
+    /* height: 20%; */
     transition: all 1s;
     /* background-color: chartreuse; */
   }
