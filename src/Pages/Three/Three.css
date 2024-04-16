@@ -91,17 +91,35 @@
     font-style: italic;
 }
 
-@media screen and (max-width: 720px){
-    .smallBoxPaper {
-      width: 300px;
-      transition: all 1s;
-    }
+@media screen and (max-width: 1145px){
     .boxPage3 {
       width: 70vw;
       transition: all 1s;
     }
     .allBoxPapers {
       width: 70vw;
+      transition: all 1s;
+    }
+}
+@media screen and (min-width: 1145px){
+    .boxPage3 {transition: all 1s;}
+    .allBoxPapers {transition: all 1s;}
+}
+
+@media screen and (max-width: 720px){
+    .smallBoxPaper {
+      width: 300px;
+      transition: all 1s;
+    }
+    .boxPage3 {
+      /* width: 70vw; */
+      width: 80vw;
+      transition: all 1s;
+      /* background-color: hotpink; */
+    }
+    .allBoxPapers {
+      /* width: 70vw; */
+      width: 80vw;
       transition: all 1s;
     }
 }
@@ -112,22 +130,33 @@
 }
 
 
-@media screen and (max-height: 860px){
+@media screen and (max-height: 834px){
     /* .allBoxPapers{
         grid-template-columns: auto auto;
         background-color: antiquewhite;
     } */
     .boxPaper{
         align-content: flex-start;
-        padding: 10px 0;
-        /* width: 97%; */
-        height: 5vh;
+        height: 9vh;
+        transition: all 1s;
     }
     /* .right { left: 0; }
     .left  { right: 0;} */
 }
-@media screen and (min-height: 860px){
-    .allBoxPapers {transition: all 1s;}
+@media screen and (min-height: 834px){
+    .boxPaper {transition: all 1s;}
+}
+
+@media screen and (max-height: 700px){
+    .boxPaper{
+        align-content: flex-start;
+        height: 8vh;
+        font-size: small;
+        transition: all 1s;
+    }
+}
+@media screen and (min-height: 700px){
+    .boxPaper {transition: all 1s;}
 }
 
 
