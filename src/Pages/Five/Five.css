@@ -183,10 +183,17 @@ ul {list-style-type: square;}
       width: 300px;
       transition: all 1s;
     }
+    .boxPage5 {
+      width: 70vw;
+      transition: all 1s;
+    }
   }
   @media screen and (min-width: 720px){
     .smallBoxExp {transition: all 1s;}
+    .boxPage5 {transition: all 1s;}
   }
+
+
 
   @media screen and (max-height: 800px){
     .boxExp {

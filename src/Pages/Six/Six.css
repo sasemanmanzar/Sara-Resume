@@ -147,12 +147,12 @@
     width: 300px;
     transition: all 1s;
   }
-  .boxForm{
-    width: 110%; 
+  .boxPage6{
+    width: 70vw; 
     transition: all 1s;
   }
 }
 @media screen and (min-width: 720px){
   .smallBoxCallMe {transition: all 1s;}
-  .boxForm{transition: all 1s;}
+  .boxPage6{transition: all 1s;}
 }

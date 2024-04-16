@@ -113,9 +113,14 @@
     width: 300px;
     transition: all 1s;
   }
+  .boxPage4{
+    width: 70vw;
+    transition: all 1s;
+  }
 }
 @media screen and (min-width: 720px){
   .smallBoxSkill {transition: all 1s;}
+  .boxPage4 {transition: all 1s;}
 }
 
 @media screen and (max-width: 900px){

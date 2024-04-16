@@ -132,9 +132,14 @@
       width: 300px;
       transition: all 1s;
     }
+    .boxPage2 {
+      width: 70vw;
+      transition: all 1s;
+    }
   }
   @media screen and (min-width: 720px){
     .smallBox1 {transition: all 1s;}
+    .boxPage2 {transition: all 1s;}
   }
 
   @media screen and (max-height: 700px){
