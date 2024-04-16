@@ -55,6 +55,7 @@
     overflow: scroll;
     margin-top: 30px;
     /* background-color: antiquewhite; */
+    width: 60vw;
 }
 
 .boxPaper{
