@@ -49,7 +49,8 @@
   margin-top: 30px;
   /* padding-top: 20px;
   padding-bottom: 20px; */
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding: 6vh 0;
 }
 
 .boxs{
@@ -57,7 +58,8 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  padding-bottom: 2.5vh;
   color: rgb(8,46,108);
   /* background-color: aqua; */
 }
@@ -82,7 +84,7 @@
   background: linear-gradient(to right, rgba(8,46,108,0.7) 0%, rgba(255, 255, 255, 0.7) 100%);
 }
 
-#DataMining{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
+/* #DataMining{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
 #AndroidDevelopment{background: linear-gradient(to right, rgba(8,46,108,0.7) 80%, rgba(255, 255, 255, 1) 20%);}
 #FrontEnd {background: linear-gradient(to right, rgba(8,46,108,0.7) 90%, rgba(255, 255, 255, 1) 10%);}
 #CSS{background: linear-gradient(to right, rgba(8,46,108,0.7) 95%, rgba(255, 255, 255, 1) 5%);}
@@ -91,7 +93,19 @@
 #Research{background: linear-gradient(to right, rgba(8,46,108,0.7) 100%, rgba(255, 255, 255, 1) 0%);}
 #PersianLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 100%, rgba(255, 255, 255, 1) 0%);}
 #EnglishLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 70%, rgba(255, 255, 255, 1) 30%);}
-#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 50%, rgba(255, 255, 255, 1) 50%);}
+#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 50%, rgba(255, 255, 255, 1) 50%);} */
+
+
+#ReactJs{background: linear-gradient(to right, rgba(8,46,108,0.6) 90%, rgba(255, 255, 255, 1) 10%);}
+#DataMining{background: linear-gradient(to right, rgba(8,46,108,0.6) 80%, rgba(255, 255, 255, 1) 20%);}
+#AndroidDevelopment{background: linear-gradient(to right, rgba(8,46,108,0.6) 80%, rgba(255, 255, 255, 1) 20%);}
+#JavaScript{background: linear-gradient(to right, rgba(8,46,108,0.6) 80%, rgba(255, 255, 255, 1) 20%);}
+#FrontEnd {background: linear-gradient(to right, rgba(8,46,108,0.6) 90%, rgba(255, 255, 255, 1) 10%);}
+#CSS{background: linear-gradient(to right, rgba(8,46,108,0.6) 95%, rgba(255, 255, 255, 1) 5%);}
+#Research{background: linear-gradient(to right, rgba(8,46,108,0.6) 100%, rgba(255, 255, 255, 1) 0%);}
+#PersianLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 100%, rgba(255, 255, 255, 1) 0%);}
+#EnglishLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 70%, rgba(255, 255, 255, 1) 30%);}
+#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 50%, rgba(255, 255, 255, 1) 50%);}
 
 
 @media screen and (max-width: 720px){
