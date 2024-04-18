@@ -150,6 +150,9 @@
       transition: all 1s;
       /* background-color: #cccccc; */
     }
+    #subject{
+      padding-top: 15px;
+    }
     #project {
       display: none;
     }
@@ -170,11 +173,11 @@
       align-content: flex-start;
       transition: all 1s;
     }
+    #subject{
+      padding-top: 15px;
+    }
     #project {
       display: none;
-    }
-    .remove{
-      color: aqua;
     }
   }
   @media screen and (min-width: 450px){
