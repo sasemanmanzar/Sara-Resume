@@ -171,6 +171,10 @@
       width: 250px;
       transition: all 1s;
     }
+    .boxPaper{
+        height: 8vh;
+        transition: all 1s;
+    }
     /* .box{
       align-content: flex-start;
       transition: all 1s;
