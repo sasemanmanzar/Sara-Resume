@@ -150,6 +150,12 @@
       transition: all 1s;
       /* background-color: #cccccc; */
     }
+    #project {
+      display: none;
+    }
+    #prise{
+      display: none;
+    }
   }
   @media screen and (min-height: 700px){
     .box {transition: all 1s;}
@@ -163,6 +169,12 @@
     .box{
       align-content: flex-start;
       transition: all 1s;
+    }
+    #project {
+      display: none;
+    }
+    .remove{
+      color: aqua;
     }
   }
   @media screen and (min-width: 450px){

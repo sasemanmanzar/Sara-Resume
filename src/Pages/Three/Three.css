@@ -154,6 +154,13 @@
         font-size: small;
         transition: all 1s;
     }
+    #title{
+        padding-top: 15px;
+    }
+    #nameConf{
+        /* display: none; */
+        padding: 15px;
+    }
 }
 @media screen and (min-height: 700px){
     .boxPaper {transition: all 1s;}
@@ -168,6 +175,13 @@
       align-content: flex-start;
       transition: all 1s;
     } */
+    #title{
+        padding-top: 15px;
+    }
+    #nameConf{
+        /* display: none; */
+        padding: 15px;
+    }
   }
   @media screen and (min-width: 450px){
     .smallBoxPaper {transition: all 1s;}
