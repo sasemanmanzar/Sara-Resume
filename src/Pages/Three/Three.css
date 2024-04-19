@@ -156,10 +156,12 @@
     }
     #title{
         padding-top: 15px;
+        /* font-size: small; */
     }
     #nameConf{
         /* display: none; */
         padding: 15px;
+        /* font-size: smaller; */
     }
 }
 @media screen and (min-height: 700px){
