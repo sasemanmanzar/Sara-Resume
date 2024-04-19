@@ -6,7 +6,7 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 
 // import Test from './Pages/test';
 
@@ -25,10 +25,20 @@ function App() {
     dot6: false
   });
 
-  // const backgroundDot1 = document.getElementById('dot1');
-  // const backgroundDot2 = document.getElementById('dot2');
+  // const Dot1 = document.getElementById('dot1');
+  // const Dot2 = document.getElementById('dot2');
+  // const Dot3 = document.getElementById('dot3');
+  // const Dot4 = document.getElementById('dot4');
+  // const Dot5 = document.getElementById('dot5');
+  // const Dot6 = document.getElementById('dot6');
 
-  // const sara ='';
+  // const marginDot1 = document.getElementById('IdOne'); 
+  // const marginDot2 = document.getElementById('IdTwo'); 
+  // const marginDot3 = document.getElementById('IdThree'); 
+  // const marginDot4 = document.getElementById('IdFour'); 
+  // const marginDot5 = document.getElementById('IdFive'); 
+  // const marginDot6 = document.getElementById('IdSix'); 
+
 
   const scrollToMarginPage1 = () => {
     const marginDot1 = document.getElementById('IdOne'); 
@@ -106,6 +116,63 @@ function App() {
   //   if (marginDot1){}
   // };
 
+  // const listenScrollEvent = () => {
+  //   window.scrollY > 10
+  //     ? setHeaderColor("black")
+  //     : setHeaderColor("white")
+  // }
+// Similar to componentDidMount and componentDidUpdate:
+// useEffect(() => {
+//   window.addEventListener("scroll", listenScrollEvent)
+// })
+
+  // const listenScrollEvent = () => {
+  //   if (window.scrollY >= 0 && window.scrollY <= 100) {
+  //     alert("1");
+  //     // Dot1.backgroundColor = 'red';
+  //   }
+  //   else if (window.scrollY >= 101 && window.scrollY <= 200) {
+  //     alert("2");
+  //     // Dot2.backgroundColor = 'red';
+  //   }
+  //   else if (window.scrollY >= 201 && window.scrollY <= 300) {
+  //     alert("3");
+  //     // Dot3.backgroundColor = 'red';
+  //   }
+
+  //   // if (window.scrollY > '100vh')
+  //   // if (window.scrollY > '200vh')
+  //   // if (window.scrollY > '300vh')
+  // }
+  // useEffect(() => {
+  //     window.addEventListener("scroll", listenScrollEvent)
+  //   },[])
+
+  // const scrollKard = () => {
+  //   if(marginDot1){
+  //   setActiveDot(() => {
+  //     return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+  //   });
+  // }
+  // if(marginDot2){
+  //   setActiveDot(() => {
+  //     return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
+  //   });
+  // }
+  // if(marginDot3){
+  //   setActiveDot(() => {
+  //     return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
+  //   });
+  // }
+  // }
+  
+//  useEffect(() => {
+//   const marginDot6 = document.getElementById('IdSix'); 
+
+//       if(marginDot6){alert('man p6 hastam');}
+// })
+
+
   return (
     <div>
       <div>    
@@ -136,6 +203,8 @@ function App() {
             6: {backgroundDot.dot6} <br/>
       </div> */}
       {/* <div>{sara}</div> */}
+
+      {/* <div style={{position:"sticky", color:'red'}}>{window.scrollIntoView}</div> */}
 
       <div className='scroller'>
         <div className='section'><One/></div>
