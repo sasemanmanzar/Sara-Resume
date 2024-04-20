@@ -25,6 +25,154 @@ function App() {
     dot6: false
   });
 
+  const Dot1 = document.getElementById('dot1');
+  const Dot2 = document.getElementById('dot2');
+  const Dot3 = document.getElementById('dot3');
+  const Dot4 = document.getElementById('dot4');
+  const Dot5 = document.getElementById('dot5');
+  const Dot6 = document.getElementById('dot6');
+
+  const marginDot1 = document.getElementById('IdOne'); 
+  const marginDot2 = document.getElementById('IdTwo'); 
+  const marginDot3 = document.getElementById('IdThree'); 
+  const marginDot4 = document.getElementById('IdFour'); 
+  const marginDot5 = document.getElementById('IdFive'); 
+  const marginDot6 = document.getElementById('IdSix'); 
+
+  // const changeBackground = () => {
+  //   console.log(window.scrollY)
+  //   if (window.scrollY >= 66) {
+  //     setNavbar(true)
+  //   } else {
+  //     setNavbar(false)
+  //   }
+  // }
+
+  // const [offset, setOffset] = useState(0);
+  // useEffect( () => {
+  //   const onScroll = () => setOffset(window.scrollY);
+  //   window.removeEventListener('scroll', onScroll);
+  //   window.addEventListener('scroll', onScroll, {passive: true});
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
+
+  // console.log("offset:");
+  // console.log(offset);
+
+    // const myFunc = () => {
+    //     console.log('in myFunc');
+    // }
+    // var objTable = document.getElementById("test");
+
+    // marginDot3.document.addEventListener("scroll", myFunc , false);
+
+    // marginDot1.ariaCurrent.addEventListener('scroll' , myFunc);
+  
+  const changeCircleBg = () => {
+
+    console.log('sara');
+    // console.log(window.onscrollend);
+    // console.log(ref.current.Dot1)
+    // alert('ll');
+    // if(marginDot6){
+    //   alert('oooo');
+    // }
+    // console.log(  window.scrollBy(marginDot5) )
+    // console.log(window.scrollTo(marginDot1))
+      // if (marginDot1) {
+      //   activeDot.dot1 = true;
+      //   // Dot1.backgroundColor = 'red';
+      //   // alert('p1');
+      // }
+      // else { 
+      //   activeDot.dot1 = false; 
+      // }
+
+      // if (marginDot2) {
+      //   activeDot.dot2 = true;
+      // }
+      // else { 
+      //   activeDot.dot2 = false; 
+      // }
+      // console.log(window.scrollY)
+      // if (window.scrollY >= 66){
+      //   activeDot.dot2 = true;
+      // }
+      // else { 
+      //   activeDot.dot2 = false; 
+      // }
+  }
+
+  // toggleVisibility = () => {
+  //   console.log('Do your thg');
+  // };
+
+  // const page3 = () => {
+  //     console.log('page1');
+  // };
+
+  useEffect(() => {
+    //  document.addEventListener('wheel', (event) => {console.log('i scrolled')});
+
+    //  document.addEventListener('wheel', changeCircleBg);
+
+    //  document.querySelector('#myDiv').addEventListener('scroll', () => {
+    //   console.log('scroll event fired!')
+    //   });
+
+
+    // window.addEventListener('scroll', changeCircleBg);
+    // return () => {
+    //   window.removeEventListener('scroll', changeCircleBg);
+    // }
+
+          // const AppWrapper = document.getElementById('app-content');
+          // AppWrapper.addEventListener('scroll', toggleVisibility);
+
+          // marginDot3.addEventListener('scroll', page3)
+  }, [])
+
+          // const AppWrapper = document.getElementById('app-content');
+          // AppWrapper.addEventListener('scroll', toggleVisibility);
+
+
+          
+  
+
+  // const scroller = document.querySelector('.scroller');
+  // const circles = document.querySelector('.circles');
+
+  // scroller.addEventListener('scroll', (event) => {
+  //   if (scroller.scrollTop >= 1000 && scroller.scrollTop < 2000) {
+  //     circles.backgroundColor = '#ffff00'
+  //   } else if (scroller.scrollTop >= 2000 && scroller.scrollTop < 3000) {
+  //     circles.backgroundColor = '#00ff00'
+  //   } else if (scroller.scrollTop >= 3000 && scroller.scrollTop < 4000) {
+  //     circles.backgroundColor = '#00ffff'
+  //   } else if (scroller.scrollTop >= 4000 && scroller.scrollTop < 5000) {
+  //     circles.backgroundColor = '#0000ff'
+  //   } else {
+  //     circles.backgroundColor = '#ff0000'
+  //   }
+  // })
+
+  // const back = document.querySelector('.back')
+
+  // back.addEventListener('scroll', (event) => {
+  //   if (back.scrollTop >= 1000 && back.scrollTop < 2000) {
+  //     back.style.backgroundColor = '#ffff00'
+  //   } else if (back.scrollTop >= 2000 && back.scrollTop < 3000) {
+  //     back.style.backgroundColor = '#00ff00'
+  //   } else if (back.scrollTop >= 3000 && back.scrollTop < 4000) {
+  //     back.style.backgroundColor = '#00ffff'
+  //   } else if (back.scrollTop >= 4000 && back.scrollTop < 5000) {
+  //     back.style.backgroundColor = '#0000ff'
+  //   } else {
+  //     back.style.backgroundColor = '#ff0000'
+
+  //   }
+  // })
+
   // const Dot1 = document.getElementById('dot1');
   // const Dot2 = document.getElementById('dot2');
   // const Dot3 = document.getElementById('dot3');
@@ -202,7 +350,7 @@ function App() {
             5: {backgroundDot.dot5} <br/>
             6: {backgroundDot.dot6} <br/>
       </div> */}
-      {/* <div>{sara}</div> */}
+      {/* <div>{scroller.scrollTop}</div> */}
 
       {/* <div style={{position:"sticky", color:'red'}}>{window.scrollIntoView}</div> */}
 
