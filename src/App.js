@@ -23,6 +23,49 @@ function App() {
     dot6: false
   });
 
+  const allFalse = () => {
+    setActiveDot(() => {
+          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+        });
+
+    // if(activeDot.dot1){
+    //   setActiveDot(() => {
+    //     return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+    //   });
+    //   // activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
+    // }
+    // else if(activeDot.dot2){
+    //   setActiveDot(() => {
+    //     return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
+    //   });
+    //   // activeDot.dot1 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
+    // }
+    // else if(activeDot.dot3){
+    //   setActiveDot(() => {
+    //     return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
+    //   });
+    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
+    // }
+    // else if(activeDot.dot4){
+    //   setActiveDot(() => {
+    //     return { dot1: false, dot2: false, dot3: false, dot4:true, dot5:false, dot6:false }
+    //   });
+    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot5 = false; activeDot.dot6 = false;
+    // }
+    // else if(activeDot.dot5){
+    //   setActiveDot(() => {
+    //     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:true, dot6:false }
+    //   });
+    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot6 = false;
+    // }
+    // else if(activeDot.dot6){
+    //   setActiveDot(() => {
+    //     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:true }
+    //   });
+    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false;
+    // }
+  }
+
   // const Dot1 = document.getElementById('dot1');
   // const Dot2 = document.getElementById('dot2');
   // const Dot3 = document.getElementById('dot3');
@@ -58,10 +101,11 @@ function App() {
       if (marginDot1) {
         marginDot1.scrollIntoView();
         
+        activeDot.dot1 = true;
         // setBackgroundDot.dot1("red");
-        setActiveDot(() => {
-          return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-        });
+        // setActiveDot(() => {
+        //   return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+        // });
       }
   };
 
@@ -70,9 +114,11 @@ function App() {
       if (marginDot2) {
         marginDot2.scrollIntoView();
         
-        setActiveDot(() => {
-            return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
-          });
+        activeDot.dot2 = true;
+
+        // setActiveDot(() => {
+        //     return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
+        //   });
       }
   };
 
@@ -82,9 +128,11 @@ function App() {
       if (marginDot3) {
         marginDot3.scrollIntoView();
          
-        setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
-        });
+        activeDot.dot3 = true;
+
+        // setActiveDot(() => {
+        //   return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
+        // });
       }
   };
 
@@ -93,9 +141,11 @@ function App() {
       if (marginDot4) {
         marginDot4.scrollIntoView();
          
-        setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: false, dot4:true, dot5:false, dot6:false }
-        });
+        activeDot.dot4 = true;
+
+        // setActiveDot(() => {
+        //   return { dot1: false, dot2: false, dot3: false, dot4:true, dot5:false, dot6:false }
+        // });
       }
   };
 
@@ -104,9 +154,11 @@ function App() {
       if (marginDot5) {
         marginDot5.scrollIntoView();
          
-        setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:true, dot6:false }
-        });
+        activeDot.dot5 = true;
+
+        // setActiveDot(() => {
+        //   return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:true, dot6:false }
+        // });
       }
   };
 
@@ -114,10 +166,19 @@ function App() {
     const marginDot6 = document.getElementById('IdSix'); 
       if (marginDot6) {
         marginDot6.scrollIntoView();
-         
-        setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:true }
+        
+        
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot6:true }
         });
+        // allFalse();
+
+        // activeDot.dot6 = true;
+
+        // setActiveDot(() => {
+        //   return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:true }
+        // });
       }
   };
 
@@ -170,74 +231,88 @@ function App() {
   // }
 
   const Fdot1 = (e) => {
-      const Dot1 = document.getElementById('dot1');
-      const Dot2 = document.getElementById('dot2');
+      // const Dot1 = document.getElementById('dot1');
+      // const Dot2 = document.getElementById('dot2');
       if(e.deltaY === 1){
-        Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
-        Dot1.style.backgroundColor = "gold";
+        // Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
+        // Dot1.style.backgroundColor = "gold";
+        activeDot.dot2 = true;
       }
   }
 
   const Fdot2 = (e) => {
-    const Dot1 = document.getElementById('dot1');
-    const Dot2 = document.getElementById('dot2');
-    const Dot3 = document.getElementById('dot3');
+    // const Dot1 = document.getElementById('dot1');
+    // const Dot2 = document.getElementById('dot2');
+    // const Dot3 = document.getElementById('dot3');
     if(e.deltaY === 1){
-      Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
-      Dot2.style.backgroundColor = "gold";
+      // Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot2.style.backgroundColor = "gold";
+      activeDot.dot3 = true;
     }
     else if (e.deltaY === -1){
-      Dot1.style.backgroundColor = "rgba(8,46,108,0.85)";
-      Dot2.style.backgroundColor = "gold";
+      // Dot1.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot2.style.backgroundColor = "gold";
+      activeDot.dot1 = true;
     }
-}
-const Fdot3 = (e) => {
-  const Dot2 = document.getElementById('dot2');
-  const Dot3 = document.getElementById('dot3');
-  const Dot4 = document.getElementById('dot4');
-  if(e.deltaY === 1){
-    Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot3.style.backgroundColor = "gold";
   }
-  else if (e.deltaY === -1){
-    Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot3.style.backgroundColor = "gold";
+
+  const Fdot3 = (e) => {
+    // const Dot2 = document.getElementById('dot2');
+    // const Dot3 = document.getElementById('dot3');
+    // const Dot4 = document.getElementById('dot4');
+    if(e.deltaY === 1){
+      // Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot3.style.backgroundColor = "gold";
+      activeDot.dot4 = true;
+    }
+    else if (e.deltaY === -1){
+      // Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot3.style.backgroundColor = "gold";
+      activeDot.dot2 = true;
+    }
   }
-}
-const Fdot4 = (e) => {
-  const Dot3 = document.getElementById('dot3');
-  const Dot4 = document.getElementById('dot4');
-  const Dot5 = document.getElementById('dot5');
-  if(e.deltaY === 1){
-    Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot4.style.backgroundColor = "gold";
+
+  const Fdot4 = (e) => {
+    // const Dot3 = document.getElementById('dot3');
+    // const Dot4 = document.getElementById('dot4');
+    // const Dot5 = document.getElementById('dot5');
+    if(e.deltaY === 1){
+      // Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot4.style.backgroundColor = "gold";
+      activeDot.dot5 = true;
+    }
+    else if (e.deltaY === -1){
+      // Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot4.style.backgroundColor = "gold";
+      activeDot.dot3 = true;
+    }
   }
-  else if (e.deltaY === -1){
-    Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot4.style.backgroundColor = "gold";
+
+  const Fdot5 = (e) => {
+    // const Dot4 = document.getElementById('dot4');
+    // const Dot5 = document.getElementById('dot5');
+    // const Dot6 = document.getElementById('dot6');
+    if(e.deltaY === 1){
+      // Dot6.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot5.style.backgroundColor = "gold";
+      activeDot.dot6 = true;
+    }
+    else if (e.deltaY === -1){
+      // Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot5.style.backgroundColor = "gold";
+      activeDot.dot4 = true;
+    }
   }
-}
-const Fdot5 = (e) => {
-  const Dot4 = document.getElementById('dot4');
-  const Dot5 = document.getElementById('dot5');
-  const Dot6 = document.getElementById('dot6');
-  if(e.deltaY === 1){
-    Dot6.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot5.style.backgroundColor = "gold";
+
+  const Fdot6 = (e) => {
+    // const Dot5 = document.getElementById('dot5');
+    // const Dot6 = document.getElementById('dot6');
+    if(e.deltaY === -1){
+      // Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
+      // Dot6.style.backgroundColor = "gold";
+      activeDot.dot5 = true;
+    }
   }
-  else if (e.deltaY === -1){
-    Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot5.style.backgroundColor = "gold";
-  }
-}
-const Fdot6 = (e) => {
-  const Dot5 = document.getElementById('dot5');
-  const Dot6 = document.getElementById('dot6');
-  if(e.deltaY === -1){
-    Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
-    Dot6.style.backgroundColor = "gold";
-  }
-}
 
 
   return (
