@@ -6,7 +6,7 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
-import { useState , useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
 
@@ -138,34 +138,107 @@ function App() {
     // }
   // })
 
-  const myFunction = () => {
-      // console.log(event.deltaY);
-      // console.log(event.target.style.width);
-      // scrollToMarginPage3(event);
+  // const myFunction = () => {
+  //     // console.log(event.deltaY);
+  //     // console.log(event.target.style.width);
+  //     // scrollToMarginPage3(event);
       
-      // Dot3.style.backgroundColor = "red";
+  //     // Dot3.style.backgroundColor = "red";
       
-  };
+  // };
 
-  const Fdot4 = (event) => {
-    // alert('hi');
-    // Dot4.style.backgroundColor = "green";
+  // const Fdot4 = (event) => {
+  //   // alert('hi');
+  //   // Dot4.style.backgroundColor = "green";
+  // }
+
+  
+  
+  // const Fdot5 = (e) => {
+  //   // Dot5.style.backgroundColor = "yellow";
+  //   console.log(e);
+
+  //   console.log(e.deltaY);
+
+  //   console.log(e.type);
+
+  //   const Dot6 = document.getElementById('dot6');
+  //   if(e.deltaY == 1){
+  //     Dot6.style.backgroundColor = "yellow";
+  //   }
+
+  // }
+
+  const Fdot1 = (e) => {
+      const Dot1 = document.getElementById('dot1');
+      const Dot2 = document.getElementById('dot2');
+      if(e.deltaY === 1){
+        Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
+        Dot1.style.backgroundColor = "gold";
+      }
   }
 
-  const Fdot5 = (e) => {
-    // Dot5.style.backgroundColor = "yellow";
-    console.log(e);
-
-    console.log(e.deltaY);
-
-    console.log(e.type);
-
-    const Dot6 = document.getElementById('dot6');
-    if(e.deltaY == 1){
-      Dot6.style.backgroundColor = "yellow";
+  const Fdot2 = (e) => {
+    const Dot1 = document.getElementById('dot1');
+    const Dot2 = document.getElementById('dot2');
+    const Dot3 = document.getElementById('dot3');
+    if(e.deltaY === 1){
+      Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
+      Dot2.style.backgroundColor = "gold";
     }
-
+    else if (e.deltaY === -1){
+      Dot1.style.backgroundColor = "rgba(8,46,108,0.85)";
+      Dot2.style.backgroundColor = "gold";
+    }
+}
+const Fdot3 = (e) => {
+  const Dot2 = document.getElementById('dot2');
+  const Dot3 = document.getElementById('dot3');
+  const Dot4 = document.getElementById('dot4');
+  if(e.deltaY === 1){
+    Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot3.style.backgroundColor = "gold";
   }
+  else if (e.deltaY === -1){
+    Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot3.style.backgroundColor = "gold";
+  }
+}
+const Fdot4 = (e) => {
+  const Dot3 = document.getElementById('dot3');
+  const Dot4 = document.getElementById('dot4');
+  const Dot5 = document.getElementById('dot5');
+  if(e.deltaY === 1){
+    Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot4.style.backgroundColor = "gold";
+  }
+  else if (e.deltaY === -1){
+    Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot4.style.backgroundColor = "gold";
+  }
+}
+const Fdot5 = (e) => {
+  const Dot4 = document.getElementById('dot4');
+  const Dot5 = document.getElementById('dot5');
+  const Dot6 = document.getElementById('dot6');
+  if(e.deltaY === 1){
+    Dot6.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot5.style.backgroundColor = "gold";
+  }
+  else if (e.deltaY === -1){
+    Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot5.style.backgroundColor = "gold";
+  }
+}
+const Fdot6 = (e) => {
+  const Dot5 = document.getElementById('dot5');
+  const Dot6 = document.getElementById('dot6');
+  if(e.deltaY === -1){
+    Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
+    Dot6.style.backgroundColor = "gold";
+  }
+}
+
 
   return (
     <div>
@@ -179,12 +252,12 @@ function App() {
       </div>
 
       <div className='scroller'>
-        <div className='section'><One/></div>
-        <div className='section'><Two/></div>
-        <div className='section' onWheel={myFunction}><Three/></div>
-        <div className='section' onScrollCapture={Fdot4}><Four/></div>
+        <div className='section' onWheel = {(e) => Fdot1(e)}><One/></div>
+        <div className='section' onWheel = {(e) => Fdot2(e)}><Two/></div>
+        <div className='section' onWheel = {(e) => Fdot3(e)}><Three/></div>
+        <div className='section' onWheel = {(e) => Fdot4(e)}><Four/></div>
         <div className='section' onWheel = {(e) => Fdot5(e)}><Five/></div>
-        <div className='section'><Six/></div>
+        <div className='section' onWheel = {(e) => Fdot6(e)}><Six/></div>
       </div>
 
         {/* <One/>
