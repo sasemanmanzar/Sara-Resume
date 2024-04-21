@@ -27,43 +27,6 @@ function App() {
     setActiveDot(() => {
           return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
         });
-
-    // if(activeDot.dot1){
-    //   setActiveDot(() => {
-    //     return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-    //   });
-    //   // activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
-    // }
-    // else if(activeDot.dot2){
-    //   setActiveDot(() => {
-    //     return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
-    //   });
-    //   // activeDot.dot1 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
-    // }
-    // else if(activeDot.dot3){
-    //   setActiveDot(() => {
-    //     return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
-    //   });
-    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot4 = false; activeDot.dot5 = false; activeDot.dot6 = false;
-    // }
-    // else if(activeDot.dot4){
-    //   setActiveDot(() => {
-    //     return { dot1: false, dot2: false, dot3: false, dot4:true, dot5:false, dot6:false }
-    //   });
-    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot5 = false; activeDot.dot6 = false;
-    // }
-    // else if(activeDot.dot5){
-    //   setActiveDot(() => {
-    //     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:true, dot6:false }
-    //   });
-    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot6 = false;
-    // }
-    // else if(activeDot.dot6){
-    //   setActiveDot(() => {
-    //     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:true }
-    //   });
-    //   // activeDot.dot1 = false; activeDot.dot2 = false; activeDot.dot3 = false; activeDot.dot4 = false; activeDot.dot5 = false;
-    // }
   }
 
   // const Dot1 = document.getElementById('dot1');
@@ -101,7 +64,12 @@ function App() {
       if (marginDot1) {
         marginDot1.scrollIntoView();
         
-        activeDot.dot1 = true;
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot1:true }
+        });
+
+        // activeDot.dot1 = true;
         // setBackgroundDot.dot1("red");
         // setActiveDot(() => {
         //   return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
@@ -114,8 +82,12 @@ function App() {
       if (marginDot2) {
         marginDot2.scrollIntoView();
         
-        activeDot.dot2 = true;
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot2:true }
+        });
 
+        // activeDot.dot2 = true;
         // setActiveDot(() => {
         //     return { dot1: false, dot2: true, dot3: false, dot4:false, dot5:false, dot6:false }
         //   });
@@ -128,7 +100,12 @@ function App() {
       if (marginDot3) {
         marginDot3.scrollIntoView();
          
-        activeDot.dot3 = true;
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot3:true }
+        });
+
+        // activeDot.dot3 = true;
 
         // setActiveDot(() => {
         //   return { dot1: false, dot2: false, dot3: true, dot4:false, dot5:false, dot6:false }
@@ -141,7 +118,12 @@ function App() {
       if (marginDot4) {
         marginDot4.scrollIntoView();
          
-        activeDot.dot4 = true;
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot4:true }
+        });
+
+        // activeDot.dot4 = true;
 
         // setActiveDot(() => {
         //   return { dot1: false, dot2: false, dot3: false, dot4:true, dot5:false, dot6:false }
@@ -154,8 +136,12 @@ function App() {
       if (marginDot5) {
         marginDot5.scrollIntoView();
          
-        activeDot.dot5 = true;
+        allFalse();
+        setActiveDot((els) => {
+          return { ...els, dot5:true }
+        });
 
+        // activeDot.dot5 = true;
         // setActiveDot(() => {
         //   return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:true, dot6:false }
         // });
@@ -172,8 +158,8 @@ function App() {
         setActiveDot((els) => {
           return { ...els, dot6:true }
         });
-        // allFalse();
 
+        // allFalse();
         // activeDot.dot6 = true;
 
         // setActiveDot(() => {
