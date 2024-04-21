@@ -139,62 +139,12 @@ function App() {
       }
   };
 
-  // const sara = () => {
-  //     scrollToMarginPage3();
-  // }
-
-  // useEffect(() => {
-    // console.log(scrollToMarginPage1);
-    //  document.addEventListener('wheel', (event) => {console.log('i scrolled')});
-
-    // document.addEventListener('wheel', sara);
-
-
-    // window.addEventListener('scroll', scrollToMarginPage3);
-    // return () => {
-    //   window.removeEventListener('scroll', scrollToMarginPage3);
-    // }
-  // })
-
-  // const myFunction = () => {
-  //     // console.log(event.deltaY);
-  //     // console.log(event.target.style.width);
-  //     // scrollToMarginPage3(event);
-      
-  //     // Dot3.style.backgroundColor = "red";
-      
-  // };
-
-  // const Fdot4 = (event) => {
-  //   // alert('hi');
-  //   // Dot4.style.backgroundColor = "green";
-  // }
-
-  
-  
-  // const Fdot5 = (e) => {
-  //   // Dot5.style.backgroundColor = "yellow";
-  //   console.log(e);
-
-  //   console.log(e.deltaY);
-
-  //   console.log(e.type);
-
-  //   const Dot6 = document.getElementById('dot6');
-  //   if(e.deltaY == 1){
-  //     Dot6.style.backgroundColor = "yellow";
-  //   }
-
-  // }
-
   const Fdot1 = (e) => {
       // const Dot1 = document.getElementById('dot1');
       // const Dot2 = document.getElementById('dot2');
       if(e.deltaY === 1){
         // Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
         // Dot1.style.backgroundColor = "gold";
-        
-        // activeDot.dot2 = true;
         allFalse();
         setActiveDot((els) => {
           return { ...els, dot2:true }
@@ -203,22 +153,13 @@ function App() {
   }
 
   const Fdot2 = (e) => {
-    // const Dot1 = document.getElementById('dot1');
-    // const Dot2 = document.getElementById('dot2');
-    // const Dot3 = document.getElementById('dot3');
     if(e.deltaY === 1){
-      // Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot2.style.backgroundColor = "gold";
-      // activeDot.dot3 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot3:true }
         });
     }
     else if (e.deltaY === -1){
-      // Dot1.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot2.style.backgroundColor = "gold";
-      // activeDot.dot1 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot1:true }
@@ -227,22 +168,13 @@ function App() {
   }
 
   const Fdot3 = (e) => {
-    // const Dot2 = document.getElementById('dot2');
-    // const Dot3 = document.getElementById('dot3');
-    // const Dot4 = document.getElementById('dot4');
     if(e.deltaY === 1){
-      // Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot3.style.backgroundColor = "gold";
-      // activeDot.dot4 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot4:true }
         });
     }
     else if (e.deltaY === -1){
-      // Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot3.style.backgroundColor = "gold";
-      // activeDot.dot2 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot2:true }
@@ -251,22 +183,13 @@ function App() {
   }
 
   const Fdot4 = (e) => {
-    // const Dot3 = document.getElementById('dot3');
-    // const Dot4 = document.getElementById('dot4');
-    // const Dot5 = document.getElementById('dot5');
     if(e.deltaY === 1){
-      // Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot4.style.backgroundColor = "gold";
-      // activeDot.dot5 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot5:true }
         });
     }
     else if (e.deltaY === -1){
-      // Dot3.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot4.style.backgroundColor = "gold";
-      // activeDot.dot3 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot3:true }
@@ -275,22 +198,13 @@ function App() {
   }
 
   const Fdot5 = (e) => {
-    // const Dot4 = document.getElementById('dot4');
-    // const Dot5 = document.getElementById('dot5');
-    // const Dot6 = document.getElementById('dot6');
     if(e.deltaY === 1){
-      // Dot6.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot5.style.backgroundColor = "gold";
-      // activeDot.dot6 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot6:true }
         });
     }
     else if (e.deltaY === -1){
-      // Dot4.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot5.style.backgroundColor = "gold";
-      // activeDot.dot4 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot4:true }
@@ -299,12 +213,7 @@ function App() {
   }
 
   const Fdot6 = (e) => {
-    // const Dot5 = document.getElementById('dot5');
-    // const Dot6 = document.getElementById('dot6');
     if(e.deltaY === -1){
-      // Dot5.style.backgroundColor = "rgba(8,46,108,0.85)";
-      // Dot6.style.backgroundColor = "gold";
-      // activeDot.dot5 = true;
       allFalse();
         setActiveDot((els) => {
           return { ...els, dot5:true }
