@@ -23,12 +23,12 @@ function App() {
     dot6: false
   });
 
-  const Dot1 = document.getElementById('dot1');
-  const Dot2 = document.getElementById('dot2');
-  const Dot3 = document.getElementById('dot3');
-  const Dot4 = document.getElementById('dot4');
-  const Dot5 = document.getElementById('dot5');
-  const Dot6 = document.getElementById('dot6');
+  // const Dot1 = document.getElementById('dot1');
+  // const Dot2 = document.getElementById('dot2');
+  // const Dot3 = document.getElementById('dot3');
+  // const Dot4 = document.getElementById('dot4');
+  // const Dot5 = document.getElementById('dot5');
+  // const Dot6 = document.getElementById('dot6');
 
   // const marginDot1 = document.getElementById('IdOne'); 
   // const marginDot2 = document.getElementById('IdTwo'); 
@@ -142,9 +142,30 @@ function App() {
       // console.log(event.deltaY);
       // console.log(event.target.style.width);
       // scrollToMarginPage3(event);
-      Dot3.style.backgroundColor = "red";
+      
+      // Dot3.style.backgroundColor = "red";
       
   };
+
+  const Fdot4 = (event) => {
+    // alert('hi');
+    // Dot4.style.backgroundColor = "green";
+  }
+
+  const Fdot5 = (e) => {
+    // Dot5.style.backgroundColor = "yellow";
+    console.log(e);
+
+    console.log(e.deltaY);
+
+    console.log(e.type);
+
+    const Dot6 = document.getElementById('dot6');
+    if(e.deltaY == 1){
+      Dot6.style.backgroundColor = "yellow";
+    }
+
+  }
 
   return (
     <div>
@@ -161,8 +182,8 @@ function App() {
         <div className='section'><One/></div>
         <div className='section'><Two/></div>
         <div className='section' onWheel={myFunction}><Three/></div>
-        <div className='section'><Four/></div>
-        <div className='section'><Five/></div>
+        <div className='section' onScrollCapture={Fdot4}><Four/></div>
+        <div className='section' onWheel = {(e) => Fdot5(e)}><Five/></div>
         <div className='section'><Six/></div>
       </div>
 
