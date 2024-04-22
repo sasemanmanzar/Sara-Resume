@@ -1,10 +1,13 @@
 import './App.css';
-import One from './Pages/One/One';
+// import One from './Pages/One/One';
 import Two from './Pages/Two/Two';
 import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
+
+import './Pages/One/One.css';
+import picSara from './Pic/sara.jpg';
 
 import { useState } from 'react';
 
@@ -234,7 +237,27 @@ function App() {
       </div>
 
       <div className='scroller'>
-        <div className='section' onWheel = {(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div>
+        {/* <div className='section' onWheel = {(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div> */}
+        
+        {/* Page One: */}
+        <div className='section' onWheel = {(e) => Fdot1(e)}>
+          <div id='IdOne' className='one'>
+              <div className='boxAll'>
+                <div id="boxPicText" className='boxPicText'>
+                    <img className='picSara' src={picSara} alt="" />
+                    <div className='textPageOne'>سارا آسمان منظر</div>
+                </div>
+                <div id="Circles" className='boxCircles'>
+                    <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
+                    <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
+                    <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
+                    <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
+                    <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
+                </div>
+              </div>
+          </div>
+        </div>
+
         <div className='section' onWheel = {(e) => Fdot2(e)}><Two/></div>
         <div className='section' onWheel = {(e) => Fdot3(e)}><Three/></div>
         <div className='section' onWheel = {(e) => Fdot4(e)}><Four/></div>
