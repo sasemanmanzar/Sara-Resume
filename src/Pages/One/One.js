@@ -1,13 +1,69 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 
-function One(){
+// import {AppContext} from '../../App';
+// import {activeDot , setActiveDot} from '../../App';
+// import {setActiveDot} from '../../App';
+
+
+function One(props){
+
+      // console.log(props.activeDotApp.dot1);
+      const activeDotPgOne = [props.activeDotApp.dot1 , props.activeDotApp.dot2, props.activeDotApp.dot3, props.activeDotApp.dot4, props.activeDotApp.dot5,props.activeDotApp.dot6];
+      
+      console.log(activeDotPgOne);
+
+      // const sara = useContext(activeDot);
+
+      // const sara = (activeDot) => {
+      //   setActiveDot((els) => {
+      //     return { ...els, dot5:true }
+      //   });
+      // }
+      // const sara = [activeDot , setActiveDot] = useState({
+      //   dot1: false,
+      //   dot2: false,
+      //   dot3: false,
+      //   dot4: false,
+      //   dot5: false,
+      //   dot6: false
+      // });
+
+      // function sara(props){
+      //   // setActiveDot(() => {
+      //   //           return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+      //   //         });
+      //   const ee = props.activeDot.dot1;
+      //   console.log(ee);
+      // }
+
+
+      // const [activeDot , setActiveDot] = useState({
+      //   dot1: false,
+      //   dot2: false,
+      //   dot3: false,
+      //   dot4: false,
+      //   dot5: false,
+      //   dot6: false
+      // });
+
+      // const allFalse = () => {
+      //   setActiveDot(() => {
+      //         return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+      //       });
+      // }
 
       const scrollToMarginPage2 = () => {
         const marginDot2 = document.getElementById('IdTwo'); 
           if (marginDot2) {
             marginDot2.scrollIntoView();
+            // allFalse();
+            // setActiveDot((els) => {
+            //   return { ...els, dot2:true }
+            // });
+
+            // const Dot1 = document.getElementById('dot1');
           }
       };
 
@@ -15,6 +71,10 @@ function One(){
         const marginDot3 = document.getElementById('IdThree'); 
           if (marginDot3) {
             marginDot3.scrollIntoView();
+            // allFalse();
+            // setActiveDot((els) => {
+            //   return { ...els, dot3:true }
+            // });
           }
       };
     
@@ -22,6 +82,10 @@ function One(){
         const marginDot4 = document.getElementById('IdFour'); 
           if (marginDot4) {
             marginDot4.scrollIntoView();
+            // allFalse();
+            // setActiveDot((els) => {
+            //   return { ...els, dot4:true }
+            // });
           }
       };
     
@@ -29,6 +93,10 @@ function One(){
         const marginDot5 = document.getElementById('IdFive'); 
           if (marginDot5) {
             marginDot5.scrollIntoView();
+            // allFalse();
+            // setActiveDot((els) => {
+            //   return { ...els, dot5:true }
+            // });
           }
       };
 
@@ -36,6 +104,10 @@ function One(){
         const marginDot6 = document.getElementById('IdSix'); 
           if (marginDot6) {
             marginDot6.scrollIntoView();
+            // allFalse();
+            // setActiveDot((els) => {
+            //   return { ...els, dot6:true }
+            // });
           }
       };
 
@@ -82,6 +154,8 @@ function One(){
     return(
         <div id='IdOne' className='one'>
             {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>  */}
+
+            {/* <button onClick={sara}> sssss </button> */}
 
             <div className='boxAll'>
               <div id="boxPicText" className='boxPicText'>
