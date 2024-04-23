@@ -101,55 +101,6 @@ function App() {
     }
   }
 
-  const Fdot1 = (e) => {
-    if (e.deltaY === 1) {
-      setActiveDot(2);
-    }
-  }
-
-  const Fdot2 = (e) => {
-    if (e.deltaY === 1) {
-      setActiveDot(3);
-    }
-    else if (e.deltaY === -1) {
-      setActiveDot(1);
-    }
-  }
-
-  const Fdot3 = (e) => {
-    if (e.deltaY === 1) {
-      setActiveDot(4);
-    }
-    else if (e.deltaY === -1) {
-      setActiveDot(2);
-    }
-  }
-
-  const Fdot4 = (e) => {
-    if (e.deltaY === 1) {
-      setActiveDot(5);
-    }
-    else if (e.deltaY === -1) {
-      setActiveDot(3);
-    }
-  }
-
-  const Fdot5 = (e) => {
-    if (e.deltaY === 1) {
-      setActiveDot(6);
-    }
-    else if (e.deltaY === -1) {
-      setActiveDot(4);
-    }
-  }
-
-  const Fdot6 = (e) => {
-    if (e.deltaY === -1) {
-      setActiveDot(5);
-    }
-  }
-
-
   return (
     <div>
       <div>
