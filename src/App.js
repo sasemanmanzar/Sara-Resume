@@ -24,8 +24,6 @@ function App() {
 
 
   const scrollToMarginPage1 = () => {
-    // const marginDot1 = document.getElementById('IdOne');
-    // const marginDot1 = pageRef1.current;
     if (pageRef1.current) {
       pageRef1.current.scrollIntoView();
       setActiveDot(1);
@@ -46,8 +44,6 @@ function App() {
   };
 
   const scrollToMarginPage3 = () => {
-    // const marginDot3 = document.getElementById('IdThree');
-    // const marginDot3 = pageRef3.current;
     if (pageRef3.current) {
       pageRef3.current.scrollIntoView();
       setActiveDot(3);
@@ -55,8 +51,6 @@ function App() {
   };
 
   const scrollToMarginPage4 = () => {
-    // const marginDot4 = document.getElementById('IdFour');
-    // const marginDot4 = pageRef4.current;
     if (pageRef4.current) {
       pageRef4.current.scrollIntoView();
       setActiveDot(4);
@@ -64,8 +58,6 @@ function App() {
   };
 
   const scrollToMarginPage5 = () => {
-    // const marginDot5 = document.getElementById('IdFive');
-    // const marginDot5 = pageRef5.current;
     if (pageRef5.current) {
       pageRef5.current.scrollIntoView();
       setActiveDot(5);
@@ -73,8 +65,6 @@ function App() {
   };
 
   const scrollToMarginPage6 = () => {
-    // const marginDot6 = document.getElementById('IdSix');
-    // const marginDot6 = pageRef6.current;
     if (pageRef6.current) {
       pageRef6.current.scrollIntoView();
       setActiveDot(6);
