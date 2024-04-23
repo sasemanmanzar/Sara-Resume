@@ -7,6 +7,7 @@ import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
+import strings from './strings';
 
 function App() {
   // const [sara, setSara] = useState("mohsen");
@@ -21,6 +22,8 @@ function App() {
   const pageRef4 = useRef();
   const pageRef5 = useRef();
   const pageRef6 = useRef();
+
+  const s = strings.fa;
 
 
   const scrollToMarginPage1 = () => {
@@ -101,7 +104,7 @@ function App() {
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
         <div className='section'> {/* onWheel={(e) => Fdot1(e)}> */}
-          <One pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
+          <One s={s} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
         </div>
         <div className='section'> {/* onWheel={(e) => Fdot2(e)}> */}
           <Two pageRef={pageRef2} />

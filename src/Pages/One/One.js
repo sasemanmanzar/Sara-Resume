@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // function One({ pageRef, sara, setSara }) {
 
-function One({  pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
+function One({ s, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -58,14 +58,14 @@ function One({  pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
   };
 
 
-
   return (
     <div id='IdOne' className='one' ref={pageRef}>
       {/* <PageSize /> */}
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
-          <div className='textPageOne'>سارا آسمان منظر</div>
+          {/* <div className='textPageOne'>سارا آسمان منظر</div> */}
+          <div className='textPageOne'>{s.sara}</div>
         </div>
 
         <div id="Circles" className='boxCircles'>
