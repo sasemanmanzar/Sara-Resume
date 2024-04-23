@@ -2,10 +2,23 @@ import './One.css';
 import picSara from '../../Pic/sara.jpg';
 import React, { useState, useEffect, useRef } from 'react';
 
-function One(props) {
+// function One(props) {
+//   const { pageRef, sara, setSara } = props;
 
-  props.setSara("mohammad");
-  console.log(props.sara);
+function One({ pageRef, sara, setSara }) {
+
+  // const shalgham = { barge: "sabz", geli: "ghaveii" };
+  // console.log(shalgham.barge);
+
+  // const barge = shalgham.barge;
+  // console.log(barge);
+
+  // const { barge } = shalgham;
+  // console.log(barge);
+
+  // props.setSara("mohammad");
+  setSara("mohammad");
+  console.log(sara);
 
   const scrollToMarginPage2 = () => {
     const marginDot2 = document.getElementById('IdTwo');
@@ -45,7 +58,7 @@ function One(props) {
 
 
   return (
-    <div id='IdOne' className='one' ref={props.pageRef}>
+    <div id='IdOne' className='one' ref={pageRef}>
       <PageSize />
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
