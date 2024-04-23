@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './App.css';
 import One from './Pages/One/One';
 import Two from './Pages/Two/Two';
@@ -6,292 +8,125 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
-// import './Pages/One/One.css';
-// import picSara from './Pic/sara.jpg';
-
-import { useState } from 'react';
-
-// function allFalse2() {
-//     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-// }
-
 function App() {
-
-
-  const [activeDot , setActiveDot] = useState(1);
-
-    // const button = () => {
-    //   alert("Hi!");
-    // }
-  
-  // const [activeDot , setActiveDot] = useState(allFalse2());
-
-  // const [activeDot , setActiveDot] = useState({
-  //   dot1: false,
-  //   dot2: false,
-  //   dot3: false,
-  //   dot4: false,
-  //   dot5: false,
-  //   dot6: false
-  // });
-
-  const allFalse = () => {
-    setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-        });
-  }
-
-  // const Dot1 = document.getElementById('dot1');
-  // const Dot2 = document.getElementById('dot2');
-  // const Dot3 = document.getElementById('dot3');
-  // const Dot4 = document.getElementById('dot4');
-  // const Dot5 = document.getElementById('dot5');
-  // const Dot6 = document.getElementById('dot6');
-
-  // const marginDot1 = document.getElementById('IdOne'); 
-  // const marginDot2 = document.getElementById('IdTwo'); 
-  // const marginDot3 = document.getElementById('IdThree'); 
-  // const marginDot4 = document.getElementById('IdFour'); 
-  // const marginDot5 = document.getElementById('IdFive'); 
-  // const marginDot6 = document.getElementById('IdSix'); 
-
-
-  // const changeCircleBg2 = () => {
-  //   console.log('sara');
-  // }
-
-
-  // useEffect(() => {
-    //  document.addEventListener('wheel', (event) => {console.log('i scrolled')});
-
-    // window.addEventListener('scroll', changeCircleBg2);
-    // return () => {
-    //   window.removeEventListener('scroll', changeCircleBg2);
-    // }
-  // }, [])
-
+  const [activeDot, setActiveDot] = useState(1);
 
   const scrollToMarginPage1 = () => {
-    const marginDot1 = document.getElementById('IdOne'); 
-      if (marginDot1) {
-        marginDot1.scrollIntoView();
-        
-        // let dots = allFalse2();
-        // dots.dot1 = true;
-        // setActiveDot(dots);
-
-
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot1:true }
-        });
-
-
-        // allFalse();
-        // setActiveDot((els) => {
-        //   return { ...els, dot1:true }
-        // });
-
-        // setBackgroundDot.dot1("red");
-
-        // setActiveDot(() => {
-        //   return { dot1: true, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-        // });
-      }
+    const marginDot1 = document.getElementById('IdOne');
+    if (marginDot1) {
+      marginDot1.scrollIntoView();
+      setActiveDot(1);
+    }
   };
 
   const scrollToMarginPage2 = () => {
-    const marginDot2 = document.getElementById('IdTwo'); 
-      if (marginDot2) {
-        marginDot2.scrollIntoView();
-        
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot2:true }
-        });
-      }
+    const marginDot2 = document.getElementById('IdTwo');
+    if (marginDot2) {
+      marginDot2.scrollIntoView();
+      setActiveDot(2);
+    }
   };
 
-
   const scrollToMarginPage3 = () => {
-    const marginDot3 = document.getElementById('IdThree'); 
-      if (marginDot3) {
-        marginDot3.scrollIntoView();
-         
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot3:true }
-        });
-      }
+    const marginDot3 = document.getElementById('IdThree');
+    if (marginDot3) {
+      marginDot3.scrollIntoView();
+      setActiveDot(3);
+    }
   };
 
   const scrollToMarginPage4 = () => {
-    const marginDot4 = document.getElementById('IdFour'); 
-      if (marginDot4) {
-        marginDot4.scrollIntoView();
-         
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot4:true }
-        });
-      }
+    const marginDot4 = document.getElementById('IdFour');
+    if (marginDot4) {
+      marginDot4.scrollIntoView();
+      setActiveDot(4);
+    }
   };
 
   const scrollToMarginPage5 = () => {
-    const marginDot5 = document.getElementById('IdFive'); 
-      if (marginDot5) {
-        marginDot5.scrollIntoView();
-         
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot5:true }
-        });
-      }
+    const marginDot5 = document.getElementById('IdFive');
+    if (marginDot5) {
+      marginDot5.scrollIntoView();
+      setActiveDot(5);
+    }
   };
 
   const scrollToMarginPage6 = () => {
-    const marginDot6 = document.getElementById('IdSix'); 
-      if (marginDot6) {
-        marginDot6.scrollIntoView();
-        
-        
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot6:true }
-        });
-      }
+    const marginDot6 = document.getElementById('IdSix');
+    if (marginDot6) {
+      marginDot6.scrollIntoView();
+      setActiveDot(6);
+    }
   };
 
   const Fdot1 = (e) => {
-      // const Dot1 = document.getElementById('dot1');
-      // const Dot2 = document.getElementById('dot2');
-      if(e.deltaY === 1){
-        // Dot2.style.backgroundColor = "rgba(8,46,108,0.85)";
-        // Dot1.style.backgroundColor = "gold";
-        allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot2:true }
-        });
-      }
+    if (e.deltaY === 1) {
+      setActiveDot(2);
+    }
   }
 
   const Fdot2 = (e) => {
-    if(e.deltaY === 1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot3:true }
-        });
+    if (e.deltaY === 1) {
+      setActiveDot(3);
     }
-    else if (e.deltaY === -1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot1:true }
-        });
+    else if (e.deltaY === -1) {
+      setActiveDot(1);
     }
   }
 
   const Fdot3 = (e) => {
-    if(e.deltaY === 1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot4:true }
-        });
+    if (e.deltaY === 1) {
+      setActiveDot(4);
     }
-    else if (e.deltaY === -1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot2:true }
-        });
+    else if (e.deltaY === -1) {
+      setActiveDot(2);
     }
   }
 
   const Fdot4 = (e) => {
-    if(e.deltaY === 1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot5:true }
-        });
+    if (e.deltaY === 1) {
+      setActiveDot(5);
     }
-    else if (e.deltaY === -1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot3:true }
-        });
+    else if (e.deltaY === -1) {
+      setActiveDot(3);
     }
   }
 
   const Fdot5 = (e) => {
-    if(e.deltaY === 1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot6:true }
-        });
+    if (e.deltaY === 1) {
+      setActiveDot(6);
     }
-    else if (e.deltaY === -1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot4:true }
-        });
+    else if (e.deltaY === -1) {
+      setActiveDot(4);
     }
   }
 
   const Fdot6 = (e) => {
-    if(e.deltaY === -1){
-      allFalse();
-        setActiveDot((els) => {
-          return { ...els, dot5:true }
-        });
+    if (e.deltaY === -1) {
+      setActiveDot(5);
     }
   }
 
 
   return (
     <div>
-      <div>    
-        <div id="dot1" className='circle dot1' onClick={scrollToMarginPage1} style={{backgroundColor: activeDot.dot1? 'rgba(8,46,108,0.85)' : 'gold' }}/>
-        <div id="dot2" className='circle dot2' onClick={scrollToMarginPage2} style={{backgroundColor: activeDot.dot2? 'rgba(8,46,108,0.85)' : 'gold' }}/>
-        <div id="dot3" className='circle dot3' onClick={scrollToMarginPage3} style={{backgroundColor: activeDot.dot3? 'rgba(8,46,108,0.85)' : 'gold' }}/>
-        <div id="dot4" className='circle dot4' onClick={scrollToMarginPage4} style={{backgroundColor: activeDot.dot4? 'rgba(8,46,108,0.85)' : 'gold' }}/>
-        <div id="dot5" className='circle dot5' onClick={scrollToMarginPage5} style={{backgroundColor: activeDot.dot5? 'rgba(8,46,108,0.85)' : 'gold' }}/>
-        <div id="dot6" className='circle dot6' onClick={scrollToMarginPage6} style={{backgroundColor: activeDot.dot6? 'rgba(8,46,108,0.85)' : 'gold' }} />
+      <div>
+        <div id="dot1" className='circle dot1' onClick={scrollToMarginPage1} style={{ backgroundColor: (activeDot === 1) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
+        <div id="dot2" className='circle dot2' onClick={scrollToMarginPage2} style={{ backgroundColor: (activeDot === 2) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
+        <div id="dot3" className='circle dot3' onClick={scrollToMarginPage3} style={{ backgroundColor: (activeDot === 3) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
+        <div id="dot4" className='circle dot4' onClick={scrollToMarginPage4} style={{ backgroundColor: (activeDot === 4) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
+        <div id="dot5" className='circle dot5' onClick={scrollToMarginPage5} style={{ backgroundColor: (activeDot === 5) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
+        <div id="dot6" className='circle dot6' onClick={scrollToMarginPage6} style={{ backgroundColor: (activeDot === 6) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
       </div>
 
       <div className='scroller'>
-        <div className='section' onWheel = {(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div>
-        
-        {/* Page One: */}
-        {/* <div className='section' onWheel = {(e) => Fdot1(e)}>
-          <div id='IdOne' className='one'>
-              <div className='boxAll'>
-                <div id="boxPicText" className='boxPicText'>
-                    <img className='picSara' src={picSara} alt="" />
-                    <div className='textPageOne'>سارا آسمان منظر</div>
-                </div>
-                <div id="Circles" className='boxCircles'>
-                    <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
-                    <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
-                    <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
-                    <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
-                    <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
-                </div>
-              </div>
-          </div>
-        </div> */}
-
-        <div className='section' onWheel = {(e) => Fdot2(e)}><Two/></div>
-        <div className='section' onWheel = {(e) => Fdot3(e)}><Three/></div>
-        <div className='section' onWheel = {(e) => Fdot4(e)}><Four/></div>
-        <div className='section' onWheel = {(e) => Fdot5(e)}><Five/></div>
-        <div className='section' onWheel = {(e) => Fdot6(e)}><Six/></div>
+        <div className='section' onWheel={(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div>
+        <div className='section' onWheel={(e) => Fdot2(e)}><Two /></div>
+        <div className='section' onWheel={(e) => Fdot3(e)}><Three /></div>
+        <div className='section' onWheel={(e) => Fdot4(e)}><Four /></div>
+        <div className='section' onWheel={(e) => Fdot5(e)}><Five /></div>
+        <div className='section' onWheel={(e) => Fdot6(e)}><Six /></div>
       </div>
-
-        {/* <One/>
-        <Two/>
-        <Three/>
-        <Four/>
-        <Five/>
-        <Six/> */}
-
     </div>
   );
 }
