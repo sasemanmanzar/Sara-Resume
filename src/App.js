@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 import './App.css';
 import One, { usePageSize } from './Pages/One/One';
@@ -40,9 +40,9 @@ function App() {
     //   setActiveDot(2);
     // }
     if (pageRef2.current) {
-        pageRef2.current.scrollIntoView();
-        setActiveDot(2);
-      }
+      pageRef2.current.scrollIntoView();
+      setActiveDot(2);
+    }
   };
 
   const scrollToMarginPage3 = () => {
@@ -84,12 +84,19 @@ function App() {
   // const [width, height] = usePageSize();
   const height = usePageSize()[1];
 
-  const onScroll = () => {
+  // const onScroll = () => {
+  //   if (scrollerElementRef.current) {
+  //     const scrollTop = scrollerElementRef.current.scrollTop;
+  //     setActiveDot((Math.round((scrollTop / height)))+1);
+  //   }
+  // }
+
+  const onScroll = useCallback(() => {
     if (scrollerElementRef.current) {
       const scrollTop = scrollerElementRef.current.scrollTop;
-      setActiveDot((Math.round((scrollTop / height)))+1);
+      setActiveDot((Math.round((scrollTop / height))) + 1);
     }
-  }
+  }, [height]);
 
   return (
     <div>
@@ -104,7 +111,7 @@ function App() {
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
         <div className='section'> {/* onWheel={(e) => Fdot1(e)}> */}
-          <One pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6}  />
+          <One pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
         </div>
         <div className='section'> {/* onWheel={(e) => Fdot2(e)}> */}
           <Two pageRef={pageRef2} />
