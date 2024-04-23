@@ -13,6 +13,8 @@ function App() {
 
   const [activeDot, setActiveDot] = useState(1);
 
+  const scrollerElementRef = useRef();
+
   const pageRef1 = useRef();
   const pageRef2 = useRef();
   const pageRef3 = useRef();
@@ -79,6 +81,15 @@ function App() {
     }
   };
 
+  // console.log();
+
+  const onScroll = (e) => {
+    if (scrollerElementRef.current) {
+      const scrollTop = scrollerElementRef.current.scrollTop;
+      console.log(scrollTop);
+    }
+  }
+
   const Fdot1 = (e) => {
     if (e.deltaY === 1) {
       setActiveDot(2);
@@ -139,23 +150,23 @@ function App() {
         <div id="dot6" className='circle dot6' onClick={scrollToMarginPage6} style={{ backgroundColor: (activeDot === 6) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
       </div>
 
-      <div className='scroller'>
-        <div className='section' onWheel={(e) => Fdot1(e)}>
+      <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
+        <div className='section'> {/* onWheel={(e) => Fdot1(e)}> */}
           <One pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6}  />
         </div>
-        <div className='section' onWheel={(e) => Fdot2(e)}>
+        <div className='section'> {/* onWheel={(e) => Fdot2(e)}> */}
           <Two pageRef={pageRef2} />
         </div>
-        <div className='section' onWheel={(e) => Fdot3(e)}>
+        <div className='section'> {/* onWheel={(e) => Fdot3(e)}> */}
           <Three pageRef={pageRef3} />
         </div>
-        <div className='section' onWheel={(e) => Fdot4(e)}>
+        <div className='section'> {/* onWheel={(e) => Fdot4(e)}> */}
           <Four pageRef={pageRef4} />
         </div>
-        <div className='section' onWheel={(e) => Fdot5(e)}>
+        <div className='section'> {/* onWheel={(e) => Fdot5(e)}> */}
           <Five pageRef={pageRef5} />
         </div>
-        <div className='section' onWheel={(e) => Fdot6(e)}>
+        <div className='section'> {/* onWheel={(e) => Fdot6(e)}> */}
           <Six pageRef={pageRef6} />
         </div>
       </div>
