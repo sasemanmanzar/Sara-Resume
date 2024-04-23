@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
 import './App.css';
-import One from './Pages/One/One';
+import One, { usePageSize } from './Pages/One/One';
 import Two from './Pages/Two/Two';
 import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
@@ -83,10 +83,21 @@ function App() {
 
   // console.log();
 
+  const [width, height] = usePageSize();
+
   const onScroll = (e) => {
     if (scrollerElementRef.current) {
       const scrollTop = scrollerElementRef.current.scrollTop;
-      console.log(scrollTop);
+      // console.log((Math.round((scrollTop / height)))+1);
+
+      setActiveDot((Math.round((scrollTop / height)))+1);
+
+      // if((scrollTop / height) === 0) setActiveDot(1);
+      // if((scrollTop / height) === 1) setActiveDot(2);
+      // if((scrollTop / height) === 2) setActiveDot(3);
+      // if((scrollTop / height) === 3) setActiveDot(4);
+      // if((scrollTop / height) === 4) setActiveDot(5);
+      // if((scrollTop / height) === 5) setActiveDot(6);
     }
   }
 

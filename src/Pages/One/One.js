@@ -80,9 +80,25 @@ function One({  pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
   );
 }
 
-export function PageSize() {
+export function usePageSize() {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
+
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
+  return [width, height];
+}
+
+export function PageSize() {
+  const [width, height] = usePageSize();
 
   const previousWidthValue = useRef("");
   const previousHeightValue = useRef("");
@@ -94,16 +110,6 @@ export function PageSize() {
   useEffect(() => {
     previousHeightValue.current = height;
   }, [height]);
-
-  const updateDimensions = () => {
-    setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
 
   return (
     <div style={{ color: "red" }}>{width} <br /> {height} <br /> old= <br /> {previousWidthValue.current} <br /> {previousHeightValue.current}</div>
