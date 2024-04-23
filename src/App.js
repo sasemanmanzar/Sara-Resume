@@ -120,7 +120,7 @@ function App() {
       </div>
 
       <div className='scroller'>
-        <div className='section' onWheel={(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div>
+        <div className='section' onWheel={(e) => Fdot1(e)}><One /></div>
         <div className='section' onWheel={(e) => Fdot2(e)}><Two /></div>
         <div className='section' onWheel={(e) => Fdot3(e)}><Three /></div>
         <div className='section' onWheel={(e) => Fdot4(e)}><Four /></div>
