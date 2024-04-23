@@ -38,6 +38,30 @@ function One() {
     }
   };
 
+
+
+  return (
+    <div id='IdOne' className='one'>
+      <PageSize />
+      <div className='boxAll'>
+        <div id="boxPicText" className='boxPicText'>
+          <img className='picSara' src={picSara} alt="" />
+          <div className='textPageOne'>سارا آسمان منظر</div>
+        </div>
+
+        <div id="Circles" className='boxCircles'>
+          <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function PageSize() {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
 
@@ -63,25 +87,8 @@ function One() {
   }, []);
 
   return (
-    <div id='IdOne' className='one'>
-      {/* <div style={{color:"red"}}>{width} <br/> {height} <br/> old= <br/> {previousWidthValue.current} <br/> {previousHeightValue.current}</div>  */}
-
-      <div className='boxAll'>
-        <div id="boxPicText" className='boxPicText'>
-          <img className='picSara' src={picSara} alt="" />
-          <div className='textPageOne'>سارا آسمان منظر</div>
-        </div>
-
-        <div id="Circles" className='boxCircles'>
-          <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
-        </div>
-      </div>
-    </div>
-  );
+    <div style={{ color: "red" }}>{width} <br /> {height} <br /> old= <br /> {previousWidthValue.current} <br /> {previousHeightValue.current}</div>
+  )
 }
 
 export default One;
