@@ -1,36 +1,45 @@
 import './App.css';
-// import One from './Pages/One/One';
+import One from './Pages/One/One';
 import Two from './Pages/Two/Two';
 import Three from './Pages/Three/Three';
 import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
-import './Pages/One/One.css';
-import picSara from './Pic/sara.jpg';
+// import './Pages/One/One.css';
+// import picSara from './Pic/sara.jpg';
 
 import { useState } from 'react';
 
+// function allFalse2() {
+//     return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+// }
+
 function App() {
+
+
+  const [activeDot , setActiveDot] = useState(1);
 
     // const button = () => {
     //   alert("Hi!");
     // }
   
-  const [activeDot , setActiveDot] = useState({
-    dot1: false,
-    dot2: false,
-    dot3: false,
-    dot4: false,
-    dot5: false,
-    dot6: false
-  });
+  // const [activeDot , setActiveDot] = useState(allFalse2());
 
-  const allFalse = () => {
-    setActiveDot(() => {
-          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-        });
-  }
+  // const [activeDot , setActiveDot] = useState({
+  //   dot1: false,
+  //   dot2: false,
+  //   dot3: false,
+  //   dot4: false,
+  //   dot5: false,
+  //   dot6: false
+  // });
+
+  // const allFalse = () => {
+  //   setActiveDot(() => {
+  //         return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+  //       });
+  // }
 
   // const Dot1 = document.getElementById('dot1');
   // const Dot2 = document.getElementById('dot2');
@@ -67,10 +76,21 @@ function App() {
       if (marginDot1) {
         marginDot1.scrollIntoView();
         
+        // let dots = allFalse2();
+        // dots.dot1 = true;
+        // setActiveDot(dots);
+
+
         allFalse();
         setActiveDot((els) => {
           return { ...els, dot1:true }
         });
+
+
+        // allFalse();
+        // setActiveDot((els) => {
+        //   return { ...els, dot1:true }
+        // });
 
         // setBackgroundDot.dot1("red");
 
@@ -237,10 +257,10 @@ function App() {
       </div>
 
       <div className='scroller'>
-        {/* <div className='section' onWheel = {(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div> */}
+        <div className='section' onWheel = {(e) => Fdot1(e)}><One activeDotApp={activeDot} /></div>
         
         {/* Page One: */}
-        <div className='section' onWheel = {(e) => Fdot1(e)}>
+        {/* <div className='section' onWheel = {(e) => Fdot1(e)}>
           <div id='IdOne' className='one'>
               <div className='boxAll'>
                 <div id="boxPicText" className='boxPicText'>
@@ -256,7 +276,7 @@ function App() {
                 </div>
               </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='section' onWheel = {(e) => Fdot2(e)}><Two/></div>
         <div className='section' onWheel = {(e) => Fdot3(e)}><Three/></div>
