@@ -61,7 +61,7 @@ function One({  pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   return (
     <div id='IdOne' className='one' ref={pageRef}>
-      <PageSize />
+      {/* <PageSize /> */}
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
