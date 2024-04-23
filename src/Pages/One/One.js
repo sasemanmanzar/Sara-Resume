@@ -5,7 +5,10 @@ import React, { useState, useEffect, useRef } from 'react';
 // function One(props) {
 //   const { pageRef, sara, setSara } = props;
 
-function One({ pageRef, sara, setSara }) {
+// function One({ pageRef, sara, setSara }) {
+
+function One({ pageRef }) {
+
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -17,8 +20,8 @@ function One({ pageRef, sara, setSara }) {
   // console.log(barge);
 
   // props.setSara("mohammad");
-  setSara("mohammad");
-  console.log(sara);
+  // setSara("mohammad");
+  // console.log(sara);
 
   const scrollToMarginPage2 = () => {
     const marginDot2 = document.getElementById('IdTwo');

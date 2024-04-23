@@ -131,13 +131,23 @@ function App() {
 
       <div className='scroller'>
         <div className='section' onWheel={(e) => Fdot1(e)}>
-          <One pageRef={pageRef1} sara={sara} setSara={setSara} />
+          <One pageRef={pageRef1} />
         </div>
-        <div className='section' onWheel={(e) => Fdot2(e)}><Two pageRef={pageRef2} /></div>
-        <div className='section' onWheel={(e) => Fdot3(e)}><Three pageRef={pageRef3} /></div>
-        <div className='section' onWheel={(e) => Fdot4(e)}><Four pageRef={pageRef4} /></div>
-        <div className='section' onWheel={(e) => Fdot5(e)}><Five pageRef={pageRef5} /></div>
-        <div className='section' onWheel={(e) => Fdot6(e)}><Six pageRef={pageRef6} /></div>
+        <div className='section' onWheel={(e) => Fdot2(e)}>
+          <Two pageRef={pageRef2} />
+        </div>
+        <div className='section' onWheel={(e) => Fdot3(e)}>
+          <Three pageRef={pageRef3} />
+        </div>
+        <div className='section' onWheel={(e) => Fdot4(e)}>
+          <Four pageRef={pageRef4} />
+        </div>
+        <div className='section' onWheel={(e) => Fdot5(e)}>
+          <Five pageRef={pageRef5} />
+        </div>
+        <div className='section' onWheel={(e) => Fdot6(e)}>
+          <Six pageRef={pageRef6} />
+        </div>
       </div>
     </div>
   );
