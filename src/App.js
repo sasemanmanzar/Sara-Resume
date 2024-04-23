@@ -35,11 +35,11 @@ function App() {
   //   dot6: false
   // });
 
-  // const allFalse = () => {
-  //   setActiveDot(() => {
-  //         return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
-  //       });
-  // }
+  const allFalse = () => {
+    setActiveDot(() => {
+          return { dot1: false, dot2: false, dot3: false, dot4:false, dot5:false, dot6:false }
+        });
+  }
 
   // const Dot1 = document.getElementById('dot1');
   // const Dot2 = document.getElementById('dot2');
