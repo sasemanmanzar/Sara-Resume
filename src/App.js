@@ -103,22 +103,22 @@ function App() {
       </div>
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
-        <div className='section'> {/* onWheel={(e) => Fdot1(e)}> */}
+        <div className='section'> 
           <One s={s} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
         </div>
-        <div className='section'> {/* onWheel={(e) => Fdot2(e)}> */}
+        <div className='section'> 
           <Two pageRef={pageRef2} />
         </div>
-        <div className='section'> {/* onWheel={(e) => Fdot3(e)}> */}
+        <div className='section'> 
           <Three pageRef={pageRef3} />
         </div>
-        <div className='section'> {/* onWheel={(e) => Fdot4(e)}> */}
+        <div className='section'> 
           <Four pageRef={pageRef4} />
         </div>
-        <div className='section'> {/* onWheel={(e) => Fdot5(e)}> */}
+        <div className='section'> 
           <Five pageRef={pageRef5} />
         </div>
-        <div className='section'> {/* onWheel={(e) => Fdot6(e)}> */}
+        <div className='section'> 
           <Six pageRef={pageRef6} />
         </div>
       </div>
