@@ -3,7 +3,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 // import { useRef } from 'react';
 
-function Six(){
+function Six({ pageRef }){
   
         const [InfoSendEmail, SetInfo] = useState({
         Name: "نام",

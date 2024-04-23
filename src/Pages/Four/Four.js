@@ -2,7 +2,7 @@ import './Four.css';
 
 //مهارت ها
 
-function Four(){
+function Four({ pageRef }){
 
     return(
         <div id='IdFour' className='four'>

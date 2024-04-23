@@ -1,7 +1,7 @@
 import './Five.css';
 import iconBluePencil from '../../Pic/iconBluePencil.gif';
 
-function Five(){
+function Five({ pageRef }){
 
     return(
         <div id='IdFive' className='five'>

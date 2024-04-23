@@ -10,7 +10,7 @@ import './Three.css';
 //     return true;
 // }
 
-function Three(){
+function Three({ pageRef }){
 
     return(
         <div id='IdThree' className='three'>

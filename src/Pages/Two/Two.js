@@ -2,7 +2,7 @@ import './Two.css';
 // import React, { useState, useEffect } from 'react';
 
 
-function Two(){
+function Two({ pageRef }){
 
         // const [width, setWidth]   = useState(window.innerWidth);
         // const [height, setHeight] = useState(window.innerHeight);
