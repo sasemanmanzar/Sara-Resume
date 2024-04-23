@@ -7,8 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // function One({ pageRef, sara, setSara }) {
 
-function One({ pageRef }) {
-
+function One({  pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -24,37 +23,37 @@ function One({ pageRef }) {
   // console.log(sara);
 
   const scrollToMarginPage2 = () => {
-    const marginDot2 = document.getElementById('IdTwo');
-    if (marginDot2) {
-      marginDot2.scrollIntoView();
+    // const marginDot2 = document.getElementById('IdTwo');
+    if (pageRef2.current) {
+        pageRef2.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage3 = () => {
-    const marginDot3 = document.getElementById('IdThree');
-    if (marginDot3) {
-      marginDot3.scrollIntoView();
+    // const marginDot3 = document.getElementById('IdThree');
+    if (pageRef3.current) {
+      pageRef3.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage4 = () => {
-    const marginDot4 = document.getElementById('IdFour');
-    if (marginDot4) {
-      marginDot4.scrollIntoView();
+    // const marginDot4 = document.getElementById('IdFour');
+    if (pageRef4.current) {
+      pageRef4.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage5 = () => {
-    const marginDot5 = document.getElementById('IdFive');
-    if (marginDot5) {
-      marginDot5.scrollIntoView();
+    // const marginDot5 = document.getElementById('IdFive');
+    if (pageRef5.current) {
+      pageRef5.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage6 = () => {
-    const marginDot6 = document.getElementById('IdSix');
-    if (marginDot6) {
-      marginDot6.scrollIntoView();
+    // const marginDot6 = document.getElementById('IdSix');
+    if (pageRef6.current) {
+      pageRef6.current.scrollIntoView();
     }
   };
 

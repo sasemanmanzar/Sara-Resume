@@ -141,7 +141,7 @@ function App() {
 
       <div className='scroller'>
         <div className='section' onWheel={(e) => Fdot1(e)}>
-          <One pageRef={pageRef1} />
+          <One pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6}  />
         </div>
         <div className='section' onWheel={(e) => Fdot2(e)}>
           <Two pageRef={pageRef2} />
