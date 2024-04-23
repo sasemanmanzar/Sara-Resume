@@ -4,7 +4,7 @@ import iconBluePencil from '../../Pic/iconBluePencil.gif';
 function Five({ pageRef }){
 
     return(
-        <div id='IdFive' className='five'>
+        <div id='IdFive' className='five' ref={pageRef}>
             <div className='boxPage5'>
             <div className='smallBoxExp'><div>تجارب</div></div>
                 <div className='boxExp'>

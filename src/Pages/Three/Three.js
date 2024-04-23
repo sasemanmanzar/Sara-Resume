@@ -13,7 +13,7 @@ import './Three.css';
 function Three({ pageRef }){
 
     return(
-        <div id='IdThree' className='three'>
+        <div id='IdThree' className='three' ref={pageRef}>
             <div className='boxPage3'>
                 <div className='smallBoxPaper'>مقالات</div>
                 <div className='allBoxPapers'>

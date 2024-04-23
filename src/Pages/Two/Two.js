@@ -20,7 +20,7 @@ function Two({ pageRef }){
 
 
     return(
-        <div id='IdTwo' className='two'>
+        <div id='IdTwo' className='two' ref={pageRef}>
             {/* <div style={{color:"red"}}>{width} <br/> {height} </div> */}
             <div className='boxPage2'>
             <div className='smallBox1'><div>سوابق تحصیلی</div></div>

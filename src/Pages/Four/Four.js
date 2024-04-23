@@ -5,7 +5,7 @@ import './Four.css';
 function Four({ pageRef }){
 
     return(
-        <div id='IdFour' className='four'>
+        <div id='IdFour' className='four' ref={pageRef}>
             <div className='boxPage4'>
             <div className='smallBoxSkill'><p>مهارت ها</p></div>
 

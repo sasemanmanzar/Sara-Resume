@@ -9,7 +9,7 @@ import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
 function App() {
-  const [sara, setSara] = useState("mohsen");
+  // const [sara, setSara] = useState("mohsen");
 
   const [activeDot, setActiveDot] = useState(1);
 

@@ -106,7 +106,7 @@ function Six({ pageRef }){
           };
 
     return(
-        <div id='IdSix' className='six'>
+        <div id='IdSix' className='six' ref={pageRef}>
           <div className='boxPage6'>
               <div className='smallBoxCallMe'><div>تماس با ما</div></div>
 
