@@ -81,23 +81,13 @@ function App() {
     }
   };
 
-  // console.log();
+  // const [width, height] = usePageSize();
+  const height = usePageSize()[1];
 
-  const [width, height] = usePageSize();
-
-  const onScroll = (e) => {
+  const onScroll = () => {
     if (scrollerElementRef.current) {
       const scrollTop = scrollerElementRef.current.scrollTop;
-      // console.log((Math.round((scrollTop / height)))+1);
-
       setActiveDot((Math.round((scrollTop / height)))+1);
-
-      // if((scrollTop / height) === 0) setActiveDot(1);
-      // if((scrollTop / height) === 1) setActiveDot(2);
-      // if((scrollTop / height) === 2) setActiveDot(3);
-      // if((scrollTop / height) === 3) setActiveDot(4);
-      // if((scrollTop / height) === 4) setActiveDot(5);
-      // if((scrollTop / height) === 5) setActiveDot(6);
     }
   }
 
