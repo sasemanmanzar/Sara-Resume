@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import './App.css';
 import One from './Pages/One/One';
@@ -9,7 +9,17 @@ import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 
 function App() {
+  const [sara, setSara] = useState("mohsen");
+
   const [activeDot, setActiveDot] = useState(1);
+
+  const pageRef1 = useRef();
+  const pageRef2 = useRef();
+  const pageRef3 = useRef();
+  const pageRef4 = useRef();
+  const pageRef5 = useRef();
+  const pageRef6 = useRef();
+
 
   const scrollToMarginPage1 = () => {
     const marginDot1 = document.getElementById('IdOne');
@@ -120,12 +130,14 @@ function App() {
       </div>
 
       <div className='scroller'>
-        <div className='section' onWheel={(e) => Fdot1(e)}><One /></div>
-        <div className='section' onWheel={(e) => Fdot2(e)}><Two /></div>
-        <div className='section' onWheel={(e) => Fdot3(e)}><Three /></div>
-        <div className='section' onWheel={(e) => Fdot4(e)}><Four /></div>
-        <div className='section' onWheel={(e) => Fdot5(e)}><Five /></div>
-        <div className='section' onWheel={(e) => Fdot6(e)}><Six /></div>
+        <div className='section' onWheel={(e) => Fdot1(e)}>
+          <One pageRef={pageRef1} sara={sara} setSara={setSara} />
+        </div>
+        <div className='section' onWheel={(e) => Fdot2(e)}><Two pageRef={pageRef2} /></div>
+        <div className='section' onWheel={(e) => Fdot3(e)}><Three pageRef={pageRef3} /></div>
+        <div className='section' onWheel={(e) => Fdot4(e)}><Four pageRef={pageRef4} /></div>
+        <div className='section' onWheel={(e) => Fdot5(e)}><Five pageRef={pageRef5} /></div>
+        <div className='section' onWheel={(e) => Fdot6(e)}><Six pageRef={pageRef6} /></div>
       </div>
     </div>
   );

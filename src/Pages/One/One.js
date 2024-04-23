@@ -2,7 +2,11 @@ import './One.css';
 import picSara from '../../Pic/sara.jpg';
 import React, { useState, useEffect, useRef } from 'react';
 
-function One() {
+function One(props) {
+
+  props.setSara("mohammad");
+  console.log(props.sara);
+
   const scrollToMarginPage2 = () => {
     const marginDot2 = document.getElementById('IdTwo');
     if (marginDot2) {
@@ -41,7 +45,7 @@ function One() {
 
 
   return (
-    <div id='IdOne' className='one'>
+    <div id='IdOne' className='one' ref={props.pageRef}>
       <PageSize />
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
