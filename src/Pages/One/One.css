@@ -151,16 +151,15 @@
 }
 
 
-@media screen and (max-height: 700px){
+/* @media screen and (max-height: 700px){
   .boxPicText{
-    /* background-color: crimson; */
     top: -120px;
     transition: all 4s;
   }
 }
 @media screen and (min-height: 700px){
   .boxPicText {transition: all 1s;}
-}
+} */
 
 
 
