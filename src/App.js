@@ -10,8 +10,6 @@ import Six from './Pages/Six/Six';
 import strings from './strings';
 
 function App() {
-  // const [sara, setSara] = useState("mohsen");
-
   const [activeDot, setActiveDot] = useState(1);
 
   const scrollerElementRef = useRef();
@@ -26,14 +24,14 @@ function App() {
   const s = strings.fa;
 
 
-  const scrollToMarginPage1 = () => {
+  const scrollToMarginPage1 = useCallback(() => {
     if (pageRef1.current) {
       pageRef1.current.scrollIntoView();
       setActiveDot(1);
     }
-  };
+  }, []);
 
-  const scrollToMarginPage2 = () => {
+  const scrollToMarginPage2 = useCallback(() => {
     // const marginDot2 = document.getElementById('IdTwo');
     // const marginDot2 = pageRef2.current;
     // if (marginDot2) {
@@ -44,35 +42,35 @@ function App() {
       pageRef2.current.scrollIntoView();
       setActiveDot(2);
     }
-  };
+  }, []);
 
-  const scrollToMarginPage3 = () => {
+  const scrollToMarginPage3 = useCallback(() => {
     if (pageRef3.current) {
       pageRef3.current.scrollIntoView();
       setActiveDot(3);
     }
-  };
+  }, []);
 
-  const scrollToMarginPage4 = () => {
+  const scrollToMarginPage4 = useCallback(() => {
     if (pageRef4.current) {
       pageRef4.current.scrollIntoView();
       setActiveDot(4);
     }
-  };
+  }, []);
 
-  const scrollToMarginPage5 = () => {
+  const scrollToMarginPage5 = useCallback(() => {
     if (pageRef5.current) {
       pageRef5.current.scrollIntoView();
       setActiveDot(5);
     }
-  };
+  }, []);
 
-  const scrollToMarginPage6 = () => {
+  const scrollToMarginPage6 = useCallback(() => {
     if (pageRef6.current) {
       pageRef6.current.scrollIntoView();
       setActiveDot(6);
     }
-  };
+  }, []);
 
   // const [width, height] = usePageSize();
   const height = usePageSize()[1];
