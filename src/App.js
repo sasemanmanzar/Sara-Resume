@@ -21,7 +21,9 @@ function App() {
   const pageRef5 = useRef();
   const pageRef6 = useRef();
 
-  const s = strings.fa;
+  // const s = strings.fa;
+  const textFa = strings.fa;
+  const textEn = strings.en;
 
 
   const scrollToMarginPage1 = useCallback(() => {
@@ -102,7 +104,7 @@ function App() {
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
         <div className='section'> 
-          <One s={s} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
+          <One text={textFa} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
         </div>
         <div className='section'> 
           <Two pageRef={pageRef2} />

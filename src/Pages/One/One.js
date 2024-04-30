@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // function One({ pageRef, sara, setSara }) {
 
-function One({ s, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
+function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -21,6 +21,7 @@ function One({ s, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
   // props.setSara("mohammad");
   // setSara("mohammad");
   // console.log(sara);
+  const Text = text.main;
 
   const scrollToMarginPage2 = () => {
     // const marginDot2 = document.getElementById('IdTwo');
@@ -65,15 +66,15 @@ function One({ s, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
           {/* <div className='textPageOne'>سارا آسمان منظر</div> */}
-          <div className='textPageOne'>{s.sara}</div>
+          <div className='textPageOne'>{Text.myName}</div>
         </div>
 
         <div id="Circles" className='boxCircles'>
-          <div className='circlePageOne' onClick={scrollToMarginPage6}>تماس با ما</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage5}>تجارب</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage4}>مهارت ها</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage3}>مقالات</div>
-          <div className='circlePageOne' onClick={scrollToMarginPage2}>تحصیلات</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage6}>{Text.titleContact}</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage5}>{Text.titleExperience}</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage4}>{Text.titleSkills}</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage3}>{Text.titlePublication}</div>
+          <div className='circlePageOne' onClick={scrollToMarginPage2}>{Text.titleEducation}</div>
         </div>
       </div>
     </div>
