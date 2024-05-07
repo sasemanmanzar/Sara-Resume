@@ -2,7 +2,7 @@ import './Two.css';
 // import React, { useState, useEffect } from 'react';
 
 
-function Two({ pageRef }){
+function Two({ text, pageRef }){
 
         // const [width, setWidth]   = useState(window.innerWidth);
         // const [height, setHeight] = useState(window.innerHeight);
@@ -16,31 +16,32 @@ function Two({ pageRef }){
         //     window.addEventListener("resize", updateDimensions);
         //     return () => window.removeEventListener("resize", updateDimensions);
         // }, []);
-
+       
+        const Text = text.Education;
 
 
     return(
         <div id='IdTwo' className='two' ref={pageRef}>
             {/* <div style={{color:"red"}}>{width} <br/> {height} </div> */}
             <div className='boxPage2'>
-            <div className='smallBox1'><div>سوابق تحصیلی</div></div>
-            <div className='smallBox'><div>کارشناسی ارشد</div></div>
+            <div className='smallBox1'><div>{text.main.titleEducation}</div></div>
+            <div className='smallBox'><div>{Text.MSc.degree}</div></div>
             <div className='box'>
                 <div>
-                    <div id='subject'>مهندسی فناوری اطلاعات گرایش مدیریت سیستم های اطلاعاتی</div>
-                    <div id='university'>موسسه آموزش عالی فناوری اطلاعات تعالی، قم ۱۳۹۴</div>
+                    <div id='subject'>{Text.MSc.fieldOfStudy}</div>
+                    <div id='university'>{Text.MSc.university}</div>
                     {/* <p id='project'>پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی - مورد واکاوی: مرکز شنوایی سنجی</p>
                     <p>استاد راهنما: جناب آقای دکتر رضا احسن</p> */}
-                    <div id='project'>پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی (مورد واکاوی: مرکز شنوایی سنجی) / استاد راهنما: جناب آقای دکتر رضا احسن</div>
+                    <div id='project'>{Text.MSc.project}</div>
                 </div>
             </div>
-            <div className='smallBox'><div>کارشناسی</div></div>
+            <div className='smallBox'><div>{Text.BSc.degree}</div></div>
             <div className='box'>
                 <div>
-                    <div id='subject'>مهندسی فناوری اطلاعات</div>
-                    <div id='university'>دانشگاه صنعتی خواجه نصیر الدین طوسی، تهران ۱۳۹۱</div>
-                    <div id='prise'>رتبه اول فارغ التحصیلان دوره کارشناسی رشته مهندسی فناوری اطلاعات</div>
-                    <div id='project'>پروژه پایانی: مدارس و دانشگاه های هوشمند / استاد راهنما: جناب آقای دکتر اصغر زمانی</div>
+                    <div id='subject'>{Text.BSc.fieldOfStudy}</div>
+                    <div id='university'>{Text.BSc.university}</div>
+                    <div id='prise'>{Text.BSc.prise}</div>
+                    <div id='project'>{Text.BSc.project}</div>
                 </div>
             </div>
             </div>
