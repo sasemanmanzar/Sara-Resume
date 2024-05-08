@@ -24,6 +24,38 @@ const strings = {
             }
         },
         Publication:{
+            p1: {
+                title:" Customer Relationship Management and its Implementation of an Organization (in Persian)",
+                conference:"National e-Conference on Advances in Basic Sciences and Engineering",
+            },
+            p2: {
+                title:"Analysis and Improving the Software Testing Process based on the Mutation Test (in Persian)",
+                conference:"The First National Conference on Meta-Heuristic Algorithms and their Applications in Science and Engineering", 
+            },
+            p3: {
+                title:"Successful Implement of Requirements Engineering with the Best Available Tools then Comparing and evaluating them with Existing Criteria (in Persian)",
+                conference:"National e-Conference on Advances in Basic Sciences and Engineering",
+            },
+            p4: {
+                title:"Classification of Data Pre-Processing Solutions in Data Mining and Knowledge Discovery (in Persian)",
+                conference:"7th Iranian & 1st International Knowledge Management Conference", 
+            },
+            p5: {
+                title:"Introducing the most Effective Principles of Software Testing and evaluating the Logical Coverage Criteria for Seasonal Normal Functions (in Persian)",
+                conference:"The Second National Conference on New Technologies in Electrical and Computer Engineering",
+            },
+            p6: {
+                title:" Expression and Extraction Security Requirements are using the Best Methods(in Persian)",
+                conference:"National e-Conference on Advances in Basic Sciences and Engineering", 
+            },
+            p7: {
+                title:"Analysis Data Mining Process and Classification Solutions for Solving Problems in Data Per-Process Step (in Persian)",
+                conference:"International Conference on Research in Engineering, Science and Technology",
+            },
+            p8: {
+                title:"Designing a Platform to Analyze Games’ Users’ Data and Classification of Essential Metrics (in Persian)",
+                conference:"1st Digital Games Research Conference (DGRC)", 
+            }
         },
         Skills:{
         },
@@ -58,6 +90,38 @@ const strings = {
             }
         },
         Publication:{ 
+            p1: {
+                title:"مدیریت ارتباط با مشتری و پیاده سازی آن در سازمان",
+                conference:"همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه",
+            },
+            p2: {
+                title:"بررسی و بهبود فرآیند تست نرم افزار براساس آزمون جهش",
+                conference:"اولين کنفرانس ملّي الگوريتم‌هاي فراابتکاري و کاربردهاي آن در علوم و مهندسی", 
+            },
+            p3: {
+                title:"اجرای موفق مهندسی نیازمندی ها با بهترین ابزارهای مطرح و مقایسه و ارزیابی آنها با معیارهای موجود",
+                conference:"همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه",
+            },
+            p4: {
+                title:"طبقه بندی راهکارهای پیش پردازش داده در داده کاوی و کشف دانش",
+                conference:"هفتمین کنفرانس ملی و اولین کنفرانس بین المللی مدیریت دانش", 
+            },
+            p5: {
+                title:"معرفی موثرترین اصول تست نرم افزار و ارزیابی معیار هاي پوشش منطقی براي توابع عادي فصلی",
+                conference:"دومین همایش ملی فناوری های نوین در مهندسی برق و کامپیوتر",
+            },
+            p6: {
+                title:"بیان و استخراج نیازمندی های امنیتی با استفاده از بهترین روش های موجود",
+                conference:"همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه", 
+            },
+            p7: {
+                title:"بررسی فرآیند داده کاوی و طبقه بندی راهکارهای حل مشکلات در مرحله پیش پردازش داده ها",
+                conference:"کنفرانس بین المللی پژوهش در مهندسی، علوم و تکنولوژی",
+            },
+            p8: {
+                title:"طراحی بستر نرم افزاری تحلیل داده کاربران در بازی ها و طبقه بندی شاخص های ضروری",
+                conference:"کنفرانس تحقیقات بازی های دیجیتال، گرایش ها، فناوری ها و کاربرد ها", 
+            }
         },
         Skills:{
         },

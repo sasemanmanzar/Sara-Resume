@@ -110,7 +110,7 @@ function App() {
           <Two text={textFa} pageRef={pageRef2} />
         </div>
         <div className='section'> 
-          <Three pageRef={pageRef3} />
+          <Three text={textFa} pageRef={pageRef3} />
         </div>
         <div className='section'> 
           <Four pageRef={pageRef4} />

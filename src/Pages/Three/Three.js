@@ -10,45 +10,47 @@ import './Three.css';
 //     return true;
 // }
 
-function Three({ pageRef }){
+function Three({ text, pageRef }){
+
+    const Text = text.Publication;
 
     return(
         <div id='IdThree' className='three' ref={pageRef}>
             <div className='boxPage3'>
-                <div className='smallBoxPaper'>مقالات</div>
+                <div className='smallBoxPaper'>{text.main.titlePublication}</div>
                 <div className='allBoxPapers'>
                     <div className='boxPaper right'>
-                        <div id='title'>طراحی بستر نرم افزاری تحلیل داده کاربران در بازی ها و طبقه بندی شاخص های ضروری</div>
-                        <div id="nameConf">کنفرانس تحقیقات بازی های دیجیتال، گرایش ها، فناوری ها و کاربرد ها</div>
+                        <div id='title'>{Text.p8.title}</div>
+                        <div id="nameConf">{Text.p8.conference}</div>
                         {/* <div id="date">دوم و سوم آذر ماه سال ۱۳۹۶، دانشگاه علم و صنعت، تهران</div> */}
                     </div>
                     <div className='boxPaper left'>
-                        <div id="title">بررسی فرآیند داده کاوی و طبقه بندی راهکارهای حل مشکلات در مرحله پیش پردازش داده ها</div>
-                        <div id="nameConf"> کنفرانس بین المللی پژوهش در مهندسی، علوم و تکنولوژی</div>
+                        <div id="title">{Text.p7.title}</div>
+                        <div id="nameConf">{Text.p7.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>بیان و استخراج نیازمندی های امنیتی با استفاده از بهترین روش های موجود</div>
-                        <div id="nameConf"> همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+                        <div id='title'>{Text.p6.title}</div>
+                        <div id="nameConf">{Text.p6.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>معرفی موثرترین اصول تست نرم افزار و ارزیابی معیار هاي پوشش منطقی براي توابع عادي فصلی</div>
-                        <div id="nameConf">دومین همایش ملی فناوری های نوین در مهندسی برق و کامپیوتر</div>
+                        <div id='title'>{Text.p5.title}</div>
+                        <div id="nameConf">{Text.p5.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>طبقه بندی راهکارهای پیش پردازش داده در داده کاوی و کشف دانش</div>
-                        <div id="nameConf"> هفتمین کنفرانس ملی و اولین کنفرانس بین المللی مدیریت دانش</div>
+                        <div id='title'>{Text.p4.title}</div>
+                        <div id="nameConf">{Text.p4.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>اجرای موفق مهندسی نیازمندی ها با بهترین ابزارهای مطرح و مقایسه و ارزیابی آنها با معیارهای موجود</div>
-                        <div id="nameConf">همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+                        <div id='title'>{Text.p3.title}</div>
+                        <div id="nameConf">{Text.p3.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>بررسی و بهبود فرآیند تست نرم افزار براساس آزمون جهش</div>
-                        <div id="nameConf"> اولين کنفرانس ملّي الگوريتم‌هاي فراابتکاري و کاربردهاي آن در علوم و مهندسی</div>
+                        <div id='title'>{Text.p2.title}</div>
+                        <div id="nameConf">{Text.p2.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>مدیریت ارتباط با مشتری و پیاده سازی آن در سازمان</div>
-                        <div id="nameConf"> همایش ملی الکترونیکی دستاوردهای نوین در علوم مهندسی و پایه</div>
+                        <div id='title'>{Text.p1.title}</div>
+                        <div id="nameConf">{Text.p1.conference}</div>
                     </div>
                 </div>
             </div>
