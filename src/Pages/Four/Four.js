@@ -2,12 +2,12 @@ import './Four.css';
 
 //مهارت ها
 
-function Four({ pageRef }){
+function Four({ text, pageRef }){
 
     return(
         <div id='IdFour' className='four' ref={pageRef}>
             <div className='boxPage4'>
-            <div className='smallBoxSkill'><p>مهارت ها</p></div>
+            <div className='smallBoxSkill'><p>{text.main.titleSkills}</p></div>
 
             <div className='boxSkill'>
 
