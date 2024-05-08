@@ -1,36 +1,38 @@
 import './Five.css';
 import iconBluePencil from '../../Pic/iconBluePencil.gif';
 
-function Five({ pageRef }){
+function Five({ text, pageRef }){
+
+    const Text = text.Experience;
 
     return(
         <div id='IdFive' className='five' ref={pageRef}>
             <div className='boxPage5'>
-            <div className='smallBoxExp'><div>تجارب</div></div>
+            <div className='smallBoxExp'><div>{text.main.titleExperience}</div></div>
                 <div className='boxExp'>
                     <div className='boxPicText5'>
-                        <div className="TitelBP">برنامه نقاشی مداد آبی</div>
+                        <div className="TitelBP">{Text.bulePencil.title}</div>
                         <img className='picIconBluePencil' src={iconBluePencil} alt="" />
                     </div>
                     
-                    <div className="textBP1">برنامه نقاشی مداد آبی، زبان پروژه اندروید، منتشرشده در کافه بازار</div>
-                    <div className="textBP1 italicBP">تعداد نصب +۲۰۰۰</div>
-                    <div className="textBP2">برنامه نقاشی مخصوص کودکان که دارای ویژگی های خلاقانه و جذاب است</div>
-                    <div className="textBP2">امکانات برنامه:</div>
+                    <div className="textBP1">{Text.bulePencil.text1}</div>
+                    <div className="textBP1 italicBP">{Text.bulePencil.text2}</div>
+                    <div className="textBP2">{Text.bulePencil.text3}</div>
+                    <div className="textBP2">{Text.bulePencil.text4}</div>
                     <div className="textBP2">
                     <ul>
-                        <li><div>نقاشی</div></li>
-                        <li><div>رنگ آمیزی تصاویر</div></li>
-                        <li><div>تصاویر کارتونی متحرک</div></li>
-                        <li><div>وصل کردن نقطه چین ها</div></li>
-                        <li><div>ذخیره تصاویر</div></li>
-                        <li><div> پرداخت درون برنامه ای</div></li>
+                        <li><div>{Text.bulePencil.text5}</div></li>
+                        <li><div>{Text.bulePencil.text6}</div></li>
+                        <li><div>{Text.bulePencil.text7}</div></li>
+                        <li><div>{Text.bulePencil.text8}</div></li>
+                        <li><div>{Text.bulePencil.text9}</div></li>
+                        <li><div>{Text.bulePencil.text10}</div></li>
                     </ul>
                     </div>
-                    <div className="textBP3">تاریخ انتشار دی ۱۳۹۸</div>
-                    <div className="textBP3">آخرین بروزرسانی تیر ۱۳۹۹</div>
+                    <div className="textBP3">{Text.bulePencil.text11}</div>
+                    <div className="textBP3">{Text.bulePencil.text12}</div>
                     <div className='boxLinkDownload'>
-                        <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">دانلود از کافه بازار</a></div>
+                        <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div>
                     </div>
                     {/* <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">دانلود از کافه بازار</a></div> */}
                 </div>

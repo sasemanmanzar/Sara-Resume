@@ -60,6 +60,31 @@ const strings = {
         Skills:{
         },
         Experience:{
+            bulePencil: {
+                title: "BLUE PENCIL",
+                text1: "BLUE PENCIL GAME FOR ANDROID, PUBLISHED IN CAFE BAZAAR (PERSIAN APP)",
+                text2: "INSTALL +2K",
+                text3: "A Painting App for Children with Creative and Attractive Features.",
+                text4: "This Program includes",
+                text5: "Drawing",
+                text6: "Coloring Pictures",
+                text7: "",
+                text8: "Connecting the Dots",
+                text9: "Saving Pictures",
+                text10: "In-app Payments",
+                text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2020",
+                text12: "",
+                text13: "Download",
+                // text16: "
+                //     ANDROID DEVELOPER, SELF-EMPLOYED; TEHRAN, IRAN — 2019-2020
+                //     BLUE PENCIL GAME FOR ANDROID, PUBLISHED IN CAFE BAZAAR (PERSIAN APP)
+                //     INSTALL +3K
+                //     A Painting App for Children with Creative and Attractive Features. This Program
+                //     includes Drawing, Coloring Pictures, Connecting the Dots and Features such as Saving
+                //     Pictures and In-app Payments.
+                //     https://cafebazaar.ir/app/com.example.BluePencil?l=en
+                // ",
+            }
         },
         Contact:{
         }
@@ -126,6 +151,22 @@ const strings = {
         Skills:{
         },
         Experience:{
+            bulePencil: {
+                title: "برنامه نقاشی مداد آبی",
+                text1: "برنامه نقاشی مداد آبی، زبان پروژه اندروید، منتشرشده در کافه بازار",
+                text2: "تعداد نصب +۲۰۰۰",
+                text3: "برنامه نقاشی مخصوص کودکان که دارای ویژگی های خلاقانه و جذاب است",
+                text4: "امکانات برنامه:",
+                text5: "نقاشی",
+                text6: "رنگ آمیزی تصاویر",
+                text7: "تصاویر کارتونی متحرک",
+                text8: "وصل کردن نقطه چین ها",
+                text9: "ذخیره تصاویر",
+                text10: "پرداخت درون برنامه ای",
+                text11: "تاریخ انتشار دی ۱۳۹۸",
+                text12: "آخرین بروزرسانی تیر ۱۳۹۹",
+                text13: "دانلود از کافه بازار",
+            }
         },
         Contact:{
         }
