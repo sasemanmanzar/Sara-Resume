@@ -3,7 +3,9 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 // import { useRef } from 'react';
 
-function Six({ pageRef }){
+function Six({ text, pageRef }){
+
+        const Text = text.Contact;
   
         const [InfoSendEmail, SetInfo] = useState({
         Name: "نام",
@@ -108,7 +110,7 @@ function Six({ pageRef }){
     return(
         <div id='IdSix' className='six' ref={pageRef}>
           <div className='boxPage6'>
-              <div className='smallBoxCallMe'><div>تماس با ما</div></div>
+              <div className='smallBoxCallMe'><div>{text.main.titleContact}</div></div>
 
               <div className='boxAlert' style={{display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
 
@@ -121,7 +123,7 @@ function Six({ pageRef }){
                     </div>
                     <div className='TitleP6'><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></div>  
                     <div className='TextP6'><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></div>
-                    <div className='SubmitP6'><input type="submit" name="SubmitP6" value="ارسال" disabled={isSubmitting}/></div>  
+                    <div className='SubmitP6'><input type="submit" name="SubmitP6" value={Text.send} disabled={isSubmitting}/></div>  
 
                   </form>
                 </div>

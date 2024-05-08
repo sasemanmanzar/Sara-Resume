@@ -119,7 +119,7 @@ function App() {
           <Five text={textFa} pageRef={pageRef5} />
         </div>
         <div className='section'> 
-          <Six pageRef={pageRef6} />
+          <Six text={textEn} pageRef={pageRef6} />
         </div>
       </div>
     </div>

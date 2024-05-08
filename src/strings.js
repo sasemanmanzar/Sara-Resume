@@ -87,6 +87,11 @@ const strings = {
             }
         },
         Contact:{
+            name: "name",
+            email: "email",
+            subject: "subject",
+            text: "text",
+            send: "Send"
         }
     }, 
     fa: {
@@ -169,6 +174,11 @@ const strings = {
             }
         },
         Contact:{
+            name: "نام",
+            email: "ایمیل",
+            subject: "موضوع",
+            text: "متن پیام",
+            send: "ارسال"
         }
     }
 }
