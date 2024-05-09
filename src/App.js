@@ -28,7 +28,7 @@ function App() {
   // const language = strings.en;
 
   const [language, setLanguageOrg] = useState(strings.fa);
-  const [lang, setLang] = useState("fa");
+  const [lang, setLang] = useState("en");
   const [langNow, setLongNow] = useState("fa");
   function setLanguage() {
     if (lang === 'fa') {
