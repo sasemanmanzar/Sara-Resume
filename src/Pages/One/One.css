@@ -129,17 +129,28 @@
   font-size: smaller;
 }
 
-.fa > .boxPicText{
+/* .fa > .boxPicText{
+  background-color: aliceblue;
   direction: rtl;
-}
-.en > .boxPicText{
+} */
+/* .en > .boxPicText{
+  background-color: aliceblue;
   direction: ltr;
-}
+} */
 .en > .boxCircles {
+  /* old: */
+  /* transform: translateX(0%) translateY(0%) rotate(0deg); */
+
+  /* Az Bala: */
   transform: translateX(0%) translateY(0%) rotate(-180deg);
+
+  /* Az Paeen: */
+    /* transform: translateX(0%) translateY(0%) rotate(180deg); */
 }
 .en > .boxCircles > .circlePageOne {
+  /* transform: translateX(0%) translateY(0%) rotate(0deg); */
   transform: translateX(0%) translateY(0%) rotate(-180deg);
+  /* transform: translateX(0%) translateY(0%) rotate(180deg); */
 }
 
 @media screen and (max-width: 720px) {
@@ -192,6 +203,16 @@
     height: 50px;
     margin: 0 -171px;
   }
+
+  .en > .boxCircles {
+    transform: translateX(0%) translateY(0%) rotate(-90deg);
+    /* transform: translateX(0%) translateY(0%) rotate(270deg); */
+  }
+  .en > .boxCircles > .circlePageOne {
+    transform: translateX(0%) translateY(0%) rotate(90deg);
+    /* transform: translateX(0%) translateY(0%) rotate(-270deg); */
+  }
+
 }
 
 @media screen and (min-width: 720px) {
