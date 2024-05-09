@@ -8,7 +8,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // function One({ pageRef, sara, setSara }) {
 
-function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
+function One({ text, lang, setLanguage, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -27,7 +27,7 @@ function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }
   const scrollToMarginPage2 = () => {
     // const marginDot2 = document.getElementById('IdTwo');
     if (pageRef2.current) {
-        pageRef2.current.scrollIntoView();
+      pageRef2.current.scrollIntoView();
     }
   };
 
@@ -55,12 +55,12 @@ function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }
     }
   };
 
-  const [lang, setLang] = useState("fa");
+  // const [lang, setLang] = useState("fa");
 
-  function setLanguage(){
-    if(lang === 'fa') setLang('en')
-      else setLang('fa')
-  }
+  // function setLanguage(){
+  //   if(lang === 'fa') setLang('en')
+  //     else setLang('fa')
+  // }
 
   return (
     <div id='IdOne' className='one' ref={pageRef}>

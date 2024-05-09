@@ -25,7 +25,20 @@ function App() {
   // const textFa = strings.fa;
   // const textEn = strings.en;
   // const language = strings.fa;
-  const language = strings.en;
+  // const language = strings.en;
+
+  const [language, setLanguageOrg] = useState(strings.fa);
+  const [lang, setLang] = useState("fa");
+  function setLanguage() {
+    if (lang === 'fa') {
+      setLang('en');
+      setLanguageOrg(strings.fa);
+    }
+    else {
+      setLang('fa');
+      setLanguageOrg(strings.en);
+    }
+  }
 
 
   const scrollToMarginPage1 = useCallback(() => {
@@ -105,22 +118,22 @@ function App() {
       </div>
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
-        <div className='section'> 
-          <One text={language} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} />
+        <div className='section'>
+          <One text={language} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} lang={lang} setLanguage={setLanguage} />
         </div>
-        <div className='section'> 
+        <div className='section'>
           <Two text={language} pageRef={pageRef2} />
         </div>
-        <div className='section'> 
+        <div className='section'>
           <Three text={language} pageRef={pageRef3} />
         </div>
-        <div className='section'> 
+        <div className='section'>
           <Four text={language} pageRef={pageRef4} />
         </div>
-        <div className='section'> 
+        <div className='section'>
           <Five text={language} pageRef={pageRef5} />
         </div>
-        <div className='section'> 
+        <div className='section'>
           <Six text={language} pageRef={pageRef6} />
         </div>
       </div>
