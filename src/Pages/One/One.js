@@ -32,28 +32,24 @@ function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }
   };
 
   const scrollToMarginPage3 = () => {
-    // const marginDot3 = document.getElementById('IdThree');
     if (pageRef3.current) {
       pageRef3.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage4 = () => {
-    // const marginDot4 = document.getElementById('IdFour');
     if (pageRef4.current) {
       pageRef4.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage5 = () => {
-    // const marginDot5 = document.getElementById('IdFive');
     if (pageRef5.current) {
       pageRef5.current.scrollIntoView();
     }
   };
 
   const scrollToMarginPage6 = () => {
-    // const marginDot6 = document.getElementById('IdSix');
     if (pageRef6.current) {
       pageRef6.current.scrollIntoView();
     }
