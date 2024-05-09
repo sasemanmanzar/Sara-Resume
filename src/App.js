@@ -29,14 +29,17 @@ function App() {
 
   const [language, setLanguageOrg] = useState(strings.fa);
   const [lang, setLang] = useState("fa");
+  const [langNow, setLongNow] = useState("fa");
   function setLanguage() {
     if (lang === 'fa') {
       setLang('en');
       setLanguageOrg(strings.fa);
+      setLongNow('fa');
     }
     else {
       setLang('fa');
       setLanguageOrg(strings.en);
+      setLongNow('en');
     }
   }
 
@@ -119,7 +122,7 @@ function App() {
 
       <div className='scroller' onScroll={onScroll} ref={scrollerElementRef}>
         <div className='section'>
-          <One text={language} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} lang={lang} setLanguage={setLanguage} />
+          <One text={language} pageRef={pageRef1} pageRef2={pageRef2} pageRef3={pageRef3} pageRef4={pageRef4} pageRef5={pageRef5} pageRef6={pageRef6} lang={lang} setLanguage={setLanguage} langNow={langNow}/>
         </div>
         <div className='section'>
           <Two text={language} pageRef={pageRef2} />

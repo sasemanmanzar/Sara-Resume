@@ -8,7 +8,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // function One({ pageRef, sara, setSara }) {
 
-function One({ text, lang, setLanguage, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
+function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
   // const shalgham = { barge: "sabz", geli: "ghaveii" };
   // console.log(shalgham.barge);
@@ -61,6 +61,8 @@ function One({ text, lang, setLanguage, pageRef, pageRef2, pageRef3, pageRef4, p
   //   if(lang === 'fa') setLang('en')
   //     else setLang('fa')
   // }
+
+  // console.log(langNow);
 
   return (
     <div id='IdOne' className='one' ref={pageRef}>
