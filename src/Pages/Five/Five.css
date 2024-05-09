@@ -108,7 +108,11 @@
     /* text-align: end; */
     left: 50%;
     transform: translate3d(-50%, 0 , 0);
-    /* background-color: red; */
+    /* background-color: #ff0000; */
+
+    padding-left: 50px;
+    direction: rtl;
+
 
     /* align-items: right;
     align-content: right;
@@ -130,6 +134,7 @@
     position: relative;
     display: grid;
     padding-right: 50px;
+    padding-left: 50px;
     left: 50%;
     transform: translate3d(-50%, 0 , 0);
     direction: rtl;
@@ -148,7 +153,6 @@ ul {list-style-type: square;}
     direction: rtl;
     padding-bottom: 5px;
     font-style: italic;
-
 }
 
 .boxLinkDownload{
