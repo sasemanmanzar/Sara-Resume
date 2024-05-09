@@ -129,6 +129,18 @@
   font-size: smaller;
 }
 
+.fa > .boxPicText{
+  direction: rtl;
+}
+.en > .boxPicText{
+  direction: ltr;
+}
+.en > .boxCircles {
+  transform: translateX(0%) translateY(0%) rotate(-180deg);
+}
+.en > .boxCircles > .circlePageOne {
+  transform: translateX(0%) translateY(0%) rotate(-180deg);
+}
 
 @media screen and (max-width: 720px) {
   .boxAll {

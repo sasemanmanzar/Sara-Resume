@@ -70,6 +70,8 @@ function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pa
       <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
       <div className='langleg' onClick={setLanguage}>{lang}</div>
       <div className='boxAll'>
+      <div className={langNow}>
+
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
           {/* <div className='textPageOne'>سارا آسمان منظر</div> */}
@@ -83,6 +85,7 @@ function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pa
           <div className='circlePageOne' onClick={scrollToMarginPage3}>{Text.titlePublication}</div>
           <div className='circlePageOne' onClick={scrollToMarginPage2}>{Text.titleEducation}</div>
         </div>
+      </div>
       </div>
     </div>
   );
