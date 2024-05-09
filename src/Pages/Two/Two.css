@@ -59,9 +59,18 @@
     border-radius: 8px;
     margin-top: 30px;
     margin-bottom: 5px;
-    left: 50%;
-    transform: translate3d(-50%,0, 0);
+    /* left: 50%; */
+    /* transform: translate3d(-50%,0, 0); */
 }
+
+/* .en > .smallBox {
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: aqua;
+  direction: rtl;
+} */
 
 .box {
     position: relative;

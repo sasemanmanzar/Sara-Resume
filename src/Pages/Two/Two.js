@@ -2,7 +2,7 @@ import './Two.css';
 // import React, { useState, useEffect } from 'react';
 
 
-function Two({ text, pageRef }){
+function Two({ text, langNow, pageRef }){
 
         // const [width, setWidth]   = useState(window.innerWidth);
         // const [height, setHeight] = useState(window.innerHeight);
@@ -18,12 +18,14 @@ function Two({ text, pageRef }){
         // }, []);
        
         const Text = text.Education;
+        // console.log(langNow);
 
 
     return(
         <div id='IdTwo' className='two' ref={pageRef}>
             {/* <div style={{color:"red"}}>{width} <br/> {height} </div> */}
             <div className='boxPage2'>
+            {/* <div className={langNow}> */}
             <div className='smallBox1'><div>{text.main.titleEducation}</div></div>
             <div className='smallBox'><div>{Text.MSc.degree}</div></div>
             <div className='box'>
@@ -44,6 +46,7 @@ function Two({ text, pageRef }){
                     <div id='project'>{Text.BSc.project}</div>
                 </div>
             </div>
+            {/* </div> */}
             </div>
         </div>
     );
