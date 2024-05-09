@@ -24,7 +24,8 @@ function App() {
   // const s = strings.fa;
   // const textFa = strings.fa;
   // const textEn = strings.en;
-  const language = strings.fa;
+  // const language = strings.fa;
+  const language = strings.en;
 
 
   const scrollToMarginPage1 = useCallback(() => {

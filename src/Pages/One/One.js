@@ -1,5 +1,6 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
+import langIcon from '../../Pic/lang-pic.png';
 import React, { useState, useEffect, useRef } from 'react';
 
 // function One(props) {
@@ -62,6 +63,7 @@ function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }
   return (
     <div id='IdOne' className='one' ref={pageRef}>
       {/* <PageSize /> */}
+      <div><img className='lang' src={langIcon} alt="" /></div>
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />

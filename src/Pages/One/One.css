@@ -1,26 +1,26 @@
-.one{
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image:url('../../Pic/darkBlue1.jpg');
-    position: relative;
-    /* position: static; */
+.one {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../Pic/darkBlue1.jpg');
+  position: relative;
+  /* position: static; */
 
-    background-color: #cccccc; 
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    z-index: 2;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 
-.boxAll{
+.boxAll {
   position: absolute;
   display: grid;
   align-content: center;
   justify-items: center;
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   /* background-color: cadetblue; */
 }
 
@@ -41,23 +41,23 @@
   border-radius: 8px;
 }
 
-.textPageOne{
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    background-color: rgba(220, 189, 90, 0.85);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: medium;
-    direction: rtl;
-    text-align: center;
-    margin-top: auto;
-    margin-right: 3px;
-    /* padding: 10px 20px 10px 20px; */
-    padding: 10px 60px;
-    /* color: aliceblue; */
- }
+.textPageOne {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: rgba(220, 189, 90, 0.85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: medium;
+  direction: rtl;
+  text-align: center;
+  margin-top: auto;
+  margin-right: 3px;
+  /* padding: 10px 20px 10px 20px; */
+  padding: 10px 60px;
+  /* color: aliceblue; */
+}
 
 /* Circles: */
 
@@ -77,14 +77,18 @@
   justify-items: center;
   border-radius: 50%;
   color: aliceblue;
-  background-color: rgba(8,46,108,0.85);
+  background-color: rgba(8, 46, 108, 0.85);
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 140px;
   height: 140px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.circlePageOne:hover{ background-color: rgba(220, 189, 90, 0.85); color: black;}
+.circlePageOne:hover {
+  background-color: rgba(220, 189, 90, 0.85);
+  color: black;
+}
+
 /* .circlePageOne p ::hover {color: black;} */
 
 /* .circlePageOne p {
@@ -93,32 +97,48 @@
   padding-top: 5vh;
 } */
 
+/* language: */
+.lang {
+  position: relative;
+  /* width: 30px; */
+  height: 30px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  top: 10px;
+  left: 10px;
+}
 
 
-@media screen and (max-width: 720px){
-  .boxAll{
+@media screen and (max-width: 720px) {
+  .boxAll {
     width: 70vw;
     height: 70vh;
     transition: all 4s;
     /* background-color: #cccccc; */
   }
-  .boxPicText{
+
+  .boxPicText {
     /* background-color: crimson; */
     top: -140px;
     transition: all 4s;
   }
+
   .picSara {
     /* width: 160px; */
     width: 130px;
     transition: all 4s;
   }
-  .textPageOne{
+
+  .textPageOne {
     /* padding: 10px 60px; */
     padding: 10px 50px;
     transition: all 4s;
- }
-  .boxCircles{
-    transform:  translateX(0%) translateY(0%) rotate(-90deg);
+  }
+
+  .boxCircles {
+    transform: translateX(0%) translateY(0%) rotate(-90deg);
     /* margin: 150px 123px; */
     transition: all 4s;
 
@@ -127,9 +147,10 @@
     height: 100%;
     top: -90px;
   }
+
   .circlePageOne {
     border-radius: 10px;
-    transform:  translateX(0%) translateY(0%) rotate(90deg);
+    transform: translateX(0%) translateY(0%) rotate(90deg);
     /* width: 300px; */
     /* height: 50px; */
     /* margin: 0 -123px; */
@@ -141,13 +162,31 @@
     margin: 0 -171px;
   }
 }
-@media screen and (min-width: 720px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .picSara {transition: all 4s;}
-  .textPageOne{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne{transition: all 4s;}
+
+@media screen and (min-width: 720px) {
+  .boxAll {
+    transition: all 4s;
+  }
+
+  .boxPicText {
+    transition: all 4s;
+  }
+
+  .picSara {
+    transition: all 4s;
+  }
+
+  .textPageOne {
+    transition: all 4s;
+  }
+
+  .boxCircles {
+    transition: all 4s;
+  }
+
+  .circlePageOne {
+    transition: all 4s;
+  }
 }
 
 
@@ -163,26 +202,37 @@
 
 
 
-@media screen and (max-width: 450px){
-    .picSara {
-      width: 100px;
-      transition: all 4s;
-    }   
-    .textPageOne{
-      font-size: small;
-      padding: 10px 40px;
-      transition: all 4s;
-    }
-    .circlePageOne {
-      width: 300px;
-      margin: 0 -123px;
-      transition: all 4s;
-    }
+@media screen and (max-width: 450px) {
+  .picSara {
+    width: 100px;
+    transition: all 4s;
+  }
+
+  .textPageOne {
+    font-size: small;
+    padding: 10px 40px;
+    transition: all 4s;
+  }
+
+  .circlePageOne {
+    width: 300px;
+    margin: 0 -123px;
+    transition: all 4s;
+  }
 }
-@media screen and (min-width: 450px){
-  .picSara{transition: all 4s;}
-  .textPageOne{transition: all 4s;}
-  .circlePageOne {transition: all 4s;}
+
+@media screen and (min-width: 450px) {
+  .picSara {
+    transition: all 4s;
+  }
+
+  .textPageOne {
+    transition: all 4s;
+  }
+
+  .circlePageOne {
+    transition: all 4s;
+  }
 }
 
 /* ...................................................................... */
@@ -525,4 +575,3 @@
   animation-name: example;
   animation-duration: 4s;
 } */
-
