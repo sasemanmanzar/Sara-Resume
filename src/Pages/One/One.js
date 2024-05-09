@@ -55,11 +55,18 @@ function One({ text, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }
     }
   };
 
+  const [lang, setLang] = useState("fa");
+
+  function setLanguage(){
+    if(lang === 'fa') setLang('en')
+      else setLang('fa')
+  }
 
   return (
     <div id='IdOne' className='one' ref={pageRef}>
       {/* <PageSize /> */}
-      <div><img className='lang' src={langIcon} alt="" /></div>
+      <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
+      <div className='langleg' onClick={setLanguage}>{lang}</div>
       <div className='boxAll'>
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
