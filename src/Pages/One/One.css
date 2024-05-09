@@ -129,14 +129,14 @@
   font-size: smaller;
 }
 
-/* .fa > .boxPicText{
-  background-color: aliceblue;
+.fa > .boxPicText{
+  /* background-color: aliceblue; */
   direction: rtl;
-} */
-/* .en > .boxPicText{
-  background-color: aliceblue;
+}
+.en > .boxPicText{
+  /* background-color: aliceblue; */
   direction: ltr;
-} */
+}
 .en > .boxCircles {
   /* old: */
   /* transform: translateX(0%) translateY(0%) rotate(0deg); */
@@ -157,32 +157,37 @@
   .boxAll {
     width: 70vw;
     height: 70vh;
-    transition: all 4s;
+    /* transition: all 4s; */
     /* background-color: #cccccc; */
+    transition: all 3s;
   }
 
   .boxPicText {
     /* background-color: crimson; */
     top: -140px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .picSara {
     /* width: 160px; */
     width: 130px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .textPageOne {
     /* padding: 10px 60px; */
     padding: 10px 50px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .boxCircles {
     transform: translateX(0%) translateY(0%) rotate(-90deg);
     /* margin: 150px 123px; */
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
 
     /* background-color: chartreuse; */
     width: 100%;
@@ -196,7 +201,8 @@
     /* width: 300px; */
     /* height: 50px; */
     /* margin: 0 -123px; */
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
 
     /* background-color: darkorange; */
     width: 400px;
@@ -207,37 +213,47 @@
   .en > .boxCircles {
     transform: translateX(0%) translateY(0%) rotate(-90deg);
     /* transform: translateX(0%) translateY(0%) rotate(270deg); */
+    transition: all 3s;
+
   }
   .en > .boxCircles > .circlePageOne {
     transform: translateX(0%) translateY(0%) rotate(90deg);
     /* transform: translateX(0%) translateY(0%) rotate(-270deg); */
+    transition: all 3s;
+
   }
 
 }
 
 @media screen and (min-width: 720px) {
   .boxAll {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .boxPicText {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .picSara {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .textPageOne {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .boxCircles {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .circlePageOne {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 }
 
@@ -257,33 +273,42 @@
 @media screen and (max-width: 450px) {
   .picSara {
     width: 100px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .textPageOne {
     font-size: small;
     padding: 10px 40px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 
   .circlePageOne {
     width: 300px;
     margin: 0 -123px;
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
   }
 }
 
 @media screen and (min-width: 450px) {
   .picSara {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
+
   }
 
   .textPageOne {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
+
   }
 
   .circlePageOne {
-    transition: all 4s;
+    /* transition: all 4s; */
+    transition: all 3s;
+
   }
 }
 
