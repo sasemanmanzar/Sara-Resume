@@ -63,14 +63,16 @@
     transform: translate3d(-50%,0, 0);
 }
 
-/* .en > .smallBox {
-  position: relative;
+.en > .smallBox {
+  /* position: relative;
   display: grid;
   align-content: center;
-  justify-items: center;
-  background-color: aqua;
-  direction: rtl;
-} */
+  justify-items: center; */
+  /* background-color: aqua; */
+  /* direction: rtl; */
+  left:-50%;
+  transform: translate3d(50%,0, 0);
+}
 
 .box {
     position: relative;
@@ -102,25 +104,29 @@
     /* flex-direction:column; */
 }
 
-#subject{
+.allText {
+  padding: 10px 20px;
+}
+
+.subject{
     font-weight: bold;
     padding-bottom: 10px;
     /* padding-top: 40px; */
 }
 
-#university{
+.university{
     color: rgb(8,46,108);
     font: 0.95em sans-serif;
     font-weight: bold;
     padding-bottom: 15px;
 }
 
-#prise{
+.prise{
     font-style: italic;
     color: rgb(8,46,108);
 }
 
-#project{
+.project{
     font-style: italic;
     padding: 0 50px;
     /* color: rgb(8,46,108); */
