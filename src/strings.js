@@ -18,7 +18,9 @@ const strings = {
             },
             MSc: {
                 degree: "MSc.",
-                fieldOfStudy: "Information Technology Engineering, Management Information Systems",
+                // fieldOfStudy: "Information Technology Engineering, Management Information Systems",
+                fieldOfStudy: "Information Technology Engineering",
+                fieldOfStudyPart2: "Management Information Systems",
                 university: "Taali Higher Education Information Technology Institute, Gom, Iran, 2015",
                 project: "Designing Medicine Decision Assistant System to Increase Accuracy by Data Mining Techniques (Case Study: Audiology)",
             }
@@ -108,15 +110,18 @@ const strings = {
                 degree: "کارشناسی",
                 fieldOfStudy: "مهندسی فناوری اطلاعات",
                 university: "دانشگاه صنعتی خواجه نصیر الدین طوسی، تهران ۱۳۹۱",
-                project: "پروژه پایانی: مدارس و دانشگاه های هوشمند / استاد راهنما: جناب آقای دکتر اصغر زمانی",
+                project: "پروژه پایانی: مدارس و دانشگاه های هوشمند",
                 prise: "رتبه اول فارغ التحصیلان دوره کارشناسی رشته مهندسی فناوری اطلاعات"
             },
             MSc: {
                 degree: "کارشناسی ارشد",
-                fieldOfStudy: "مهندسی فناوری اطلاعات گرایش مدیریت سیستم های اطلاعاتی",
+                // fieldOfStudy: "مهندسی فناوری اطلاعات گرایش مدیریت سیستم های اطلاعاتی",
+                fieldOfStudy: "مهندسی فناوری اطلاعات",
+                fieldOfStudyPart2: "گرایش مدیریت سیستم های اطلاعاتی",
                 // university: "موسسه آموزش عالی فناوری اطلاعات تعالی، قم ۱۳۹۴",
                 university: "دانشگاه فناوری اطلاعات تعالی، قم ۱۳۹۴",
-                project: "پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی (مورد واکاوی: مرکز شنوایی سنجی) / استاد راهنما: جناب آقای دکتر رضا احسن",
+                // project: "پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی (مورد واکاوی: مرکز شنوایی سنجی) / استاد راهنما: جناب آقای دکتر رضا احسن",
+                project: "پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی (مورد واکاوی: مرکز شنوایی سنجی)",
             }
         },
         Publication:{ 

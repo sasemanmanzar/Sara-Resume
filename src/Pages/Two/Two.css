@@ -114,6 +114,13 @@
     /* padding-top: 40px; */
 }
 
+.subject1{
+  padding-bottom: 5px;
+}
+.subject2{
+  font-style: italic;
+}
+
 .university{
     color: rgb(8,46,108);
     font: 0.95em sans-serif;
@@ -124,6 +131,7 @@
 .prise{
     font-style: italic;
     color: rgb(8,46,108);
+    padding-bottom: 15px;
 }
 
 .project{

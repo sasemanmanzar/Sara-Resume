@@ -30,10 +30,13 @@ function Two({ text, langNow, pageRef }) {
                     <div className='smallBox'><div>{Text.MSc.degree}</div></div>
                     <div className='box'>
                         <div className='allText'>
-                            <div className='subject'>{Text.MSc.fieldOfStudy}</div>
+                            <div className='subject'>
+                                <div className='subject1'>{Text.MSc.fieldOfStudy}</div>
+                                <div className='subject2'>{Text.MSc.fieldOfStudyPart2}</div>
+                            </div>
                             <div className='university'>{Text.MSc.university}</div>
                             {/* <p id='project'>پروژه پایانی: طراحی سیستم تصمیم یار پزشکی به منظور افزایش دقت با استفاده از تکنیک‌های داده کاوی - مورد واکاوی: مرکز شنوایی سنجی</p>
-                    <p>استاد راهنما: جناب آقای دکتر رضا احسن</p> */}
+                            <p>استاد راهنما: جناب آقای دکتر رضا احسن</p> */}
                             <div className='project'>{Text.MSc.project}</div>
                         </div>
                     </div>
