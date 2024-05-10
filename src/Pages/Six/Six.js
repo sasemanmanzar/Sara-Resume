@@ -3,16 +3,26 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 // import { useRef } from 'react';
 
-function Six({ text, pageRef }){
+function Six({ text, langNow, pageRef }){
 
         const Text = text.Contact;
-  
+
+        console.log(langNow);
+        console.log(Text.name);
+
+        // const [InfoSendEmail, SetInfo] = useState({
+        // Name: "نام",
+        // Email: "ایمیل",
+        // Title: "موضوع",
+        // Text: "متن پیام"
+        // });
+
         const [InfoSendEmail, SetInfo] = useState({
-        Name: "نام",
-        Email: "ایمیل",
-        Title: "موضوع",
-        Text: "متن پیام"
-        });
+          Name: Text.name,
+          Email: Text.email,
+          Title: Text.subject,
+          Text: Text.text
+          });
 
         const updateInfoSendName = (e) => {
             SetInfo((previousState) => {
@@ -101,10 +111,15 @@ function Six({ text, pageRef }){
             // Clears the form after sending the email
             e.target.reset();
             
-            InfoSendEmail.Name = "نام";
-            InfoSendEmail.Email = "ایمیل";
-            InfoSendEmail.Title = "موضوع";
-            InfoSendEmail.Text = "متن پیام";
+            // InfoSendEmail.Name = "نام";
+            // InfoSendEmail.Email = "ایمیل";
+            // InfoSendEmail.Title = "موضوع";
+            // InfoSendEmail.Text = "متن پیام";
+
+            InfoSendEmail.Name = Text.name;
+            InfoSendEmail.Email = Text.email;
+            InfoSendEmail.Title = Text.subject;
+            InfoSendEmail.Text = Text.text;
           };
 
     return(

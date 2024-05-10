@@ -137,7 +137,7 @@ function App() {
           <Five text={language} pageRef={pageRef5} langNow={langNow}/>
         </div>
         <div className='section'>
-          <Six text={language} pageRef={pageRef6} />
+          <Six text={language} pageRef={pageRef6} langNow={langNow}/>
         </div>
       </div>
     </div>
