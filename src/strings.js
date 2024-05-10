@@ -63,14 +63,14 @@ const strings = {
         },
         Experience:{
             bulePencil: {
-                title: "BLUE PENCIL",
+                title: "BLUE PENCIL GAME",
                 text1: "BLUE PENCIL GAME FOR ANDROID, PUBLISHED IN CAFE BAZAAR (PERSIAN APP)",
                 text2: "INSTALL +2K",
                 text3: "A Painting App for Children with Creative and Attractive Features.",
-                text4: "This Program includes",
+                text4: "This Program includes:",
                 text5: "Drawing",
                 text6: "Coloring Pictures",
-                text7: "",
+                text7: "Gif Pictures",
                 text8: "Connecting the Dots",
                 text9: "Saving Pictures",
                 text10: "In-app Payments",

@@ -55,7 +55,8 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  text-align: right;
+  /* text-align: right; */
+  text-align: start;
   overflow: scroll;
   background-color: rgba(220, 189, 90, 0.7);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -214,10 +215,6 @@ ul {
   direction: ltr;
   left: -50%;
   transform: translate3d(50%, 0, 0);
-}
-.en > .boxExp > .textBP2 > ul > li > div {
-  direction: ltr;
-  background-color: aliceblue;
 }
 .en > .boxExp > .textBP3 {
   direction: ltr;
