@@ -88,7 +88,8 @@ function Six({ text, langNow, pageRef }){
                 // پیام شما ارسال شد
                 // alert('پیام شما ارسال شد');
                   setBoxAlert(true);
-                  setStateMessage('پیام شما با موفقیت ارسال شد. متشکرم');
+                  // setStateMessage('پیام شما با موفقیت ارسال شد. متشکرم');
+                  setStateMessage(Text.alert_good);
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);
@@ -99,7 +100,8 @@ function Six({ text, langNow, pageRef }){
                 //   setStateMessage('Something went wrong, please try again later');
                 // alert('خطایی رخ داده است. لطفا دوباره تلاش کنید');
                   setBoxAlert(true);
-                  setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
+                  // setStateMessage('خطایی رخ داده است. لطفا دوباره تلاش کنید');
+                  setStateMessage(Text.alert_bad);
                   setIsSubmitting(false);
                   setTimeout(() => {
                     setStateMessage(null);

@@ -93,7 +93,9 @@ const strings = {
             email: "email",
             subject: "subject",
             text: "text",
-            send: "Send"
+            send: "Send",
+            alert_good:"Message sent!",
+            alert_bad:"Something went wrong, please try again later"
         }
     }, 
     fa: {
@@ -183,7 +185,9 @@ const strings = {
             email: "ایمیل",
             subject: "موضوع",
             text: "متن پیام",
-            send: "ارسال"
+            send: "ارسال",
+            alert_good:"پیام شما با موفقیت ارسال شد. متشکرم",
+            alert_bad:"خطایی رخ داده است. لطفا دوباره تلاش کنید"
         }
     }
 }
