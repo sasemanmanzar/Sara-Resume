@@ -30,7 +30,7 @@ function Six({ text, langNow, pageRef }) {
         Email: Text.email,
         Title: Text.subject,
         Text: Text.text
-      });
+      });   
   }, [langNow]);
 
   // console.log(InfoSendEmail);
@@ -138,6 +138,7 @@ function Six({ text, langNow, pageRef }) {
   return (
     <div id='IdSix' className='six' ref={pageRef}>
       <div className='boxPage6'>
+        <div className={langNow}>
         <div className='smallBoxCallMe'><div>{text.main.titleContact}</div></div>
 
         <div className='boxAlert' style={{ display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
@@ -155,6 +156,7 @@ function Six({ text, langNow, pageRef }) {
 
             </form>
           </div>
+        </div>
         </div>
       </div>
       {/* <div className='bbbbb'> 
