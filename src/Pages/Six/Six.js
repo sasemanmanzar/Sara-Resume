@@ -25,12 +25,12 @@ function Six({ text, langNow, pageRef }) {
   });
 
   useEffect(() => {
-      SetInfo({
-        Name: Text.name,
-        Email: Text.email,
-        Title: Text.subject,
-        Text: Text.text
-      });   
+    SetInfo({
+      Name: Text.name,
+      Email: Text.email,
+      Title: Text.subject,
+      Text: Text.text
+    });
   }, [langNow]);
 
   // console.log(InfoSendEmail);
@@ -139,24 +139,24 @@ function Six({ text, langNow, pageRef }) {
     <div id='IdSix' className='six' ref={pageRef}>
       <div className='boxPage6'>
         <div className={langNow}>
-        <div className='smallBoxCallMe'><div>{text.main.titleContact}</div></div>
+          <div className='smallBoxCallMe'><div>{text.main.titleContact}</div></div>
 
-        <div className='boxAlert' style={{ display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
+          <div className='boxAlert' style={{ display: isBoxAlert ? 'grid' : 'none' }}>{stateMessage}</div>
 
-        <div className='boxForm'>
-          <div className='boxFormInside'>
-            <form action='' id="create-form" onSubmit={sendEmail}>
-              <div className='NameEmailP6'>
-                <div className='NameP6'><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></div>
-                <div className='EmailP6'><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></div>
-              </div>
-              <div className='TitleP6'><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></div>
-              <div className='TextP6'><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></div>
-              <div className='SubmitP6'><input type="submit" name="SubmitP6" value={Text.send} disabled={isSubmitting} /></div>
+          <div className='boxForm'>
+            <div className='boxFormInside'>
+              <form action='' id="create-form" onSubmit={sendEmail}>
+                <div className='NameEmailP6'>
+                  <div className='NameP6'><input type="text" name="NameP6" defaultValue="" placeholder={InfoSendEmail.Name} onChange={updateInfoSendName} /></div>
+                  <div className='EmailP6'><input type="email" name="EmailP6" defaultValue="" placeholder={InfoSendEmail.Email} onChange={updateInfoSendEmail} /></div>
+                </div>
+                <div className='TitleP6'><input type="text" name="TitleP6" defaultValue="" placeholder={InfoSendEmail.Title} onChange={updateInfoSendTitle} /></div>
+                <div className='TextP6'><textarea type="text" name="TextP6" defaultValue="" placeholder={InfoSendEmail.Text} onChange={updateInfoSendText} /></div>
+                <div className='SubmitP6'><input type="submit" name="SubmitP6" value={Text.send} disabled={isSubmitting} /></div>
 
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       {/* <div className='bbbbb'> 

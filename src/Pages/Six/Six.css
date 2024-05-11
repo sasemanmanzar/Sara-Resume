@@ -141,6 +141,11 @@
   cursor: pointer;
 }
 
+.en > .boxForm > .boxFormInside > form > .SubmitP6 > input {
+  margin-right: 0;
+  margin-left: calc(50% - 90px);
+}
+
 .SubmitP6 input:active{
   background-color: rgba(8,46,108, 0.9);
   border: 1px solid black;
