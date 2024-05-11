@@ -142,6 +142,8 @@
   border-radius: 5px;
   text-align: center;
   font: 0.8em sans-serif;
+  align-content: center;
+  justify-items: center;
 }
 
 /* .dot1:hover:after {content: "صفحه اصلی";}
