@@ -136,9 +136,14 @@
   /* z-index: 1; */
   /* background-color: rgba(255,215,0,0.5); */
   background-color: #cccccc;
-  width: 8vw;
+  box-shadow: 2px 1px 1px 0 rgb(150, 147, 147), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* width: 8vw;
   height: 2.2vh;
-  margin-left: -8vw;
+  margin-left: -8vw; */
+  width: 100px;
+  height: 20px;
+  margin-left: -100px;
+
   border-radius: 5px;
   text-align: center;
   font: 0.8em sans-serif;
@@ -177,11 +182,11 @@
 /* For mobile: */
 @media screen and (max-width: 600px){
   .circle:hover:after {
-    width: 15vw;
-    margin-left: -15vw;
-    transition: all 4s;
+    /* width: 15vw; */
+    /* margin-left: -15vw; */
+    transition: all 1s;
   }
 }
 @media screen and (min-width: 600px){
-  .circle:hover:after{transition: all 4s;}
+  .circle:hover:after{transition: all 1s;}
 }
