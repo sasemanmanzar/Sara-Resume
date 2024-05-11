@@ -24,6 +24,15 @@ function Six({ text, langNow, pageRef }) {
     Text: Text.text
   });
 
+  // useEffect(() => {
+  //   SetInfo({
+  //     Name: Text.name,
+  //     Email: Text.email,
+  //     Title: Text.subject,
+  //     Text: Text.text
+  //   });
+  // }, [langNow]);
+
   useEffect(() => {
     SetInfo({
       Name: Text.name,
@@ -31,7 +40,7 @@ function Six({ text, langNow, pageRef }) {
       Title: Text.subject,
       Text: Text.text
     });
-  }, [langNow]);
+  }, [Text.name, Text.email, Text.subject, Text.text]);
 
   // console.log(InfoSendEmail);
 
