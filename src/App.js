@@ -111,7 +111,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div className={langNow}>
         <div id="dot1" className='circle dot1' onClick={scrollToMarginPage1} style={{ backgroundColor: (activeDot === 1) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
         <div id="dot2" className='circle dot2' onClick={scrollToMarginPage2} style={{ backgroundColor: (activeDot === 2) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
         <div id="dot3" className='circle dot3' onClick={scrollToMarginPage3} style={{ backgroundColor: (activeDot === 3) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
