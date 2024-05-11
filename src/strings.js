@@ -94,7 +94,7 @@ const strings = {
             subject: "subject",
             text: "text",
             send: "Send",
-            alert_good:"Message sent!",
+            alert_good:"Message sent",
             alert_bad:"Something went wrong, please try again later"
         }
     }, 
