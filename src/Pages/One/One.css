@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
+  --colorBlue: rgba(8, 46, 108, 0.85);
+  --colorYellow: rgba(220, 189, 90, 0.85);
+  --colorBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .boxAll {
@@ -37,7 +40,8 @@
 .picSara {
   position: relative;
   width: 160px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: var(--colorBoxShadow);
   border-radius: 8px;
 }
 
@@ -45,8 +49,10 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  background-color: rgba(220, 189, 90, 0.85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background-color: rgba(220, 189, 90, 0.85); */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background-color: var(--colorYellow);
+  box-shadow: var(--colorBoxShadow);
   border-radius: 8px;
   font-weight: 600;
   font-size: medium;
@@ -77,15 +83,18 @@
   justify-items: center;
   border-radius: 50%;
   color: aliceblue;
-  background-color: rgba(8, 46, 108, 0.85);
+  /* background-color: rgba(8, 46, 108, 0.85); */
+  background-color: var(--colorBlue);
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: var(--colorBoxShadow); */
   width: 140px;
   height: 140px;
   cursor: pointer;
 }
 
 .circlePageOne:hover {
-  background-color: rgba(220, 189, 90, 0.85);
+  /* background-color: rgba(220, 189, 90, 0.85); */
+  background-color: var(--colorYellow);
   color: black;
 }
 
@@ -104,7 +113,8 @@
   height: 30px;
   border-radius: 50%;
   /* background-color: aliceblue; */
-  background-color: rgba(220, 189, 90, 0.85);
+  /* background-color: rgba(220, 189, 90, 0.85); */
+  background-color: var(--colorYellow);
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   top: 10px;
   left: 10px;
