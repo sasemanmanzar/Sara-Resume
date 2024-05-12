@@ -293,7 +293,7 @@
   }
 
   .textPageOne {
-    font-size: small;
+    /* font-size: small; */
     /* padding: 10px 40px; */
     width: 180px;
     /* transition: all 4s; */

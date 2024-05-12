@@ -291,6 +291,9 @@ ul {
     width: 250px;
     transition: all 1s;
   }
+  .boxExp{
+    font-size: small;
+  }
 }
 
 @media screen and (min-width: 450px) {

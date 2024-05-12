@@ -20,37 +20,37 @@ function Three({ text, pageRef }){
                 <div className='smallBoxPaper'>{text.main.titlePublication}</div>
                 <div className='allBoxPapers'>
                     <div className='boxPaper right'>
-                        <div id='title'>{Text.p8.title}</div>
-                        <div id="nameConf">{Text.p8.conference}</div>
+                        <div className='title'>{Text.p8.title}</div>
+                        <div className="nameConf">{Text.p8.conference}</div>
                         {/* <div id="date">دوم و سوم آذر ماه سال ۱۳۹۶، دانشگاه علم و صنعت، تهران</div> */}
                     </div>
                     <div className='boxPaper left'>
-                        <div id="title">{Text.p7.title}</div>
-                        <div id="nameConf">{Text.p7.conference}</div>
+                        <div className="title">{Text.p7.title}</div>
+                        <div className="nameConf">{Text.p7.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>{Text.p6.title}</div>
-                        <div id="nameConf">{Text.p6.conference}</div>
+                        <div className='title'>{Text.p6.title}</div>
+                        <div className="nameConf">{Text.p6.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>{Text.p5.title}</div>
-                        <div id="nameConf">{Text.p5.conference}</div>
+                        <div className='title'>{Text.p5.title}</div>
+                        <div className="nameConf">{Text.p5.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>{Text.p4.title}</div>
-                        <div id="nameConf">{Text.p4.conference}</div>
+                        <div className='title'>{Text.p4.title}</div>
+                        <div className="nameConf">{Text.p4.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>{Text.p3.title}</div>
-                        <div id="nameConf">{Text.p3.conference}</div>
+                        <div className='title'>{Text.p3.title}</div>
+                        <div className="nameConf">{Text.p3.conference}</div>
                     </div>
                     <div className='boxPaper right'>
-                        <div id='title'>{Text.p2.title}</div>
-                        <div id="nameConf">{Text.p2.conference}</div>
+                        <div className='title'>{Text.p2.title}</div>
+                        <div className="nameConf">{Text.p2.conference}</div>
                     </div>
                     <div className='boxPaper left'>
-                        <div id='title'>{Text.p1.title}</div>
-                        <div id="nameConf">{Text.p1.conference}</div>
+                        <div className='title'>{Text.p1.title}</div>
+                        <div className="nameConf">{Text.p1.conference}</div>
                     </div>
                 </div>
             </div>

@@ -80,16 +80,16 @@
 .right { left: 3%; }
 .left  { right: 3%;}
 
-#title {
+.title {
     /* font-weight: bold; */
     padding: 5px;
 }
-#nameConf{
+.nameConf{
     /* font-style: italic; */
     font-size: small;
     color: rgb(8,46,108);
 }
-#date {
+.date {
     font-style: italic;
 }
 
@@ -156,11 +156,11 @@
         font-size: small;
         transition: all 1s;
     }
-    #title{
+    .title{
         padding-top: 15px;
         /* font-size: small; */
     }
-    #nameConf{
+    .nameConf{
         /* display: none; */
         padding: 15px;
         /* font-size: smaller; */
@@ -179,14 +179,17 @@
         height: 8vh;
         transition: all 1s;
     }
+    .allBoxPapers{
+        font-size: small;
+    }
     /* .box{
       align-content: flex-start;
       transition: all 1s;
     } */
-    #title{
+    .title{
         padding-top: 15px;
     }
-    #nameConf{
+    .nameConf{
         /* display: none; */
         padding: 15px;
     }
