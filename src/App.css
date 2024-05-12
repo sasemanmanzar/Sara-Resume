@@ -141,7 +141,8 @@
   /* margin-left: -100px; */
   border-radius: 5px;
   text-align: center;
-  font: 0.8em sans-serif;
+  /* font: 0.8em sans-serif; */
+  font-size: small;
   align-content: center;
   justify-items: center;
   right: 22px;

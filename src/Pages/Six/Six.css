@@ -103,7 +103,7 @@
   width: 25vw;
   padding: 10px;
   margin: 2px;
-  font: 0.8em sans-serif;
+  /* font: 0.8em sans-serif; */
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
 }
@@ -112,7 +112,7 @@
   width: calc(100% - 25px);
   padding: 10px;
   margin: 2px;
-  font: 0.8em sans-serif;
+  /* font: 0.8em sans-serif; */
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
 }
@@ -122,7 +122,7 @@
   width: calc(100% - 25px);
   padding: 10px;
   margin: 2px;
-  font: 0.8em sans-serif;
+  /* font: 0.8em sans-serif; */
   border: 1px solid rgba(8,46,108,0.85);
   border-radius: 5px;
   overflow: scroll;
@@ -139,7 +139,7 @@
   border: 1px solid rgba(8,46,108,0.85);
   color: #faf7f7;
   font-weight: bold;
-  font: 0.9em sans-serif;
+  /* font: 0.9em sans-serif; */
   border-radius: 5px;
   margin-right: calc(50% - 90px);
   cursor: pointer;
