@@ -9,6 +9,7 @@
     background-repeat: no-repeat; 
     background-size: cover; 
     position: relative;
+    --colorYellow: rgba(220, 189, 90, 0.7);
 }
 
 .boxPage3 {
@@ -64,7 +65,8 @@
     align-content: center;
     justify-items: center;
     overflow: scroll;
-    background-color: rgba(220, 189, 90, 0.7);
+    /* background-color: rgba(220, 189, 90, 0.7); */
+    background-color: var(--colorYellow);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
 

@@ -8,6 +8,10 @@
     background-repeat: no-repeat; 
     background-size: cover; 
     position: relative;
+
+    --colorYellow: rgba(220, 189, 90, 0.7);
+    --colorBox: rgba(8,46,108,0.6);
+    --colorWhite: rgba(255, 255, 255, 1);
 }
 
 .boxPage4{
@@ -42,7 +46,8 @@
   align-content: center;
   justify-items: center;
   overflow: scroll;
-  background-color: rgba(220, 189, 90, 0.7);
+  /* background-color: rgba(220, 189, 90, 0.7); */
+  background-color: var(--colorYellow);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   width: 100%;
@@ -96,7 +101,7 @@
 #EnglishLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 70%, rgba(255, 255, 255, 1) 30%);}
 #GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.7) 50%, rgba(255, 255, 255, 1) 50%);} */
 
-
+/* 
 #ReactJs{background: linear-gradient(to right, rgba(8,46,108,0.6) 90%, rgba(255, 255, 255, 1) 10%);}
 #DataMining{background: linear-gradient(to right, rgba(8,46,108,0.6) 80%, rgba(255, 255, 255, 1) 20%);}
 #AndroidDevelopment{background: linear-gradient(to right, rgba(8,46,108,0.6) 80%, rgba(255, 255, 255, 1) 20%);}
@@ -106,7 +111,18 @@
 #Research{background: linear-gradient(to right, rgba(8,46,108,0.6) 100%, rgba(255, 255, 255, 1) 0%);}
 #PersianLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 100%, rgba(255, 255, 255, 1) 0%);}
 #EnglishLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 70%, rgba(255, 255, 255, 1) 30%);}
-#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 50%, rgba(255, 255, 255, 1) 50%);}
+#GermanLanguage{background: linear-gradient(to right, rgba(8,46,108,0.6) 50%, rgba(255, 255, 255, 1) 50%);} */
+
+#ReactJs{background: linear-gradient(to right, var(--colorBox) 90%, var(--colorWhite) 10%);}
+#DataMining{background: linear-gradient(to right, var(--colorBox) 80%, var(--colorWhite) 20%);}
+#AndroidDevelopment{background: linear-gradient(to right, var(--colorBox) 80%, var(--colorWhite) 20%);}
+#JavaScript{background: linear-gradient(to right, var(--colorBox) 80%, var(--colorWhite) 20%);}
+#FrontEnd {background: linear-gradient(to right, var(--colorBox) 90%, var(--colorWhite) 10%);}
+#CSS{background: linear-gradient(to right, var(--colorBox) 95%, var(--colorWhite) 5%);}
+#Research{background: linear-gradient(to right, var(--colorBox) 100%, var(--colorWhite) 0%);}
+#PersianLanguage{background: linear-gradient(to right, var(--colorBox) 100%, var(--colorWhite) 0%);}
+#EnglishLanguage{background: linear-gradient(to right, var(--colorBox) 70%, var(--colorWhite) 30%);}
+#GermanLanguage{background: linear-gradient(to right, var(--colorBox) 50%, var(--colorWhite) 50%);}
 
 
 @media screen and (max-width: 720px){
