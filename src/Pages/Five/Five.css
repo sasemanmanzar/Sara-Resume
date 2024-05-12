@@ -80,7 +80,6 @@
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
-  justify-items: right;
   padding: 50px;
   /* text-align: end; */
   left: 50%;
@@ -94,12 +93,15 @@
   align-items: end;
   padding-right: 10px;
   font-weight: bold;
-
+  direction: rtl;
   /* background-color: blanchedalmond; */
   /* align-content: end; */
 
   /* display: flex;
     align-items: end; */
+}
+.en > .boxExp > .boxPicText5 > .TitelBP {
+  direction: ltr;
 }
 
 .picIconBluePencil {
