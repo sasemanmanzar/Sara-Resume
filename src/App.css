@@ -91,17 +91,17 @@
   display: flex;
   width: 20px;
   height: 20px;
-  /* background-color: #86cadd; */
-  /* box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   border-radius: 50%;
-  /* margin-top:20vw; */
-  /* margin-left: 95vw; */
   background-color: gold;
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
   position: fixed;
   z-index: 1;
   right: 30px;
+}
+
+.en > .circle {
+  left: 30px;
 }
 
 .dot1 {
@@ -131,32 +131,26 @@
 
 
 .circle:hover:after {
-  /* content: "صفحه اصلی"; */
-  display: inline-block;
-  /* z-index: 1; */
-  /* background-color: rgba(255,215,0,0.5); */
+  position: absolute;
+  display: block;
+  /* display: inline-block; */
   background-color: #cccccc;
   box-shadow: 2px 1px 1px 0 rgb(150, 147, 147), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* width: 8vw;
-  height: 2.2vh;
-  margin-left: -8vw; */
   width: 100px;
   height: 20px;
-  margin-left: -100px;
-
+  /* margin-left: -100px; */
   border-radius: 5px;
   text-align: center;
   font: 0.8em sans-serif;
   align-content: center;
   justify-items: center;
+  right: 22px;
 }
 
-/* .dot1:hover:after {content: "صفحه اصلی";}
-.dot2:hover:after {content: 'سوابق تحصیلی';}
-.dot3:hover:after {content: 'مقالات';}
-.dot4:hover:after {content: 'مهارت ها';}
-.dot5:hover:after {content: 'تجارب';}
-.dot6:hover:after {content: 'راه ارتباطی';} */
+.en > .circle:hover:after {
+  /* margin-left: -100px; */
+  left: 22px;
+}
 
 .fa > .dot1:hover:after {content: "صفحه اصلی";}
 .fa > .dot2:hover:after {content: 'سوابق تحصیلی';}
@@ -177,6 +171,13 @@
 
 /* .dot1:active {background-color: aqua;} */
 /* .dot2:active {background-color: aqua;} */
+
+/* .dot1:hover:after {content: "صفحه اصلی";}
+.dot2:hover:after {content: 'سوابق تحصیلی';}
+.dot3:hover:after {content: 'مقالات';}
+.dot4:hover:after {content: 'مهارت ها';}
+.dot5:hover:after {content: 'تجارب';}
+.dot6:hover:after {content: 'راه ارتباطی';} */
 
 
 /* For mobile: */
