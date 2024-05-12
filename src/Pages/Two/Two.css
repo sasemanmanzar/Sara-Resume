@@ -198,6 +198,8 @@
     .box{
       align-content: flex-start;
       transition: all 1s;
+      /* background-color: aquamarine; */
+      font-size: small;
     }
     #subject{
       padding-top: 15px;
