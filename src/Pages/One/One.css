@@ -14,6 +14,7 @@
   --colorBlue: rgba(8, 46, 108, 0.85);
   --colorYellow: rgba(220, 189, 90, 0.85);
   --colorBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
 }
 
 .boxAll {
@@ -110,37 +111,34 @@
 } */
 
 /* language: */
-.lang {
+/* .lang {
   position: relative;
-  /* width: 30px; */
   height: 30px;
   border-radius: 50%;
-  /* background-color: aliceblue; */
-  /* background-color: rgba(220, 189, 90, 0.85); */
+  background-color: aliceblue;
+  background-color: rgba(220, 189, 90, 0.85);
   background-color: var(--colorYellow);
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   top: 10px;
   left: 10px;
   cursor: pointer;
-}
-.langleg {
+} */
+/* .langleg {
   position: relative;
   display: grid;
   align-content: center;
   justify-items: center;
   width: 30px;
   height: 10px;
-  /* padding: 1px; */
   border-radius: 10%;
   color: aliceblue;
   background-color: rgba(8, 46, 108, 0.7);
-  /* background-color: rgba(220, 189, 90, 0.85); */
   box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   top: 7px;
   left: 10px;
   cursor: pointer;
   font-size: smaller;
-}
+} */
 
 .fa > .boxPicText{
   /* background-color: aliceblue; */

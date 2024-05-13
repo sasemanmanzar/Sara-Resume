@@ -1,6 +1,6 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-import langIcon from '../../Pic/lang-pic.png';
+// import langIcon from '../../Pic/lang-pic.png';
 import React, { useState, useEffect, useRef } from 'react';
 
 // function One(props) {
@@ -67,8 +67,8 @@ function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pa
   return (
     <div id='IdOne' className='one' ref={pageRef}>
       {/* <PageSize /> */}
-      <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
-      <div className='langleg' onClick={setLanguage}>{lang}</div>
+      {/* <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
+      <div className='langleg' onClick={setLanguage}>{lang}</div> */}
       <div className='boxAll'>
       <div className={langNow}>
 

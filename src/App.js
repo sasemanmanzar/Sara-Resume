@@ -8,6 +8,7 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 import strings from './strings';
+import langIcon from './Pic/lang-pic.png';
 
 function App() {
   const [activeDot, setActiveDot] = useState(1);
@@ -111,6 +112,10 @@ function App() {
 
   return (
     <div>
+      <div>
+        <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
+        <div className='langleg' onClick={setLanguage}>{lang}</div>
+      </div>
       <div className={langNow}>
         <div id="dot1" className='circle dot1' onClick={scrollToMarginPage1} style={{ backgroundColor: (activeDot === 1) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
         <div id="dot2" className='circle dot2' onClick={scrollToMarginPage2} style={{ backgroundColor: (activeDot === 2) ? 'rgba(8,46,108,0.85)' : 'gold' }} />
