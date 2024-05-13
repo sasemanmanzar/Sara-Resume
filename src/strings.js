@@ -10,14 +10,16 @@ const strings = {
         },
         Education:{
             BSc: {
-                degree: "BSc.",
+                // degree: "BSc.",
+                degree: "Bachelor's degree",
                 fieldOfStudy: "Information Technology Engineering",
                 university: "K. N. Toosi University of Technology, Tehran, Iran, 2012",
                 project: "Smart School & University",
                 prise: "The First Rank of Graduates in the Bachelor Course in IT Engineering"
             },
             MSc: {
-                degree: "MSc.",
+                // degree: "MSc.",
+                degree: "Master's degree",
                 // fieldOfStudy: "Information Technology Engineering, Management Information Systems",
                 fieldOfStudy: "Information Technology Engineering",
                 fieldOfStudyPart2: "Management Information Systems",
