@@ -124,26 +124,27 @@
   .boxAll {
     width: 70vw;
     height: 70vh;
-    transition: all 3s;
+    /* transition: all 3s; */
+    /* background-color: aqua; */
   }
   .boxPicText {
     top: -140px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .picSara {
     width: 130px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .textPageOne {
     width: 220px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .boxCircles {
     width: 100%;
     height: 100%;
     top: -90px;
     transform: translateX(0%) translateY(0%) rotate(-90deg);
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .circlePageOne {
     border-radius: 10px;
@@ -151,23 +152,23 @@
     height: 50px;
     margin: 0 -171px;
     transform: translateX(0%) translateY(0%) rotate(90deg);
-    transition: all 3s;
+    /* transition: all 3s; */
   }
 
   .en > .boxCircles {
     transform: translateX(0%) translateY(0%) rotate(-90deg);
     /* transform: translateX(0%) translateY(0%) rotate(270deg); */
-    transition: all 3s;
+    /* transition: all 3s; */
 
   }
   .en > .boxCircles > .circlePageOne {
     transform: translateX(0%) translateY(0%) rotate(90deg);
     /* transform: translateX(0%) translateY(0%) rotate(-270deg); */
-    transition: all 3s;
+    /* transition: all 3s; */
 
   }
 }
-
+/* 
 @media screen and (min-width: 720px) {
   .boxAll {transition: all 3s;}
   .boxPicText {transition: all 3s;}
@@ -175,30 +176,30 @@
   .textPageOne {transition: all 3s;}
   .boxCircles {transition: all 3s;}
   .circlePageOne {transition: all 3s;}
-}
+} */
 
 
 @media screen and (max-width: 450px) {
   .picSara {
     width: 100px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .textPageOne {
     width: 180px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
   .circlePageOne {
     width: 300px;
     margin: 0 -123px;
-    transition: all 3s;
+    /* transition: all 3s; */
   }
 }
 
-@media screen and (min-width: 450px) {
+/* @media screen and (min-width: 450px) {
   .picSara {transition: all 3s;}
   .textPageOne {transition: all 3s;}
   .circlePageOne {transition: all 3s;}
-}
+} */
 
 /* ...................................................................... */
 /* @keyframes example {
