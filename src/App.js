@@ -113,7 +113,7 @@ function App() {
   return (
     <div>
       <div>
-        <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
+        <div className='lang' onClick={setLanguage}><div className='imgLang'><img src={langIcon} alt="" /></div></div>
         <div className='langleg' onClick={setLanguage}>{lang}</div>
       </div>
       <div className={langNow}>

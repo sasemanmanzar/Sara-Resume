@@ -184,15 +184,30 @@
 .lang {
   /* position: relative; */
   position: fixed;
+  align-content: center;
+  justify-items: center;
   height: 30px;
+  width: 30px;
   border-radius: 50%;
   background-color: rgba(220, 189, 90, 0.85);
   /* background-color: var(--colorYellow); */
-  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 1.5px 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   top: 10px;
   left: 10px;
   cursor: pointer;
   z-index: 3;
+}
+.imgLang {
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  margin: auto;
+}
+.imgLang > img {
+  /* height: 28px; */
+  width: 30px;
 }
 .langleg {
   /* position: relative; */
@@ -200,15 +215,17 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  width: 30px;
-  height: 10px;
+  width: 26px;
+  /* height: 14px; */
+  line-height: 13px;
   border-radius: 10%;
   color: aliceblue;
   background-color: rgba(8, 46, 108, 0.7);
   /* background-color: rgba(220, 189, 90, 0.85); */
-  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  top: 40px;
-  left: 10px;
+  /* box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 1.5px 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  top: 41px;
+  left: 12px;
   cursor: pointer;
   font-size: smaller;
   z-index: 3;
