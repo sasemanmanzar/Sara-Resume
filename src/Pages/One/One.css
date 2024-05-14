@@ -62,11 +62,8 @@
   margin-top: auto;
   margin-right: 3px;
   margin-left: 3px;
-  /* padding: 10px 20px 10px 20px; */
-  /* padding: 10px 60px; */
   width: 260px;
   height: 45px;
-  /* color: aliceblue; */
 }
 
 /* Circles: */
@@ -102,50 +99,10 @@
   color: black;
 }
 
-/* .circlePageOne p ::hover {color: black;} */
-
-/* .circlePageOne p {
-  color: aliceblue; 
-  text-align: center; 
-  padding-top: 5vh;
-} */
-
-/* language: */
-/* .lang {
-  position: relative;
-  height: 30px;
-  border-radius: 50%;
-  background-color: aliceblue;
-  background-color: rgba(220, 189, 90, 0.85);
-  background-color: var(--colorYellow);
-  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-} */
-/* .langleg {
-  position: relative;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  width: 30px;
-  height: 10px;
-  border-radius: 10%;
-  color: aliceblue;
-  background-color: rgba(8, 46, 108, 0.7);
-  box-shadow: 2px 1px 1px 0 rgb(71, 69, 69), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  top: 7px;
-  left: 10px;
-  cursor: pointer;
-  font-size: smaller;
-} */
-
 .fa > .boxPicText{
-  /* background-color: aliceblue; */
   direction: rtl;
 }
 .en > .boxPicText{
-  /* background-color: aliceblue; */
   direction: ltr;
 }
 .en > .boxCircles {
@@ -168,59 +125,34 @@
   .boxAll {
     width: 70vw;
     height: 70vh;
-    /* transition: all 4s; */
-    /* background-color: #cccccc; */
     transition: all 3s;
   }
-
   .boxPicText {
-    /* background-color: crimson; */
     top: -140px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
-
   .picSara {
-    /* width: 160px; */
     width: 130px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
-
   .textPageOne {
-    /* padding: 10px 60px; */
-    /* padding: 10px 50px; */
     width: 220px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
-
   .boxCircles {
-    transform: translateX(0%) translateY(0%) rotate(-90deg);
-    /* margin: 150px 123px; */
-    /* transition: all 4s; */
-    transition: all 3s;
-
-    /* background-color: chartreuse; */
     width: 100%;
     height: 100%;
     top: -90px;
-    /* top: -150px; */
+    transform: translateX(0%) translateY(0%) rotate(-90deg);
+    transition: all 3s;
   }
-
   .circlePageOne {
     border-radius: 10px;
-    transform: translateX(0%) translateY(0%) rotate(90deg);
-    /* width: 300px; */
-    /* height: 50px; */
-    /* margin: 0 -123px; */
-    /* transition: all 4s; */
-    transition: all 3s;
-
-    /* background-color: darkorange; */
     width: 400px;
     height: 50px;
     margin: 0 -171px;
+    transform: translateX(0%) translateY(0%) rotate(90deg);
+    transition: all 3s;
   }
 
   .en > .boxCircles {
@@ -235,425 +167,41 @@
     transition: all 3s;
 
   }
-
 }
 
 @media screen and (min-width: 720px) {
-  .boxAll {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
-
-  .boxPicText {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
-
-  .picSara {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
-
-  .textPageOne {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
-
-  .boxCircles {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
-
-  .circlePageOne {
-    /* transition: all 4s; */
-    transition: all 3s;
-  }
+  .boxAll {transition: all 3s;}
+  .boxPicText {transition: all 3s;}
+  .picSara {transition: all 3s;}
+  .textPageOne {transition: all 3s;}
+  .boxCircles {transition: all 3s;}
+  .circlePageOne {transition: all 3s;}
 }
-
-
-/* @media screen and (max-height: 700px){
-  .boxPicText{
-    top: -120px;
-    transition: all 4s;
-  }
-}
-@media screen and (min-height: 700px){
-  .boxPicText {transition: all 1s;}
-} */
-
 
 
 @media screen and (max-width: 450px) {
   .picSara {
     width: 100px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
-
   .textPageOne {
-    /* font-size: small; */
-    /* padding: 10px 40px; */
     width: 180px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
-
   .circlePageOne {
     width: 300px;
     margin: 0 -123px;
-    /* transition: all 4s; */
     transition: all 3s;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .picSara {
-    /* transition: all 4s; */
-    transition: all 3s;
-
-  }
-
-  .textPageOne {
-    /* transition: all 4s; */
-    transition: all 3s;
-
-  }
-
-  .circlePageOne {
-    /* transition: all 4s; */
-    transition: all 3s;
-
-  }
+  .picSara {transition: all 3s;}
+  .textPageOne {transition: all 3s;}
+  .circlePageOne {transition: all 3s;}
 }
 
 /* ...................................................................... */
-
-/* 
-@media screen and (max-width: 1300px){
-  .boxAll{
-    left: 20vw;
-    transition: all 4s;
-  }
-  .boxPicText{
-    width: 380px;
-    left: 14vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    width: 60vw;
-    transition: all 4s;
-  }
-  .circlePageOne p {
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 1300px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 1200px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    width: 360px;
-    left: 12vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {
-    font-size: medium;
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 1200px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 1000px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {
-    font-size: small;
-    padding: 0;
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 1000px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 950px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    left: 10vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 950px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-
-@media screen and (max-width: 900px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    left: 9vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 900px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-
-@media screen and (max-width: 800px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    width: 320px;
-    left: 10vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 800px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 750px){
-  .boxAll{
-    left: 15vw;
-    transition: all 4s;
-  }
-  .boxPicText{
-    left: 13vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    width: 70vw;
-    transition: all 4s;
-  }
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 750px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 700px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    left: 11vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 700px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-
-@media screen and (max-width: 650px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    left: 8vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 650px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-} */
-
-/* For mobile: */
-/* @media screen and (max-width: 600px){
-  .boxAll{top: 15vh; transition: all 4s;}
-  .boxPicText{
-    left: 8vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
-    height: 250px;
-    transition: all 4s;
-  }
-  .circlePageOne {
-    border-radius: 10px;
-    margin: 5px;
-  }
-  .circlePageOne p {
-    vertical-align: middle;
-    padding: 50px 0 50px 0; 
-    transform:  translateX(0%) translateY(5vh) rotate(90deg);
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 600px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne {transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-} */
-
-
-/* For mobile: */
-/* @media screen and (max-width: 450px){
-  .boxAll{top: 15vh; transition: all 4s;}
-  .boxPicText{
-    left: -1vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    transform:  translateX(0%) translateY(5vh) rotate(-90deg);
-    height: 250px;
-    width: 350px;
-    margin: 0 0 0 -30px;
-    transition: all 4s;
-  }
-  .circlePageOne {
-    border-radius: 10px;
-    margin: 5px;
-  }
-  .circlePageOne p {
-    vertical-align: middle;
-    padding: 50px 0 50px 0; 
-    transform:  translateX(0%) translateY(5vh) rotate(90deg);
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 450px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne {transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-} */
-
-/* ...................................................................... */
-
-
-/* @media screen and (max-width: 600px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{
-    left: 6vw;
-    transition: all 4s;
-  }
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 600px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-} */
-
-/* @media screen and (max-width: 550px){
-  .boxAll{
-    left: 10vw;
-    transition: all 4s;
-  }
-  .boxPicText{
-    left: 9vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    width: 80vw;
-    transition: all 4s;
-  }
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 550px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 500px){
-  .boxAll{
-    transition: all 4s;
-  }
-  .boxPicText{
-    left: 8vw;
-    width: 280px;
-    transition: all 4s;
-  }
-  .boxCircles{
-    transition: all 4s;
-  }
-  .circlePageOne p {transition: all 4s;}
-}
-@media screen and (min-width: 500px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-}
-
-@media screen and (max-width: 300px){
-  .boxAll{
-    left: 2vw;
-    transition: all 4s;
-  }
-  .boxPicText{
-    display:grid;
-    left: -18vw;
-    transition: all 4s;
-  }
-  .boxCircles{
-    width: 96vw;
-    transition: all 4s;
-  }
-  .circlePageOne p {
-    font-size: xx-small;
-    transition: all 4s;
-  }
-}
-@media screen and (min-width: 300px){
-  .boxAll{transition: all 4s;}
-  .boxPicText{transition: all 4s;}
-  .boxCircles{transition: all 4s;}
-  .circlePageOne p {transition: all 4s;}
-} */
-
-
-
-
 /* @keyframes example {
   from {background-color: red;}
   to {background-color: yellow;}
@@ -666,3 +214,4 @@
   animation-name: example;
   animation-duration: 4s;
 } */
+/* ...................................................................... */

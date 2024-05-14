@@ -1,31 +1,12 @@
 import './One.css';
 import picSara from '../../Pic/sara.jpg';
-// import langIcon from '../../Pic/lang-pic.png';
 import React, { useState, useEffect, useRef } from 'react';
 
-// function One(props) {
-//   const { pageRef, sara, setSara } = props;
+function One({ text, langNow, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
 
-// function One({ pageRef, sara, setSara }) {
-
-function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pageRef4, pageRef5, pageRef6 }) {
-
-  // const shalgham = { barge: "sabz", geli: "ghaveii" };
-  // console.log(shalgham.barge);
-
-  // const barge = shalgham.barge;
-  // console.log(barge);
-
-  // const { barge } = shalgham;
-  // console.log(barge);
-
-  // props.setSara("mohammad");
-  // setSara("mohammad");
-  // console.log(sara);
   const Text = text.main;
 
   const scrollToMarginPage2 = () => {
-    // const marginDot2 = document.getElementById('IdTwo');
     if (pageRef2.current) {
       pageRef2.current.scrollIntoView();
     }
@@ -55,26 +36,14 @@ function One({ text, lang, setLanguage, langNow, pageRef, pageRef2, pageRef3, pa
     }
   };
 
-  // const [lang, setLang] = useState("fa");
-
-  // function setLanguage(){
-  //   if(lang === 'fa') setLang('en')
-  //     else setLang('fa')
-  // }
-
-  // console.log(langNow);
-
   return (
     <div id='IdOne' className='one' ref={pageRef}>
       {/* <PageSize /> */}
-      {/* <div onClick={setLanguage}><img className='lang' src={langIcon} alt="" /></div>
-      <div className='langleg' onClick={setLanguage}>{lang}</div> */}
       <div className='boxAll'>
       <div className={langNow}>
 
         <div id="boxPicText" className='boxPicText'>
           <img className='picSara' src={picSara} alt="" />
-          {/* <div className='textPageOne'>سارا آسمان منظر</div> */}
           <div className='textPageOne'>{Text.myName}</div>
         </div>
 
