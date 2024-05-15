@@ -156,6 +156,17 @@
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
+.copyRightIcons8{
+  position: absolute;
+  color: #8d8989;
+  bottom: 10px;
+  left: 10px;
+}
+.copyRightIcons8 a{
+  color: #8d8989;
+  font-style:normal;
+  text-decoration:none;
+}
 
 @media screen and (max-width: 720px){
   .smallBoxCallMe {
