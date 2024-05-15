@@ -155,7 +155,7 @@
   border: 1px solid black;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
-
+/* 
 .copyRightIcons8{
   position: absolute;
   color: #8d8989;
@@ -166,7 +166,7 @@
   color: #8d8989;
   font-style:normal;
   text-decoration:none;
-}
+} */
 
 @media screen and (max-width: 720px){
   .smallBoxCallMe {

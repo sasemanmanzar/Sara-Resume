@@ -175,9 +175,9 @@ function Six({ text, langNow, pageRef }) {
                 {stateMessage} 
                 <br/>
             </div> */}
-    <div className='copyRightIcons8'>
+    {/* <div className='copyRightIcons8'>
     <a target="_blank" href="https://icons8.com/icon/FG6Ri8Qc8Cf6/resume">Resume</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-    </div>
+    </div> */}
     </div>
   );
 }

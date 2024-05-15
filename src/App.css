@@ -207,7 +207,8 @@
 }
 .imgLang > img {
   /* height: 28px; */
-  width: 30px;
+  /* width: 30px; */
+  width: 25px;
 }
 .langleg {
   /* position: relative; */

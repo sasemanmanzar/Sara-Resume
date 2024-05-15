@@ -8,7 +8,7 @@ import Four from './Pages/Four/Four';
 import Five from './Pages/Five/Five';
 import Six from './Pages/Six/Six';
 import strings from './strings';
-import langIcon from './Pic/lang-pic.png';
+import langIcon from './Pic/lang-pic.svg';
 
 function App() {
   const [activeDot, setActiveDot] = useState(1);
