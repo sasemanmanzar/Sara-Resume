@@ -76,7 +76,8 @@ const strings = {
                 text8: "Connecting the Dots",
                 text9: "Saving Pictures",
                 text10: "In-app Payments",
-                text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2020",
+                // text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2020",
+                text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2024",
                 text12: "",
                 text13: "Download",
                 // text16: "
@@ -178,7 +179,8 @@ const strings = {
                 text9: "ذخیره تصاویر",
                 text10: "پرداخت درون برنامه ای",
                 text11: "تاریخ انتشار دی ۱۳۹۸",
-                text12: "آخرین بروزرسانی تیر ۱۳۹۹",
+                // text12: "آخرین بروزرسانی تیر ۱۳۹۹",
+                text12: "آخرین بروزرسانی خرداد ۱۴۰۳",
                 text13: "دانلود از کافه بازار",
             }
         },
