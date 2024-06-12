@@ -186,6 +186,7 @@ ul {
 .boxLinkDownload {
   position: relative;
   display: grid;
+  grid-template-columns: auto auto;
   padding-left: 50px;
   padding-right: 50px;
   /* direction: rtl; */
@@ -193,15 +194,22 @@ ul {
   transform: translate3d(50%, 0, 0);
   padding-bottom: 50px;
 
-  /* background-color: aquamarine; */
+  /* background-color: rgb(255, 127, 249); */
 }
 
 .LinkDownload {
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: 120px;
   font-style: normal;
   background-color: rgba(8, 46, 108, 0.7);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   padding: 10px;
+  margin: 5px;
+  font-size: small;
 }
 
 .LinkDownload a {

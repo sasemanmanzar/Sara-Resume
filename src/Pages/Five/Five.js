@@ -1,9 +1,19 @@
 import './Five.css';
 import iconBluePencil from '../../Pic/iconBluePencil.gif';
+import { useState , useEffect} from 'react';
 
 function Five({ text, langNow, pageRef }) {
 
     const Text = text.Experience;
+
+    const enHref = "https://cafebazaar.ir/app/com.example.BluePencil?l=en";
+    const faHref = "https://cafebazaar.ir/app/com.example.BluePencil";
+    const [whichHref , setWhichHref] = useState(faHref);
+
+    useEffect(() => {
+        if (langNow === 'en') setWhichHref(enHref);
+            else setWhichHref(faHref);
+      }, [langNow]);
 
     return (
         <div id='IdFive' className='five' ref={pageRef}>
@@ -33,7 +43,9 @@ function Five({ text, langNow, pageRef }) {
                         <div className="textBP3">{Text.bulePencil.text11}</div>
                         <div className="textBP3">{Text.bulePencil.text12}</div>
                         <div className='boxLinkDownload'>
-                            <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div>
+                            {/* <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div> */}
+                            <div className="LinkDownload"><a href={whichHref} target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div>
+                            <div className="LinkDownload"><a href="../../FileApps/BluePencil.apk" download>{Text.bulePencil.text14}</a></div>
                         </div>
                         {/* <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">دانلود از کافه بازار</a></div> */}
                     </div>

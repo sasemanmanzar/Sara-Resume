@@ -14,7 +14,7 @@ const strings = {
                 degree: "Bachelor's degree",
                 fieldOfStudy: "Information Technology Engineering",
                 university: "K. N. Toosi University of Technology, Tehran, Iran, 2012",
-                project: "Smart School & University",
+                project: "Thesis Title: Smart School & University",
                 prise: "The First Rank of Graduates in the Bachelor Course in IT Engineering"
             },
             MSc: {
@@ -24,7 +24,7 @@ const strings = {
                 fieldOfStudy: "Information Technology Engineering",
                 fieldOfStudyPart2: "Management Information Systems",
                 university: "Taali Higher Education Information Technology Institute, Gom, Iran, 2015",
-                project: "Designing Medicine Decision Assistant System to Increase Accuracy by Data Mining Techniques (Case Study: Audiology)",
+                project: "Thesis Title: Designing Medicine Decision Assistant System to Increase Accuracy by Data Mining Techniques (Case Study: Audiology)",
             }
         },
         Publication:{
@@ -80,6 +80,7 @@ const strings = {
                 text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2024",
                 text12: "",
                 text13: "Download Bazaar",
+                text14: "Direct Download"
                 // text16: "
                 //     ANDROID DEVELOPER, SELF-EMPLOYED; TEHRAN, IRAN — 2019-2020
                 //     BLUE PENCIL GAME FOR ANDROID, PUBLISHED IN CAFE BAZAAR (PERSIAN APP)
@@ -97,7 +98,7 @@ const strings = {
             subject: "subject",
             text: "text",
             send: "Send",
-            alert_good:"Message sent",
+            alert_good:"Message send",
             alert_bad:"Something went wrong, please try again later"
         }
     }, 
@@ -182,6 +183,7 @@ const strings = {
                 // text12: "آخرین بروزرسانی تیر ۱۳۹۹",
                 text12: "آخرین بروزرسانی خرداد ۱۴۰۳",
                 text13: "دانلود از کافه بازار",
+                text14: "دانلود مستقیم"
             }
         },
         Contact:{

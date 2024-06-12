@@ -148,6 +148,7 @@
 .en > .boxForm > .boxFormInside > form > .SubmitP6 > input {
   margin-right: 0;
   margin-left: calc(50% - 90px);
+  font: 0.9em sans-serif;
 }
 
 .SubmitP6 input:active{
