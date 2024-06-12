@@ -79,7 +79,7 @@ const strings = {
                 // text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2020",
                 text11: "PUBLISHED IN CAFE BAZAAR (PERSIAN APP), TEHRAN, IRAN — 2019-2024",
                 text12: "",
-                text13: "Download",
+                text13: "Download Bazaar",
                 // text16: "
                 //     ANDROID DEVELOPER, SELF-EMPLOYED; TEHRAN, IRAN — 2019-2020
                 //     BLUE PENCIL GAME FOR ANDROID, PUBLISHED IN CAFE BAZAAR (PERSIAN APP)
