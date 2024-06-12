@@ -45,7 +45,8 @@ function Five({ text, langNow, pageRef }) {
                         <div className='boxLinkDownload'>
                             {/* <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div> */}
                             <div className="LinkDownload"><a href={whichHref} target="_blank" rel="noreferrer">{Text.bulePencil.text13}</a></div>
-                            <div className="LinkDownload"><a href="../../FileApps/BluePencil.apk" download>{Text.bulePencil.text14}</a></div>
+                            {/* <div className="LinkDownload"><a href="../../FileApps/BluePencil.apk" target="_blank" rel="noreferrer" download>{Text.bulePencil.text14}</a></div> */}
+                            <div className="LinkDownload"><a href="../../../public/BluePencil.apk" target="_blank" rel="noreferrer" download>{Text.bulePencil.text14}</a></div>
                         </div>
                         {/* <div className="LinkDownload"><a href="https://cafebazaar.ir/app/com.example.BluePencil" target="_blank" rel="noreferrer">دانلود از کافه بازار</a></div> */}
                     </div>
